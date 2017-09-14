@@ -11,8 +11,9 @@
 }
 
 .navigation__item{
+	position: relative;
 	display: block;
-	margin-bottom: 40px;
+	margin-bottom: 40px;	
 }
 
 .navigation__link{
@@ -21,7 +22,6 @@
 }
 
 .navigation__text{
-	position: relative;
 	margin-left: 36px;
 	font-size:12px;
 	font-weight:700;
