@@ -1,0 +1,29 @@
+.footer{
+	clear: both;
+	height: 77px;
+	background-color:#1c5bc3;
+	font-size:14px;
+	padding-top: 20px;
+	margin-top: 68px;
+}
+
+
+.footer__author{
+	display: block;
+	color:#fff;
+	width: 235px;
+	float: left;
+}
+
+
+.footer__logo{
+	display: block;
+	float:left;
+	margin-left: 235px;
+}
+
+.footer__loftschool-link{
+	text-decoration: none;
+	color:#fff;
+	font-weight: bold;
+}

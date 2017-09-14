@@ -1,0 +1,40 @@
+/* ------ navigation ------- */
+
+.navigation{
+	width: 200px;
+	float:left;
+	padding-top: 50px;
+}
+
+.navigation__list{
+	list-style: none;
+}
+
+.navigation__item{
+	display: block;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.navigation__link{
+	text-decoration: none;
+	color:#1c5bc3;
+}
+
+.navigation__text{
+	margin-left: 36px;
+	font-size:12px;
+	font-weight:700;
+	text-transform: uppercase;
+	color:#1c5bc3
+}
+
+.navigation__text_chosen{
+	color:#221f1f;
+}
+
+.navigation__pic{
+	position: absolute;
+	top:5px;
+}
+

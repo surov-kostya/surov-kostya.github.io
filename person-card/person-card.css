@@ -1,0 +1,23 @@
+.person-card{
+	width: 256px;
+	height: 411px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.person-card__body{
+	font-size: 14px;
+	line-height: 1.42em;
+	margin-top: 20px;	
+}
+
+.person-card__name{
+	font-weight: bold;
+	font-size:18px;
+}
+
+.person-card__position{
+	font-weight: bold;
+	color:#1c5bc3;
+	line-height: 2em;
+}
