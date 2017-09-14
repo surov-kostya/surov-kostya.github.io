@@ -3,6 +3,8 @@
 	height: 411px;
 	display: inline-block;
 	vertical-align: top;
+	text-align: center;
+	text-align-last: center;
 }
 
 .person-card__body{
@@ -20,4 +22,8 @@
 	font-weight: bold;
 	color:#1c5bc3;
 	line-height: 2em;
+}
+
+.person-card__history{
+	overflow: hidden;
 }
