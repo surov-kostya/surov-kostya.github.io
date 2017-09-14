@@ -27,10 +27,11 @@ body{
 
 .wrapper{
 	min-height: 1100px;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 .container{
 	width: 1060px;
 	margin: 0 auto;
+	overflow: hidden;
 }
