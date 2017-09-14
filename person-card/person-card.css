@@ -26,4 +26,5 @@
 
 .person-card__history{
 	overflow: hidden;
+	font-weight: normal;
 }
