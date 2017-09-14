@@ -1,5 +1,3 @@
-/* ------ navigation ------- */
-
 .navigation{
 	width: 200px;
 	float:left;
@@ -11,12 +9,12 @@
 }
 
 .navigation__item{
-	position: relative;
-	display: block;
-	margin-bottom: 40px;	
+	margin-bottom: 40px;
 }
 
 .navigation__link{
+	display: block;
+	position: relative;
 	text-decoration: none;
 	color:#1c5bc3;
 }
@@ -26,18 +24,20 @@
 	font-size:12px;
 	font-weight:700;
 	text-transform: uppercase;
-	color:#1c5bc3
+	color:#1c5bc3;
+	vertical-align:middle;
 }
 
 .navigation__text_chosen{
 	color:#221f1f;
 }
 
-.navigation__pic{
+.navigation__icon{
 	position: absolute;
-	top:1px;
-	bottom:0;
-	left:0;
-	right:0;
+}
+
+
+.navigation__pic{
+	vertical-align: middle;
 }
 
