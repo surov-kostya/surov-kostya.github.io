@@ -34,6 +34,9 @@
 
 .navigation__icon{
 	position: absolute;
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
 }
 
 

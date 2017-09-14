@@ -1,10 +1,19 @@
 .person-card{
 	width: 256px;
 	height: 411px;
-	display: inline-block;
-	vertical-align: top;
-	text-align: center;
-	text-align-last: center;
+}
+
+.person-card__photo{
+	width:160px;
+	height: 160px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.person-card__pic{
+	width:160px;
+	height: 160px;
+	border-radius: 80px;
 }
 
 .person-card__body{

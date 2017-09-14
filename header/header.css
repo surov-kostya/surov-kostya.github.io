@@ -7,11 +7,9 @@
 
 .logo{
 	float:left;
-}
-
-.logo__pic{
 	width: 121px;
 	height: 37px;
+	overflow: hidden;
 }
 
 .contacts{

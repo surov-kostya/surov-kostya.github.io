@@ -3,6 +3,14 @@
 	float: right;
 }
 
+.socials__icons{
+	list-style:none;
+}
+
+.socials__item{
+	display: inline-block;
+}
+
 .socials__text{
 	color:#fff;
 	font-size: 14px;
@@ -14,10 +22,10 @@
 	border-radius: 10px;
 	width: 20px;
 	height: 20px;
-	display: inline-block;
 	position: relative;
 	margin-top:10px;
 	margin-right: 10px;
+	overflow: hidden;
 }
 
 .socials__circle:hover{
@@ -25,8 +33,10 @@
 }
 
 .socials__link{
+	display: inline-block;
 	text-decoration: none;
 }
+
 .socials__pic{
 	position: absolute;
 	left:4px;

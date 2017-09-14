@@ -1,0 +1,17 @@
+.bread-crumbs{
+	font-style: oblique;
+	font-size:13px;
+	color:#221f1f;
+}
+
+.bread-crumbs__list{
+	list-style: none;
+}
+
+.bread-crumbs__item{
+	display: inline-block;
+}
+
+.bread-crumbs__link-to-main{
+	color: #1c5bc3;
+}

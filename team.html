@@ -11,13 +11,14 @@
 	<link rel="stylesheet" href="person-card/person-card.css">
 	<link rel="stylesheet" href="footer/footer.css">
 	<link rel="stylesheet" href="socials/socials.css">
+	<link rel="stylesheet" href="bread-crumbs/bread-crumbs.css">
 </head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
 				<div class="container">
 					<div class="logo">
-						<a href="#" class="logo__link"><img class="logo__pic" src="img/logo.png"></img></a>
+						<a href="#" class="logo__link"><img class="logo__pic" src="img/logo.png" alt="logo"></img></a>
 					</div>
 					<div class="contacts">
 						<p class="contacts__number">8(800) 00-392-10</p>
@@ -31,19 +32,19 @@
 					<ul class="navigation__list">
 						<li class="navigation__item">
 							<a class="navigation__link" href="#">
-								<span class="navigation__icon"><img class="navigation__pic" src="navigation/main-upd.png"></span>
+								<span class="navigation__icon"><img class="navigation__pic" src="navigation/main-upd.png" alt="main"></span>
 								<span class="navigation__text">Главная</span>
 							</a>
 						</li>
 						<li class="navigation__item">
 							<a class="navigation__link" href="#">
-								<span class="navigation__icon"><img class="navigation__pic " src="navigation/team-psd.png"></span>
+								<span class="navigation__icon"><img class="navigation__pic " src="navigation/team-psd.png" alt="team"></span>
 								<span class="navigation__text navigation__text_chosen">Экипаж</span>
 							</a>
 						</li>
 						<li class="navigation__item">
 							<a class="navigation__link" href="#">
-								<span class="navigation__icon"><img class="navigation__pic" src="navigation/feed-upd.png"></span>
+								<span class="navigation__icon"><img class="navigation__pic" src="navigation/feed-upd.png" alt="feed"></span>
 								<span class="navigation__text">Отзывы</span>
 							</a>
 						</li>
@@ -52,175 +53,196 @@
 
 				<section class="content">
 					<div class="bread-crumbs">
-						<a class="bread-crumbs__link-to-main" href="#">Главная</a>
-						<span class="bread-crumbs__you-are-here">/Экипаж</span>
+						<ul class="bread-crumbs__list">
+							<li class="bread-crumbs__item">
+								<a class="bread-crumbs__link-to-main" href="#">Главная</a>							
+							</li>
+							<li class="bread-crumbs__item">
+								<span class="bread-crumbs__you-are-here">/Экипаж</span>
+							</li>
+						</ul>
 					</div>
 					<div class="content__title">
 						<h1 class="content__h1">Экипаж</h1>
 					</div>
-					<div class="content__team">
-
-						<div class="person-card">
-							<div class="person-card__head">
-								<div class="person-card__photo">
-									<img class="person-card__pic" src="person-card/alex.png"></img>
+					<ul class="content__team">
+						<li class="content__item">
+							<div class="person-card">
+								<div class="person-card__head">
+									<div class="person-card__photo">
+										<img class="person-card__pic" src="person-card/alex.jpg" alt="alex"></img>
+									</div>
+								</div>
+								<div class="person-card__body">
+									<div class="person-card__who">
+										<div class="person-card__name">Белов Алексей Вадимович</div>
+										<div class="person-card__position">Главный пилот</div>
+									</div>
+									<p class="person-card__history">
+										Высокий профессионализм, честь и отвага – все это характеристики
+										главного пилота Белова А.В. На его счету более 700 полетов. 
+										Награжден за мужество и отвагу указом президента.
+									</p>
 								</div>
 							</div>
-							<div class="person-card__body">
-								<div class="person-card__who">
-									<div class="person-card__name">Белов Алексей Вадимович</div>
-									<div class="person-card__position">Главный пилот</div>
+						</li>
+						<li class="content__item">
+							<div class="person-card">
+								<div class="person-card__head">
+									<div class="person-card__photo">
+										<img class="person-card__pic" src="person-card/inna.jpg" alt="inna"></img>
+									</div>
 								</div>
-								<p class="person-card__history">
-									Высокий профессионализм, честь и отвага – все это характеристики
-									главного пилота Белова А.В. На его счету более 700 полетов. 
-									Награжден за мужество и отвагу указом президента.
-								</p>
-							</div>
-						</div>
-
-						<div class="person-card">
-							<div class="person-card__head">
-								<div class="person-card__photo">
-									<img class="person-card__pic" src="person-card/inna.png"></img>
-								</div>
-							</div>
-							<div class="person-card__body">
-								<div class="person-card__who">
-									<div class="person-card__name">Сухарина Инна Николаевна</div>
-									<div class="person-card__position">Бортпроводник</div>
-								</div>
-								<p class="person-card__history">
-									Благодаря деятельности этого человека, на борту самолета клиенты 
-									чувствуют себя, как дома. Инна Николаевна чутко относится ко всем 
-									требованиям клиентов, очень любит детей и всячески помогает сделать
-									полет комфортным и приятным.
-								</p>
-							</div>
-						</div>
-
-						<div class="person-card">
-							<div class="person-card__head">
-								<div class="person-card__photo">
-									<img class="person-card__pic" src="person-card/boris.png"></img>
+								<div class="person-card__body">
+									<div class="person-card__who">
+										<div class="person-card__name">Сухарина Инна Николаевна</div>
+										<div class="person-card__position">Бортпроводник</div>
+									</div>
+									<p class="person-card__history">
+										Благодаря деятельности этого человека, на борту самолета клиенты 
+										чувствуют себя, как дома. Инна Николаевна чутко относится ко всем 
+										требованиям клиентов, очень любит детей и всячески помогает сделать
+										полет комфортным и приятным.
+									</p>
 								</div>
 							</div>
-							<div class="person-card__body">
-								<div class="person-card__who">
-									<div class="person-card__name">Лещ Борис Анатольевич</div>
-									<div class="person-card__position">Авиатехник</div>
+						</li>
+						<li class="content__item">
+							<div class="person-card">
+								<div class="person-card__head">
+									<div class="person-card__photo">
+										<img class="person-card__pic" src="person-card/boris.jpg" alt="boris"></img>
+									</div>
 								</div>
-								<p class="person-card__history">
-									Человек с золотыми руками, инженер и конструктор от Бога! Борис 
-									Анатольевич работает уже более 50 лет и на своем веку видел, как 
-									из старых моделей самолетов появлялись настоящие авиа шедевры
-								</p>
-							</div>
-						</div>
-
-						<div class="person-card">
-							<div class="person-card__head">
-								<div class="person-card__photo">
-									<img class="person-card__pic" src="person-card/elina.png"></img>
-								</div>
-							</div>
-							<div class="person-card__body">
-								<div class="person-card__who">
-									<div class="person-card__name">Дигангидзе Элина Даниловна</div>
-									<div class="person-card__position">Диспетчер</div>
-								</div>
-								<p class="person-card__history">
-									Ей присущ внимательный подход к расчетам, а отменная память удивляет
-									даже самых опытных членов экипажа. За 22 года работы она стажировала
-									более 100 диспетчеров для работы в крупнейших аэропортах страны.  
-									Знает в совершенстве 5 иностранных языков.
-								</p>
-							</div>
-						</div>
-
-						<div class="person-card">
-							<div class="person-card__head">
-								<div class="person-card__photo">
-									<img class="person-card__pic" src="person-card/elena.png"></img>
+								<div class="person-card__body">
+									<div class="person-card__who">
+										<div class="person-card__name">Лещ Борис Анатольевич</div>
+										<div class="person-card__position">Авиатехник</div>
+									</div>
+									<p class="person-card__history">
+										Человек с золотыми руками, инженер и конструктор от Бога! Борис 
+										Анатольевич работает уже более 50 лет и на своем веку видел, как 
+										из старых моделей самолетов появлялись настоящие авиа шедевры
+									</p>
 								</div>
 							</div>
-							<div class="person-card__body">
-								<div class="person-card__who">
-									<div class="person-card__name">Следь Елена Николаевна</div>
-									<div class="person-card__position">Старший бортпроводник</div>
+						</li>
+						<li class="content__item">
+							<div class="person-card">
+								<div class="person-card__head">
+									<div class="person-card__photo">
+										<img class="person-card__pic" src="person-card/elina.jpg" alt="elina"></img>
+									</div>
 								</div>
-								<p class="person-card__history">
-									Вежливая улыбка, внимательность к деталям и большой опыт работы
-									 – это лишь малая часть достоинств Елены Николаевны. Старший 
-									 бортпроводник задает тон всей поездке, поэтому клиенты, которые 
-									 летят с ней, заряжаются отличным настроением и гармонией.
-								</p>
-							</div>
-						</div>
-
-						<div class="person-card">
-							<div class="person-card__head">
-								<div class="person-card__photo">
-									<img class="person-card__pic" src="person-card/yrii.png"></img>
+								<div class="person-card__body">
+									<div class="person-card__who">
+										<div class="person-card__name">Дигангидзе Элина Даниловна</div>
+										<div class="person-card__position">Диспетчер</div>
+									</div>
+									<p class="person-card__history">
+										Ей присущ внимательный подход к расчетам, а отменная память удивляет
+										даже самых опытных членов экипажа. За 22 года работы она стажировала
+										более 100 диспетчеров для работы в крупнейших аэропортах страны.  
+										Знает в совершенстве 5 иностранных языков.
+									</p>
 								</div>
 							</div>
-							<div class="person-card__body">
-								<div class="person-card__who">
-									<div class="person-card__name">Нестеренко Юрий Афанасьевич</div>
-									<div class="person-card__position">Второй пилот</div>
+						</li>
+						<li class="content__item">
+							<div class="person-card">
+								<div class="person-card__head">
+									<div class="person-card__photo">
+										<img class="person-card__pic" src="person-card/elena.jpg" alt="elena"></img>
+									</div>
 								</div>
-								<p class="person-card__history">
-									Правая рука главного пилота, опытный и отважный помощник. О своей
-									работе в шутку говорит так «Наше дело правое, не мешать левому». 
-									Опыт работы составляет 18 лет, внимательно относится ко всем деталям 
-									и считает свою работу – делом жизни. 
-								</p>
+								<div class="person-card__body">
+									<div class="person-card__who">
+										<div class="person-card__name">Следь Елена Николаевна</div>
+										<div class="person-card__position">Старший бортпроводник</div>
+									</div>
+									<p class="person-card__history">
+										Вежливая улыбка, внимательность к деталям и большой опыт работы
+										 – это лишь малая часть достоинств Елены Николаевны. Старший 
+										 бортпроводник задает тон всей поездке, поэтому клиенты, которые 
+										 летят с ней, заряжаются отличным настроением и гармонией.
+									</p>
+								</div>
 							</div>
-						</div>
-
-					</div>
+						</li>
+						<li class="content__item">
+							<div class="person-card">
+								<div class="person-card__head">
+									<div class="person-card__photo">
+										<img class="person-card__pic" src="person-card/yrii.jpg" alt="yrii"></img>
+									</div>
+								</div>
+								<div class="person-card__body">
+									<div class="person-card__who">
+										<div class="person-card__name">Нестеренко Юрий Афанасьевич</div>
+										<div class="person-card__position">Второй пилот</div>
+									</div>
+									<p class="person-card__history">
+										Правая рука главного пилота, опытный и отважный помощник. О своей
+										работе в шутку говорит так «Наше дело правое, не мешать левому». 
+										Опыт работы составляет 18 лет, внимательно относится ко всем деталям 
+										и считает свою работу – делом жизни. 
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</section>
 			</div>
 
 			<footer class="footer">
 					<div class="container">
-						<span class="footer__block footer__author">
+						<span class="footer__author">
 							Сделано с любовью и старанием на курсе «HTML + CSS» в
 							<a href="http://loftschool.com" class="footer__loftschool-link">LoftSchool</a>.
 							Автор работы: <a href="http://vk.com/q05t9n" class="footer__loftschool-link">Суров Константин</a>.
 						</span>
-						<div class="footer__block footer__logo">
-							<a href="#" class="logo__link"><img class="logo__pic" src="img/logo.png"></img></a>
+						<div class="logo logo-footer">
+							<a href="#" class="logo__link"><img class="logo__pic" src="img/logo.png" alt="logo"></img></a>
 						</div>
-						<div class="footer__block socials">
-							<div class="socials__text">Наши социальные сети</div>
-							<div class="socials__icons">
-								<a class="socials__link" href="http://vk.com">
-									<div class="socials__circle">
-										<img class="socials__pic socials__pic-vk" src="socials/vk.png">
-									</div>
-								</a>
-								<a class="socials__link" href="http://facebook.com">
-									<div class="socials__circle">
-										<img class="socials__pic socials__pic-fb" src="socials/fb.png">
-									</div>
-								</a>
-								<a class="socials__link" href="http://plus.google.com">
-									<div class="socials__circle">
-										<img class="socials__pic" src="socials/go.png">
-									</div>
-								</a>
-								<a class="socials__link" href="http://twitter.com">
-									<div class="socials__circle">
-										<img class="socials__pic" src="socials/tw.png">
-									</div>
-								</a>
-								<a class="socials__link" href="mailto:q05t9n@mail.ru">
-									<div class="socials__circle">
-										<img class="socials__pic" src="socials/mail.png">
-									</div>
-								</a>
-							</div>
+						<div class="socials">
+							<span class="socials__text">Наши социальные сети</span>
+							<ul class="socials__icons">
+								<li class="socials__item">
+									<a class="socials__link" href="http://vk.com">
+										<div class="socials__circle">
+											<img class="socials__pic socials__pic-vk" src="socials/vk.png" alt="vk">
+										</div>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a class="socials__link" href="http://facebook.com">
+										<div class="socials__circle">
+											<img class="socials__pic socials__pic-fb" src="socials/fb.png" alt="fb">
+										</div>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a class="socials__link" href="http://plus.google.com">
+										<div class="socials__circle">
+											<img class="socials__pic" src="socials/go.png" alt="google">
+										</div>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a class="socials__link" href="http://twitter.com">
+										<div class="socials__circle">
+											<img class="socials__pic" src="socials/tw.png" alt="twitter">
+										</div>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a class="socials__link" href="mailto:q05t9n@mail.ru">
+										<div class="socials__circle">
+											<img class="socials__pic" src="socials/mail.png" alt="email">
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 			</footer>
