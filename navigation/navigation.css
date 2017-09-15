@@ -13,7 +13,7 @@
 }
 
 .navigation__link{
-	display: block;
+	display: inline-block;
 	position: relative;
 	text-decoration: none;
 	color:#1c5bc3;
