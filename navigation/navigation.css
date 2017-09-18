@@ -75,3 +75,18 @@
 
 /*----------- ACTIVE ------------*/
 
+.navigation__item_active .navigation__text{
+	color:#221f1f;
+}
+
+.navigation__item_active .navigation__pic-main{
+	background-position: -0px -74px;
+}
+
+.navigation__item_active .navigation__pic-team{
+	background-position: -0px -0px;
+}
+
+.navigation__item_active .navigation__pic-fead{
+	background-position: -0px -36px;
+}
