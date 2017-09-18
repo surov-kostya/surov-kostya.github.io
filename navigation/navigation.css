@@ -16,31 +16,62 @@
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
-	color:#1c5bc3;
 }
 
 .navigation__text{
 	margin-left: 36px;
 	font-size:12px;
+	line-height: 1em;
 	font-weight:700;
 	text-transform: uppercase;
 	color:#1c5bc3;
 	vertical-align:middle;
 }
 
-.navigation__text_chosen{
+.navigation__icon{
+	position: absolute;
+}
+
+.navigation__pic{
+	overflow: hidden;
+	vertical-align: middle;
+	content: "";	
+	width: 23px;
+	height: 19px;
+	background-image: url(sprite.png);
+	background-repeat: no-repeat;
+}
+
+/*-------------- HOVER --------------*/
+
+.navigation__link:hover .navigation__text{
 	color:#221f1f;
 }
 
-.navigation__icon{
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	overflow: hidden;
+.navigation__pic-main{	
+	background-position: -0px -92px;
+}
+
+.navigation__link:hover .navigation__pic-main{
+	background-position: -0px -74px;
+}
+
+.navigation__pic-team{
+	background-position: -0px -18px;
+}
+
+.navigation__link:hover .navigation__pic-team{
+	background-position: -0px -0px;
+}
+
+.navigation__pic-feed{
+	background-position: -0px -55px;
+}
+
+.navigation__link:hover .navigation__pic-feed{
+	background-position: -0px -36px;
 }
 
 
-.navigation__pic{
-	vertical-align: middle;
-}
+/*----------- ACTIVE ------------*/
 

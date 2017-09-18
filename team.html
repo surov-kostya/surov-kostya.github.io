@@ -3,7 +3,7 @@
 <head>
 	<title>Airplanet team</title>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="stylesheet.css">	
 	<link rel="stylesheet" href="header/header.css">
 	<link rel="stylesheet" href="navigation/navigation.css">
@@ -32,19 +32,25 @@
 					<ul class="navigation__list">
 						<li class="navigation__item">
 							<a class="navigation__link" href="#">
-								<span class="navigation__icon"><img class="navigation__pic" src="navigation/main-upd.png" alt="main"></span>
+								<div class="navigation__icon">
+									<div class="navigation__pic navigation__pic-main"></div>				
+								</div>
 								<span class="navigation__text">Главная</span>
-							</a>
-						</li>
-						<li class="navigation__item active">
-							<a class="navigation__link" href="#">
-								<span class="navigation__icon"><img class="navigation__pic " src="navigation/team-psd.png" alt="team"></span>
-								<span class="navigation__text navigation__text_chosen">Экипаж</span>
 							</a>
 						</li>
 						<li class="navigation__item">
 							<a class="navigation__link" href="#">
-								<span class="navigation__icon"><img class="navigation__pic" src="navigation/feed-upd.png" alt="feed"></span>
+								<div class="navigation__icon">
+									<div class="navigation__pic navigation__pic-team"></div>
+								</div>
+								<span class="navigation__text">Экипаж</span>
+							</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#">
+								<div class="navigation__icon">
+									<div class="navigation__pic navigation__pic-feed"></div>
+								</div>
 								<span class="navigation__text">Отзывы</span>
 							</a>
 						</li>
@@ -193,6 +199,7 @@
 					</ul>
 				</section>
 			</div>
+		</div>
 
 			<footer class="footer">
 					<div class="container">
@@ -247,6 +254,5 @@
 					</div>
 			</footer>
 
-		</div>
 	</body>
 </html>
