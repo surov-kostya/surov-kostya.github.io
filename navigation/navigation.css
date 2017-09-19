@@ -22,22 +22,17 @@
 	margin-left: 36px;
 	font-size:12px;
 	line-height: 1em;
-	font-weight:700;
+	font-weight: bold;
 	text-transform: uppercase;
 	color:#1c5bc3;
-	vertical-align:middle;
-}
-
-.navigation__icon{
-	position: absolute;
 }
 
 .navigation__pic{
+	position: absolute;
 	overflow: hidden;
-	vertical-align: middle;
-	content: "";	
+	bottom: 1px;
 	width: 23px;
-	height: 19px;
+	height: 18px;
 	background-image: url(sprite.png);
 	background-repeat: no-repeat;
 }
