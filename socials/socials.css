@@ -1,10 +1,10 @@
 .socials{
-	display: block;
-	float: right;
+
 }
 
 .socials__icons{
 	list-style:none;
+	padding-right: 10px;
 }
 
 .socials__item{

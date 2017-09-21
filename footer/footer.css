@@ -5,23 +5,32 @@
 	font-size:14px;
 	padding-top: 20px;
 	margin-top: 68px;
+	overflow: hidden;
 }
 
 
-.footer__author{
+.footer__block{
 	display: block;
 	color:#fff;
-	width: 240px;
+	width: 33.3%;
 	float: left;
 }
 
-
-.logo-footer{
-	margin-left: 230px;
-}
 
 .footer__loftschool-link{
 	text-decoration: none;
 	color:#fff;
 	font-weight: bold;
+}
+
+.footer__block_logo{
+	text-align: center;
+}
+
+.footer__block_socials{
+	text-align: right;
+}
+
+.footer__block_author{
+	margin-top: -5px;
 }
