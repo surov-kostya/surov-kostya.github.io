@@ -1,17 +1,27 @@
 .bread-crumbs{
 	font-style: italic;
 	font-size:13px;
-	color:#221f1f;
-}
 
-.bread-crumbs__list{
-	list-style: none;
 }
 
 .bread-crumbs__item{
 	display: inline-block;
 }
 
-.bread-crumbs__link-to-main{
-	color: #1c5bc3;
+
+.bread-crumbs__link{
+	color:#1c5bc3;
+}
+
+.bread-crumbs__item_active .bread-crumbs__link{
+	color: #221f1f;
+	text-decoration: none;
+}
+
+.bread-crumbs__item:after{
+	content: " / ";
+}
+
+.bread-crumbs__item:last-child:after{
+	content: "";
 }

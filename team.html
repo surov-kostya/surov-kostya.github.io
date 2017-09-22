@@ -17,6 +17,11 @@
 	<link rel="stylesheet" href="bread-crumbs/bread-crumbs.css">
 </head>
 	<body>
+		<!--[if lt IE 8]>
+			<p class="browserhappy">
+				Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a>
+			</p>
+		<![endif]-->
 		<div class="wrapper">
 			<header class="header">
 				<div class="container">
@@ -61,10 +66,13 @@
 					<div class="bread-crumbs">
 						<ul class="bread-crumbs__list">
 							<li class="bread-crumbs__item">
-								<a class="bread-crumbs__link-to-main" href="#">Главная</a>							
+								<a class="bread-crumbs__link" href="#">Главная</a>							
 							</li>
 							<li class="bread-crumbs__item">
-								<span class="bread-crumbs__you-are-here">/Экипаж</span>
+								<a class="bread-crumbs__link" href="#">Еще ссылка</a>
+							</li>
+							<li class="bread-crumbs__item bread-crumbs__item_active" href="#">
+								<a class="bread-crumbs__link">Экипаж</a>
 							</li>
 						</ul>
 					</div>
