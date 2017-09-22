@@ -37,6 +37,7 @@ li{
 	position: relative;
 	min-width: 1100px;
 	overflow: hidden;
+	min-height: 100%;
 }
 
 .wrapper:after{
