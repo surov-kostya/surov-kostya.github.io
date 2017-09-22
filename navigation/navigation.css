@@ -1,7 +1,6 @@
 .navigation{
-	width: 200px;
+	width: 180px;
 	float:left;
-	padding-top: 50px;
 }
 
 .navigation__list{
@@ -9,7 +8,7 @@
 }
 
 .navigation__item{
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 }
 
 .navigation__link{
@@ -21,9 +20,9 @@
 .navigation__text{
 	margin-left: 36px;
 	font-size:12px;
-	line-height: 1em;
 	font-weight: bold;
 	text-transform: uppercase;
+	letter-spacing: 2.5px;
 	color:#1c5bc3;
 }
 

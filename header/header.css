@@ -3,6 +3,7 @@
 	height: 76px;
 	padding-top: 20px;
 	color: #ffffff;
+	margin-bottom: 45px;
 }
 
 .logo{
@@ -16,15 +17,19 @@
 	float: right;
 	text-align: right;
 	font-weight: bold;
-
+	font-style: normal;
 }
 
-.contacts__number{
-	color: #ffffff;
-	font-size: 21px;
+.contacts__number a{
+	font-size: 20px;
+	color: #fff;
 }
 
-.contacts__schedule{
-	color: #ffffff;
-	font-size: 14px;
+.contacts__schedule a{
+	font-size: 13px;
+	color: #CED9EF;
+}
+
+.contacts__schedule:hover a{
+	color: #fff;
 }
