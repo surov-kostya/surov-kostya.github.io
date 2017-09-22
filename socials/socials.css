@@ -39,17 +39,38 @@
 
 .socials__pic{
 	position: absolute;
-	left:4px;
-	bottom:5px;
+	background: url(socials-sprite.png) no-repeat;
+	height:10px;
+	width:17px;	
 }
 
-.socials__pic-vk{
-	left:3px;
-	bottom: 6px;
+.socials__pic_vk{
+	background-position: 0 -10px;
+	top:4px;
+	left:0px;
 }
 
-.socials__pic-fb{
-	left:7px;
-	bottom: 4px;
+.socials__pic_fb{
+	background-position: 4px -46px;
+	height:14px;
+	top:2px;
+	left:0px;
 }
 
+.socials__pic_go{
+	background-position: -1px 1px;
+	top:4px;
+	left:1px;
+}
+
+.socials__pic_tw{
+	background-position: 0 -35px;
+	top:6px;
+	left:2px;
+}
+
+.socials__pic_mail{
+	background-position: 0 -22px;
+	top:4px;
+	left:1px;
+}
