@@ -39,7 +39,7 @@
 
 .socials__pic{
 	position: absolute;
-	background: url(socials-sprite.png) no-repeat;
+	background: url("../../img/socials/socials-sprite.png") no-repeat;
 	height:10px;
 	width:17px;	
 }
