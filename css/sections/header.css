@@ -13,6 +13,10 @@
 	overflow: hidden;
 }
 
+.logo__link{
+	display:inline-block;
+}
+
 .contacts{
 	float: right;
 	text-align: right;
