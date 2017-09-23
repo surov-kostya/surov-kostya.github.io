@@ -59,3 +59,9 @@ li{
   height: 1px;
   margin: -1px;
 }
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}

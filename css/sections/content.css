@@ -9,7 +9,6 @@
 
 .content__team{
 	text-align: justify;
-	text-align-last: justify;
 	list-style: none;
 }
 
@@ -18,4 +17,8 @@
 	vertical-align: top;
 	text-align: center;
 	text-align-last: center;
+}
+
+.content__item_last{
+	width:100%;
 }
