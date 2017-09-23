@@ -17,24 +17,23 @@
 	font-weight: bold;
 }
 
+.socials__link{
+	display: inline-block;
+	text-decoration: none;
+	margin-top:10px;
+	margin-right: 10px;
+}
 .socials__circle{
 	background-color: #d3dff3;
 	border-radius: 10px;
 	width: 20px;
 	height: 20px;
-	position: relative;
-	margin-top:10px;
-	margin-right: 10px;
+	position: relative;	
 	overflow: hidden;
 }
 
 .socials__circle:hover{
 	background-color:#fff;
-}
-
-.socials__link{
-	display: inline-block;
-	text-decoration: none;
 }
 
 .socials__pic{
