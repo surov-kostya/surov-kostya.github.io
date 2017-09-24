@@ -7,6 +7,25 @@
 	margin-bottom: 37px;
 }
 
+.content__header{
+	width: 879px;
+	height: 353px;
+	background-color: red;
+	background-image: url(../../img/about-company/sky-back.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: 0 -171px;
+	margin-bottom: 31px;
+	position: relative;
+}
+
+.content__title_about-company{
+	font-size:49px;
+	font-weight: bold;
+	margin-top:160px;
+	margin-left:66px;
+}
+
 .content__team{
 	text-align: justify;
 	list-style: none;

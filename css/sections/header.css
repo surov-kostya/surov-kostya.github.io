@@ -27,6 +27,7 @@
 .contacts__number a{
 	font-size: 20px;
 	color: #fff;
+	text-decoration: none;
 }
 
 .contacts__schedule a{
