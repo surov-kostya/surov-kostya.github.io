@@ -29,6 +29,7 @@
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	overflow: hidden;
+	filter:grayscale(100%);
 }
 
 .partners__item:nth-child(3n){
@@ -38,3 +39,6 @@
 .partners__item:nth-child(3n-1){
 	text-align: center;
 }
+
+.partners__link:hover .partners__logo{
+	filter:grayscale(0);
