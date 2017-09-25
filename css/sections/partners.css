@@ -1,0 +1,36 @@
+.partners__list{
+	font-size: 0;
+}
+
+.partners__title{
+	margin-bottom: 41px;
+	font-size:48px;
+	font-weight:bold;
+}
+
+.partners__item{
+	display: inline-block;
+	width: 33.3%;
+	margin-top:14px;
+	margin-bottom: 35px;
+}
+
+.partners__link{
+	display: inline-block;
+}
+
+.partners__logo{
+	width:161px;
+	height: 64px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	overflow: hidden;
+}
+
+.partners__item:nth-child(3n){
+	text-align: right;
+}
+
+.partners__item:nth-child(3n-1){
+	text-align: center;
+}

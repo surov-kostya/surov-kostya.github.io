@@ -3,30 +3,41 @@
 }
 
 .content__title{
-	margin-top: -14px;
-	margin-bottom: 37px;
+	font-size:49px;
+	font-weight: bold;
 }
 
-.content__header{
+.content__title_team{
+	margin-top: 28px;
+	margin-bottom: 50px;
+}
+
+
+.content__header_airplanet{
 	width: 879px;
 	height: 353px;
-	background-color: red;
 	background-image: url(../../img/about-company/sky-back.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
-	background-position: 0 -171px;
-	margin-bottom: 31px;
+	background-position: 0 -187px;
 	position: relative;
+	margin-bottom: -21px;
+	top:-45px;
 }
 
-.content__title_about-company{
-	font-size:49px;
-	font-weight: bold;
-	margin-top:160px;
-	margin-left:66px;
+.content__header-gradient{
+	width: 879px;
+	height: 353px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	background-position: 0px 0px;
+	padding-top:150px;
+	padding-left: 66px;
 }
 
-.content__team{
+.content__team-list{
 	text-align: justify;
 	list-style: none;
 }
@@ -41,3 +52,47 @@
 .content__item_last{
 	width:100%;
 }
+
+.content__wrapper{
+	width: 700px;
+	font-size:18px;
+	line-height: 1.67em;
+}
+
+.content__text p{
+	margin-bottom: 14px;
+}
+
+/*.content__text ul{
+	margin-bottom: 10px;
+}*/
+
+.content__text li{
+	list-style: disc outside;
+	margin-left: 40px;
+	margin-bottom: 3px;
+}
+
+.content__proposal{
+	height: 114px;
+	margin-top:22px;
+	margin-bottom: 71px;
+	background-color: #1c5bc3;
+	padding-top: 12px;
+	padding-left: 27px;
+}
+
+.content__proposal p{
+	color:#fff;
+	margin-bottom: 14px;
+}
+
+.content__proposal a{
+	font-weight: bold;
+	color:#fff
+}
+
+.content__proposal a[href="tel:+78000039210"]{
+	text-decoration: none;
+}
+
