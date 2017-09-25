@@ -52,6 +52,7 @@
 .content__item_last{
 	width:100%;
 	height: 1px;
+	margin-top:-1px;
 }
 
 .content__wrapper{
