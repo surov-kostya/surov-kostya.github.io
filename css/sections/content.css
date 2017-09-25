@@ -65,9 +65,9 @@
 	margin-bottom: 14px;
 }
 
-/*.content__text ul{
+.content__text ul{
 	margin-bottom: 10px;
-}*/
+}
 
 .content__text li{
 	list-style: disc outside;
