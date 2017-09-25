@@ -43,7 +43,7 @@ li{
 .wrapper:after{
 	display:block;
 	content:"";
-	height: 97px;
+	height: 77px;
 }
 
 .container{
