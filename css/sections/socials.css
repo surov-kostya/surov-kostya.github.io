@@ -5,7 +5,8 @@
 .socials__icons{
 	list-style:none;
 	font-size: 0;
-	margin-top:10px;
+	margin-top:7px;
+	margin-right: 4px;
 }
 
 .socials__item{
@@ -15,7 +16,8 @@
 
 .socials__text{
 	color:#fff;
-	font-size: 14px;
+	font-size: 13px;
+	letter-spacing: 0.04em;
 	font-weight: bold;
 }
 

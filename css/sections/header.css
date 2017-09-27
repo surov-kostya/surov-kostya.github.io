@@ -22,6 +22,12 @@
 	text-align: right;
 	font-weight: bold;
 	font-style: normal;
+	margin-top:-3px;
+	margin-right: 2px;
+}
+
+.contacts__schedule{
+	margin-top: -4px;
 }
 
 .contacts__number a{
@@ -31,7 +37,8 @@
 }
 
 .contacts__schedule a{
-	font-size: 14px;
+	font-size: 13px;
+	letter-spacing: 0.04em;
 	color: #CED9EF;
 }
 

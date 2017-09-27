@@ -66,22 +66,26 @@
 }
 
 .content__text ul{
-	margin-bottom: 10px;
+	margin-bottom: 14px;
 }
 
 .content__text li{
-	list-style: disc outside;
-	margin-left: 40px;
-	margin-bottom: 3px;
+	margin-bottom: 7px;
 }
+
+.content__text li:not(:first-child){
+	list-style: disc outside;
+	margin-left:39px;
+}
+
 
 .content__proposal{
 	height: 114px;
 	margin-top:22px;
-	margin-bottom: 71px;
+	margin-bottom: 74px;
 	background-color: #1c5bc3;
 	padding-top: 12px;
-	padding-left: 27px;
+	padding-left: 29px;
 }
 
 .content__proposal p{
