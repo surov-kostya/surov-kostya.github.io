@@ -1,6 +1,7 @@
 .person-card{
-	width: 260px;
-	margin-bottom: 45px;
+	width: 258px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .person-card__photo{
