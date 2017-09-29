@@ -28,6 +28,7 @@
 
 .contacts__schedule{
 	margin-top: -4px;
+	position:relative;
 }
 
 .contacts__number a{
@@ -44,4 +45,16 @@
 
 .contacts__schedule:hover a{
 	color: #fff;
+}
+
+.contacts__popup{
+	z-index: 10;
+	position:absolute;
+	top: 44px;
+	/*right:-2px;*/
+	right:-9999px;
+}
+
+.contacts__schedule:hover .contacts__popup{
+	right:-2px;
 }
