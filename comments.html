@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Airplanet team</title>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=1100" > -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="icon" type="image/png" href="./img/favicon.png">
+	<link rel="stylesheet" href="./css/normalize.css">	
+	<link rel="stylesheet" href="./css/main.css">	
+</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="browserhappy">
+				Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a>
+			</p>
+		<![endif]-->
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="./intro.html" class="logo__link"><img class="logo__pic" src="./img/logo.png" alt="logo"></a>
+					</div>
+					<address class="contacts">
+						<div class="contacts__number"><a href="tel:+78000039210">8 (800) 00-392-10</a></div>
+						<div class="contacts__schedule">
+							<a href="#">График работы</a>
+							<div class="contacts__popup popup">
+								<div class="popup__arrow"></div>
+								<div class="popup__work-time">пн-вс: 09:00-20:00</div>
+								<div class="popup__dinner">обед: 14:00-14:30</div>
+							</div>
+						</div>
+					</address>
+				</div>
+			</header>
+			<div class="container">
+
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="navigation__link" href="./airplanet.html">
+								<div class="navigation__pic navigation__pic-main">
+								</div>
+								<span class="navigation__text">Главная</span>
+							</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="./team.html">
+								<div class="navigation__pic navigation__pic-team">
+								</div>
+								<span class="navigation__text">Экипаж</span>
+							</a>
+						</li>
+						<li class="navigation__item navigation__item_active">
+							<a class="navigation__link" href="#">
+								<div class="navigation__pic navigation__pic-feed">
+								</div>
+								<span class="navigation__text">Отзывы</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<main class="content">
+
+					<section class="content__header content__header_team">
+						<nav class="bread-crumbs">
+							<ul class="bread-crumbs__list">
+								<li class="bread-crumbs__item">
+									<a class="bread-crumbs__link" href="#">Главная</a>				
+								</li>
+								<li class="bread-crumbs__item">
+									<a class="bread-crumbs__link" href="#">Еще ссылка</a>
+								</li>
+								<li class="bread-crumbs__item bread-crumbs__item_active">
+									<a class="bread-crumbs__link">Отзывы</a>
+								</li>
+							</ul>
+						</nav>					
+						<div class="content__title content__title_team">Отзывы</div>
+					</section>
+
+					<section class="content__comments">
+
+						<ul class="comments__list">
+							<li class="comments__item">
+								<div class="comments__avatar"></div>
+								<div class="comments__data">
+									<div class="comments__date"></div>
+									<div class="comments__username"></div>
+									<div class="comments__review"></div>
+								</div>
+							</li>
+							<li class="comments__item">
+								<div class="comments__avatar"></div>
+								<div class="comments__data">
+									<div class="comments__date"></div>
+									<div class="comments__username"></div>
+									<div class="comments__review"></div>
+								</div>
+							</li>
+							<li class="comments__item">
+								<div class="comments__avatar"></div>
+								<div class="comments__data">
+									<div class="comments__date"></div>
+									<div class="comments__username"></div>
+									<div class="comments__review"></div>
+								</div>
+							</li>
+							<li class="comments__item">
+								<div class="comments__avatar"></div>
+								<div class="comments__data">
+									<div class="comments__date"></div>
+									<div class="comments__username"></div>
+									<div class="comments__review"></div>
+								</div>
+							</li>
+						</ul>
+					</section>
+
+					<section class="content__pagination">
+						<div class="pagination__text">Страница 1 из 7</div>
+						<ul class="pagination__list">
+							<li class="pagination__item pagination__item_active">1</li>
+							<li class="pagination__item">2</li>
+							<li class="pagination__item">3</li>
+							<li class="pagination__item">4</li>
+							<li class="pagination__item">5</li>
+							<li class="pagination__item">6</li>
+							<li class="pagination__item">7</li>
+						</ul>
+					</section>
+
+					<section class="content__comment-form">
+						<div class="content__title content__title_comment-form">Оставить отзыв</div>
+						<form class="comment-form">
+							<div class="comment-form__username">
+								<label class="comment-form__subtitle">Ваше имя</label><br>
+								<input class="comment-form__input" type="text" placeholder="Андрей"></input>
+							</div>
+							<div class="comment-form__vk">
+								<label class="comment-form__subtitle">Ссылка на профиль VK</label><br>
+								<input class="comment-form__input" type="text" placeholder="vk.com/example">
+							</div>
+							<div class="comment-form__comment">
+								<label class="comment-form__subtitle">Ссылка на профиль VK</label><br>
+								<textarea class="comment-form__input" placeholder="Мне понравилось"></textarea>
+							</div>
+							<div class="comment-form__question">
+								<div class="comment-form__subtitle">Отображать фото в отзыве?</div><br>
+								<div class="comment-form__answer">
+									<input class="comment-form__radio" type="radio" id="comment-form__radio_yes" name="answer" value="yes">
+									<label class="comment-form__radio-label" for="comment-form__radio_yes">Да</label>
+								</div>
+								<div class="comment-form__answer">
+									<input class="comment-form__radio" type="radio" id="comment-form__radio_no" name="answer" value="no">
+									<label class="comment-form__radio-label" for="comment-form__radio_no">Нет</label>
+								</div>
+							</div>
+
+						</form>
+					</section>
+
+				</main>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block footer__block_author">
+
+					Сделано с любовью и старанием <br> на курсе «HTML + CSS» в
+					<a href="loftschool.com" class="footer__loftschool-link">LoftSchool</a>.<br>
+					Автор работы: <a href="vk.com/q05t9n" class="footer__loftschool-link">Суров Константин</a>
+				</div>
+				<div class="footer__block footer__block_logo">
+					<a href="./intro.html" class="logo__link">
+						<img class="logo__pic" src="img/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="footer__block footer__block_socials socials">
+					<span class="socials__text">Наши социальные сети</span>
+					<ul class="socials__icons">
+						<li class="socials__item">
+							<a class="socials__link" title="Вконтакте" href="http://vk.com">
+								<div class="socials__circle">
+									<div class="socials__pic socials__pic_vk"></div>
+								</div>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" title="Фэйсбук" href="http://facebook.com">
+								<div class="socials__circle">
+									<div class="socials__pic socials__pic_fb"></div>
+								</div>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" title="Гугл плюс" href="http://plus.google.com">
+								<div class="socials__circle">
+									<div class="socials__pic socials__pic_go"></div>
+								</div>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" title="Твиттер" href="http://twitter.com">
+								<div class="socials__circle">
+									<div class="socials__pic socials__pic_tw"></div>
+								</div>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" title="Электронная почта" href="mailto:q05t9n@mail.ru">
+								<div class="socials__circle">
+									<div class="socials__pic socials__pic_mail"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
