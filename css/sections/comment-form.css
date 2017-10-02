@@ -15,15 +15,16 @@
 	border: 1px solid transparent;
 }
 
+.comment-form__input:focus{
+	outline: none;
+	border: 1px solid #1c5bc3;
+}
+
 .comment-form__input_text-area{
 	resize: none;
 	margin-top:5px;
 	width: 560px;
 	height:90px;
-}
-
-.comment-form__input_active{
-	border: 1px solid #1c5bc3;
 }
 
 .comment-form__username{
