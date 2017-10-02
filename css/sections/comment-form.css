@@ -16,6 +16,7 @@
 }
 
 .comment-form__input_text-area{
+	resize: none;
 	margin-top:5px;
 	width: 560px;
 	height:90px;
