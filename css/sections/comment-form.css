@@ -85,6 +85,7 @@
 	border-width: 0;
 	border-radius: 4px;
 	float:right;
+	cursor: pointer;
 }
 
 .comment-form__submit-text{
