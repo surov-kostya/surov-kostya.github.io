@@ -1,0 +1,109 @@
+.comment-form__comment{
+	margin-bottom: 14px;
+}
+
+.comment-form__field-name{
+	font-weight: 300;
+	margin-bottom: 7px;
+}
+
+.comment-form__input{
+	margin-top: 5px;
+	margin-bottom: 1px;
+	width: 269px;
+	height:45px;
+	border: 1px solid transparent;
+}
+
+.comment-form__input_text-area{
+	margin-top:5px;
+	width: 560px;
+	height:90px;
+}
+
+.comment-form__input_active{
+	border: 1px solid #1c5bc3;
+}
+
+.comment-form__username{
+	float:left;
+	width:270px;
+}
+
+.comment-form__vk{
+	float:right;
+	width:270px;
+}
+
+.comment-form__contacts{
+	margin-bottom:20px;
+}
+
+.comment-form__question{
+	float:left;
+}
+
+.comment-form__answer{
+	display: inline-block;
+}
+
+.comment-form__radio:checked + .comment-form__radio-label{
+	color:#1c5bc3;
+}
+
+.comment-form__radio-label{
+	margin-left: 26px;
+	margin-right: 15px;
+	position: relative;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.comment-form__radio-label:before{
+	position: absolute;
+	right:26px;
+	top:0px;
+	content:"";
+	display:inline-block;
+	width: 20px;
+	height:20px;
+	background-image: url(../../img/comments/radiobtn-unch.png);
+}
+
+.comment-form__radio:checked + .comment-form__radio-label:before{
+	background-image: url(../../img/comments/radiobtn.png);
+}
+
+.comment-form__submit{
+	padding-top: 5px;
+    padding-right: 23px;
+	height: 45px;
+	width: 155px;
+	background-color: #1c5bc3;
+	border-width: 0;
+	border-radius: 4px;
+	float:right;
+}
+
+.comment-form__submit-text{
+	position: relative;
+	text-transform: uppercase;
+	color:#fff;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size:12px;
+}
+
+.comment-form__submit-text:after{
+	position: absolute;
+	bottom:0px;
+	right:-3px;
+	display:inline-block;
+	content:"";
+	width:15px;
+	height: 14px;
+	background-image: url(../../img/comments/btn-icon.png);
+}
+

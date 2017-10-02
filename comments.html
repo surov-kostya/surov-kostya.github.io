@@ -3,7 +3,7 @@
 <head>
 	<title>Airplanet team</title>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=1100" > -->
+	<meta name="viewport" content="width=1100" >
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="icon" type="image/png" href="./img/favicon.png">
@@ -85,36 +85,43 @@
 					<section class="content__comments">
 
 						<ul class="comments__list">
-							<li class="comments__item">
-								<div class="comments__avatar"></div>
+							<li class="comments__item clearfix">
+								<div class="comments__avatar" style="background-image: url(./img/comments/irina.jpg)">
+									<img class="comments__pic visually-hidden" src="./img/comments/irina.jpg" alt="Irina">
+								</div>
 								<div class="comments__data">
-									<div class="comments__date"></div>
-									<div class="comments__username"></div>
-									<div class="comments__review"></div>
+									<div class="comments__date">12.10.2016</div>
+									<div class="comments__username">Ирина Паламарчук</div>
+									<div class="comments__review">Ужасный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Не рекомендую эту компанию, лучше доплатить и лететь с комфортом.</div>
 								</div>
 							</li>
-							<li class="comments__item">
-								<div class="comments__avatar"></div>
+							<li class="comments__item clearfix">
+								<div class="comments__avatar" style="background-image: url(./img/comments/alexandr.jpg")>
+									<img class="comments__pic visually-hidden" src="./img/comments/alexandr.jpg" alt="Alexander">
+								</div>
 								<div class="comments__data">
-									<div class="comments__date"></div>
-									<div class="comments__username"></div>
-									<div class="comments__review"></div>
+									<div class="comments__date">01.02.2016</div>
+									<div class="comments__username">Александр Бельков</div>
+									<div class="comments__review">Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз. Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.</div>
 								</div>
 							</li>
-							<li class="comments__item">
-								<div class="comments__avatar"></div>
+							<li class="comments__item clearfix">
+								<div class="comments__avatar comments__avatar_no-avatar"></div>
 								<div class="comments__data">
-									<div class="comments__date"></div>
-									<div class="comments__username"></div>
-									<div class="comments__review"></div>
+									<div class="comments__date">22.12.2015</div>
+									<div class="comments__username">Игорь Николаенко</div>
+									<div class="comments__review">Не кормили вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались. Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.</div>
 								</div>
 							</li>
-							<li class="comments__item">
-								<div class="comments__avatar"></div>
+
+							<li class="comments__item clearfix">
+								<div class="comments__avatar" style="background-image: url(./img/comments/anast.jpg)">
+									<img class="comments_pic visually-hidden" src="./img/comments/anast.jpg" alt="Anastasia">
+								</div>
 								<div class="comments__data">
-									<div class="comments__date"></div>
-									<div class="comments__username"></div>
-									<div class="comments__review"></div>
+									<div class="comments__date">14.08.2015</div>
+									<div class="comments__username">Анастасия Порядная</div>
+									<div class="comments__review">За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль. Спасибо за полет! Рекомендую!</div>
 								</div>
 							</li>
 						</ul>
@@ -122,44 +129,69 @@
 
 					<section class="content__pagination">
 						<div class="pagination__text">Страница 1 из 7</div>
+						<div class="pagination__arrow pagination__arrow_left"></div>
 						<ul class="pagination__list">
-							<li class="pagination__item pagination__item_active">1</li>
-							<li class="pagination__item">2</li>
-							<li class="pagination__item">3</li>
-							<li class="pagination__item">4</li>
-							<li class="pagination__item">5</li>
-							<li class="pagination__item">6</li>
-							<li class="pagination__item">7</li>
+							<li class="pagination__item pagination__item_active">
+								<a class="pagination__link">1</a>
+							</li><!--
+							--><li class="pagination__item">
+								<a class="pagination__link">2</a>
+							</li><!--
+							--><li class="pagination__item">
+								<a class="pagination__link">3</a>
+							</li><!--
+							--><li class="pagination__item">
+								<a class="pagination__link">4</a>
+							</li><!--
+							--><li class="pagination__item">
+								<a class="pagination__link">5</a>
+							</li><!--
+							--><li class="pagination__item">
+								<a class="pagination__link">6</a>
+							</li><!--
+							--><li class="pagination__item">
+								<a class="pagination__link">7</a>
+							</li>
 						</ul>
+						<div class="pagination__arrow pagination__arrow_right"></div>
 					</section>
 
 					<section class="content__comment-form">
 						<div class="content__title content__title_comment-form">Оставить отзыв</div>
 						<form class="comment-form">
-							<div class="comment-form__username">
-								<label class="comment-form__subtitle">Ваше имя</label><br>
-								<input class="comment-form__input" type="text" placeholder="Андрей"></input>
-							</div>
-							<div class="comment-form__vk">
-								<label class="comment-form__subtitle">Ссылка на профиль VK</label><br>
-								<input class="comment-form__input" type="text" placeholder="vk.com/example">
+							<div class="comment-form__contacts clearfix">
+								<div class="comment-form__username">
+									<label class="comment-form__field-name">Ваше имя</label><br>
+									<input class="comment-form__input" type="text" placeholder="Андрей"></input>
+								</div>
+								<div class="comment-form__vk">
+									<label class="comment-form__field-name">Ссылка на профиль VK</label><br>
+									<input class="comment-form__input" type="text" placeholder="vk.com/example">
+								</div>
 							</div>
 							<div class="comment-form__comment">
-								<label class="comment-form__subtitle">Ссылка на профиль VK</label><br>
-								<textarea class="comment-form__input" placeholder="Мне понравилось"></textarea>
+								<label class="comment-form__field-name">Текст отзыва</label><br>
+								<textarea class="comment-form__input comment-form__input_text-area" placeholder="Мне понравилось"></textarea>
 							</div>
-							<div class="comment-form__question">
-								<div class="comment-form__subtitle">Отображать фото в отзыве?</div><br>
-								<div class="comment-form__answer">
-									<input class="comment-form__radio" type="radio" id="comment-form__radio_yes" name="answer" value="yes">
-									<label class="comment-form__radio-label" for="comment-form__radio_yes">Да</label>
+							<div class="comment-form__controls clearfix">
+								<div class="comment-form__question">
+									<div class="comment-form__field-name">Отображать фото в отзыве?</div>
+									<div class="comment-form__answer">
+										<input class="comment-form__radio visually-hidden" type="radio" id="comment-form__radio_yes" name="answer" value="yes">
+										<label class="comment-form__radio-label" for="comment-form__radio_yes">Да</label>
+									</div>
+									<div class="comment-form__answer">
+										<input class="comment-form__radio visually-hidden" type="radio" id="comment-form__radio_no" name="answer" value="no">
+										<label class="comment-form__radio-label" for="comment-form__radio_no">Нет</label>
+									</div>
 								</div>
-								<div class="comment-form__answer">
-									<input class="comment-form__radio" type="radio" id="comment-form__radio_no" name="answer" value="no">
-									<label class="comment-form__radio-label" for="comment-form__radio_no">Нет</label>
-								</div>
+							
+								<button class="comment-form__submit" type="submit">
+									<div class="comment-form__submit-text">Отправить</div>
+									<div class="comment-form__submit-icon"></div>
+								</button>
+							
 							</div>
-
 						</form>
 					</section>
 

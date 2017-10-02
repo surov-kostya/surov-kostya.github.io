@@ -1,0 +1,52 @@
+.pagination__text{
+	height: 25px;
+	display:inline-block;
+	font-weight:300;
+	color:#656464;
+	margin-right:15px;
+	margin-left: 221px;
+}
+
+.pagination__arrow{
+	width:6px;
+	height: 25px;
+	display:inline-block;
+	margin-right:12px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.pagination__arrow_left{
+	background-image: url(../../img/pagination/pag-arrow-left.png);
+}
+
+.pagination__arrow_right{
+	background-image: url(../../img/pagination/pag-arrow-right.png);
+}
+
+.pagination__list{
+	display:inline-block;
+	margin-right: 7px;
+	text-align: center;
+}
+
+.pagination__item{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border-radius: 2px;
+}
+
+.pagination__item_active{
+	background-color:#1c5bc3;
+}
+
+.pagination__item a{
+	display:block;
+	height:100%;
+	text-decoration:none;
+	font-weight:700;
+	vertical-align: center;
+	
+}
+
