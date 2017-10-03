@@ -57,3 +57,7 @@
 .pagination__item:hover .pagination__link{
 	color:#1c5bc3;
 }
+
+.pagination__item_active:hover .pagination__link{
+	color:#fff;
+}
