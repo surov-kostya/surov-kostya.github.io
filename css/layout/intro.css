@@ -14,7 +14,7 @@ body{
 
 .wrapper{
 	position:relative;
-	min-width:1100px;
+	min-width:210px;
 	overflow: hidden;
 	min-height: 100%;
 }
@@ -49,14 +49,19 @@ body{
 	text-align: center;
 }
 
+.button:hover{
+	background-color:#1c5bc3;
+}
+
 .button__link{
-	display:inline-block;
-	position:relative;
-	left:-12px;
-	right:0;
-	top:0;
-	bottom:0;
-	text-decoration:none;
+	display:block;
+	text-decoration: none;
+}
+
+.button__text{
+	position: relative;
+	left:-11px;
+	top:1px;
 	color:#1c5bc3;
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
@@ -66,13 +71,23 @@ body{
 	letter-spacing: 1px;
 }
 
-.button__link:after{
+.button:hover .button__text{
+	color:#fff;
+}
+
+.button__text:after{
 	position:absolute;
 	content:"";
 	width: 15px;
 	height: 14px;
-	top:14px;
-	right:-25px;
+	top:15px;
+	right: 10px;
 	background-repeat: no-repeat;
-	background-image:url(../../img/intro/main-icon.png);
+	background-image:url(../../img/intro/intro-btn-icon.png);
+	background-position: 0px 0px;
 }
+
+.button:hover .button__text:after{
+	background-position: -1px -69px;
+}
+
