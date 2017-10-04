@@ -9,20 +9,30 @@
 
 .pagination__arrow{
 	width:6px;
-	height: 25px;
+	height: 10px;
 	display:inline-block;
 	margin-right:12px;
 	background-repeat: no-repeat;
 	background-position: bottom;
+	background-image: url(../../img/pagination/pag-sprite.png);
 }
 
 .pagination__arrow_left{
-	background-image: url(../../img/pagination/pag-arrow-left.png);
+	background-position: 0px 0px;
 }
 
 .pagination__arrow_right{
-	background-image: url(../../img/pagination/pag-arrow-right.png);
+	background-position: -34px 0px;
 }
+
+.pagination__arrow_left:hover{
+	background-position: -23px 0px;
+}
+
+.pagination__arrow_right:hover{
+	background-position: -11px 0px;
+}
+
 
 .pagination__list{
 	display:inline-block;
