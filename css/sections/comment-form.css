@@ -49,9 +49,10 @@
 	display: inline-block;
 }
 
-.comment-form__radio:checked + .comment-form__radio-label{
-	color:#1c5bc3;
-}
+
+/*------------------- radio ---------------------*/
+
+
 
 .comment-form__radio-label{
 	margin-left: 26px;
@@ -65,18 +66,44 @@
 
 .comment-form__radio-label:before{
 	position: absolute;
+	display: inline-block;
 	right:26px;
 	top:0px;
 	content:"";
 	display:inline-block;
 	width: 20px;
 	height:20px;
-	background-image: url(../../img/comments/radiobtn-unch.png);
+	border-radius: 50%;
+	border:1px solid gray;
+}
+
+.comment-form__radio-label:after{
+	position: absolute;
+	display: inline-block;
+	right:33px;
+	top:7px;
+	content:unset;
+	display:inline-block;
+	width: 8px;
+	height:8px;
+	border-radius: 50%;
+	background-color:#1c5bc3;
+}
+
+.comment-form__radio:checked + .comment-form__radio-label{
+	color:#1c5bc3;
 }
 
 .comment-form__radio:checked + .comment-form__radio-label:before{
-	background-image: url(../../img/comments/radiobtn.png);
+	border:1px solid #1c5bc3;
 }
+
+.comment-form__radio:checked + .comment-form__radio-label:after{
+	content:"";
+}
+
+
+/*-------------- submit button ---------------*/
 
 .comment-form__submit{
 	padding-top: 5px;
