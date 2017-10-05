@@ -5,6 +5,7 @@
 	-moz-box-sizing: border-box;
 	font-family: "Roboto" , sans-serif;
 	color:#221f1f;
+	-webkit-font-smoothing:antialiased;
 }
 
 h1{	

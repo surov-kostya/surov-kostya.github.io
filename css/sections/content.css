@@ -71,6 +71,14 @@
 	line-height: 1.67em;
 }
 
+.content__text{
+	font-weight:lighter;
+}
+
+.content__text strong{
+	font-weight: bold;
+}
+
 .content__text p{
 	margin-bottom: 15px;
 }

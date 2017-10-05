@@ -1,7 +1,7 @@
 .bread-crumbs{
 	font-style: italic;
-	font-size:13px;
-
+	font-size:14px;
+	font-weight: 300;
 }
 
 .bread-crumbs__item{
@@ -10,7 +10,7 @@
 
 
 .bread-crumbs__link{
-	color:#1c5bc3;
+	color:#5775cf;
 }
 
 .bread-crumbs__item_active .bread-crumbs__link{
