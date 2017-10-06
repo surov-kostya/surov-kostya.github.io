@@ -8,6 +8,10 @@
 }
 
 .comment-form__input{
+	color:#221f1f;
+	font-weight: 300;
+	padding-left: 8px;
+    padding-top: 4px;
 	margin-top: 5px;
 	margin-bottom: 1px;
 	width: 269px;
@@ -68,7 +72,7 @@
 .comment-form__radio-label:before{
 	position: absolute;
 	display: inline-block;
-	right:26px;
+	left:-26px;
 	top:0px;
 	content:"";
 	display:inline-block;
@@ -81,7 +85,7 @@
 .comment-form__radio-label:after{
 	position: absolute;
 	display: inline-block;
-	right:33px;
+	left:-19px;
 	top:7px;
 	content:unset;
 	display:inline-block;
@@ -107,8 +111,6 @@
 /*-------------- submit button ---------------*/
 
 .comment-form__submit{
-	padding-top: 5px;
-    padding-right: 23px;
 	height: 45px;
 	width: 155px;
 	background-color: #1c5bc3;
@@ -120,9 +122,10 @@
 
 .comment-form__submit-text{
 	position: relative;
+	left:-12px;
 	text-transform: uppercase;
 	color:#fff;
-	letter-spacing: 2px;
+	letter-spacing: 0.2em;
 	font-weight: bold;
 	font-size:12px;
 }
@@ -130,7 +133,7 @@
 .comment-form__submit-text:after{
 	position: absolute;
 	bottom:0px;
-	right:-3px;
+	right:10px;
 	display:inline-block;
 	content:"";
 	width:15px;
