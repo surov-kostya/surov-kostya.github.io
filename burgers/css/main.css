@@ -1,0 +1,13 @@
+@import url("./layout/base.css");
+@import url("./sections/person-card.css");
+@import url("./sections/content.css");
+@import url("./sections/navigation.css");
+@import url("./sections/header.css");
+@import url("./sections/socials.css");
+@import url("./sections/footer.css");
+@import url("./sections/bread-crumbs.css");
+@import url("./sections/partners.css");
+@import url("./sections/popup.css");
+@import url("./sections/comments.css");
+@import url("./sections/pagination.css");
+@import url("./sections/comment-form.css");
