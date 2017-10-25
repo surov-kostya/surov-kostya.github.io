@@ -1,2 +1,25 @@
+
 @import url("./layout/base.css");
 @import url("./sections/first-screen.css");
+@import url("./sections/fixed-nav-bar.css");
+
+
+/* ----------------- FONTS ---------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic');
+
+@font-face {
+    font-family: 'lifehack';
+    src: url('../fonts/lifehack_medium-webfont.woff2') format('woff2'),
+         url('../fonts/lifehack_medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gagalin';
+    src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gagalin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

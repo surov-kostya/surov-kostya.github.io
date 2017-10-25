@@ -1,3 +1,5 @@
+/* ------------------- BACKGROUND --------------------- */
+
 .first-screen{
     height: 100%;
     background-image: url(../../img/first-screen/video-bg.jpg);
@@ -15,6 +17,7 @@
     background-position:0 0, 30px 30px;
 }
 
+/* -------------------- HEADER ---------------------- */
 
 .first-screen__header{
     height: 94px;
@@ -27,8 +30,11 @@
 }
 
 
-.navigation__item{
-    display: inline-block;
+/* ------------------ NAVIGATION ------------------ */
+
+.navigation{
+    display:flex;
+    align-items: center;
 }
 
 .navigation__item:before{
@@ -47,27 +53,86 @@
     width: 0px;
 }
 
+.navigation__item:last-child:before{
+    content:"";
+    height: 0px;
+    width: 0px;
+}
+
 .navigation__link{
     color:#fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: bold;
+    font-family: "Ubuntu";
+    font-weight: 500;
 }
 
-.first-screen__btn{
-    display: inline-block;
+.navigation__link:hover{
+    text-decoration: underline;
+}
+
+.navigation__link_btn{
     background-color: #e45028;
     border-radius: 4px;
     padding: 13px 16px;
-    margin-left:15px;
 }
 
-.first-screen__order-btn{
-    display: block;    
+.navigation__link_btn:hover{
+    background-color: #c1401e;
     text-decoration: none;
+}
+
+/* --------------------------- CONTENT ------------------------ */
+
+.first-screen__content{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex:1;
+}
+
+.first-screen__burger{
+    position: relative;
+    flex-basis: 451px;
+    height:420px;
+    background: url(../../img/first-screen/burger.png) no-repeat;
+    background-position: 34px -67px;
+}
+
+.first-screen__drops{
+    width: 451px;
+}
+
+.first-screen__info{
+    margin-top:-60px;
+    margin-left:12px;
+    flex-basis: 405px;
+}
+
+.first-screen__title{
     text-transform: uppercase;
-    color: #fff;
-    font-size: 13px;
-    font-weight: bold;
+    color:#f9b43b;
+    font-family: 'gagalin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 72px;
+    margin-bottom: 5px;
+}
+
+.first-screen__text{
+    font-family: 'lifehack';
+    font-weight: 500;
+    font-style: normal;
+    color:#fff;
+    font-size:65px;
+    line-height: 55px;
+}
+
+/* ---------------------------- ARROW_SCROLL -------------------------- */
+
+.first-screen__arrow-scroll{
+    width: 29px;
+    align-self: center;
+    margin-bottom: 41px;
 }

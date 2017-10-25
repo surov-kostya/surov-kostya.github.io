@@ -1,0 +1,35 @@
+.fixed-nav-bar{
+    width:19px;
+    height: 150px;
+    position:fixed;
+    top:88px;
+    right:48px;
+}
+
+.fixed-nav-bar__item{
+    display:block;
+}
+
+.fixed-nav-bar__link{
+    display:block;
+}
+
+.fixed-nav-bar__radio{
+    position: relative;
+    width:6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.fixed-nav-bar__item_active .fixed-nav-bar__radio:before{
+    content:"";
+    position: absolute;
+    left: -7px;
+    top:-7px;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    border:2px #fff solid;
+}

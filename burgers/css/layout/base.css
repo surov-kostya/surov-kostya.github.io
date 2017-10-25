@@ -40,6 +40,8 @@ li{
 	width: 943px;
 	height: 100%;
 	margin: 0 auto;
+	display: flex;
+	flex-flow:column;
 }
 
 .fixed-nav-bar{
