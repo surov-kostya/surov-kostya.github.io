@@ -1,0 +1,86 @@
+.we{
+    height: 100%;
+    background-image: url(../../img/we/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+.we__header{
+    text-transform: uppercase;
+    color:#2f3234;
+    font-family: 'gagalin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 72px;
+    margin-top:78px;
+    margin-bottom: 87px;
+    text-align: center;
+}
+
+.we__benefit-list{
+    display: flex;
+    justify-content: space-around;
+    flex:1;
+}
+
+.we__benefit-item{
+    flex-basis: 290px;
+}
+
+/* ---------------- BENEFITS ----------------- */
+
+.benefit{
+    color:#2f3234;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: baseline;
+}
+
+.benefit__pic{
+    flex-basis: 125px;
+}
+
+.benefit__header{
+    font-family: 'lifehack';
+    font-weight: 500;
+    font-style: normal;
+    font-size:24px;
+    line-height: 28.11px;
+    margin-bottom: 20px;
+    letter-spacing: -0.6px;
+}
+
+.benefit__text{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    line-height: 24.05px;
+}
+
+/* ----------------------------- VEGETABLES ----------------------- */
+
+.we__veg{
+    position:absolute;
+}
+
+.we__veg_cream{
+    left:0px;
+    top:0px;
+}
+
+.we__veg_tomato{
+    left:0px;
+    bottom:0px;
+}
+.we__veg_cheese{
+    right:0px;
+    bottom:0px;
+}
+
+.we__veg_green{
+    top:0px;
+    right: 0px;
+}

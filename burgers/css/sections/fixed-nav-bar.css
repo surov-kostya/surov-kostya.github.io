@@ -28,8 +28,8 @@
     position: absolute;
     left: -7px;
     top:-7px;
-    width:16px;
-    height: 16px;
+    width:18px;
+    height: 18px;
     border-radius: 50%;
-    border:2px #fff solid;
+    border:1px #fff solid;
 }

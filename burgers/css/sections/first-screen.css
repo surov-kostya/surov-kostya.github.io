@@ -1,7 +1,6 @@
 /* ------------------- BACKGROUND --------------------- */
 
 .first-screen{
-    height: 100%;
     background-image: url(../../img/first-screen/video-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -118,6 +117,7 @@
     font-style: normal;
     font-size: 72px;
     margin-bottom: 5px;
+    /* letter-spacing:-1.63px; */
 }
 
 .first-screen__text{
@@ -127,6 +127,7 @@
     color:#fff;
     font-size:65px;
     line-height: 55px;
+    letter-spacing:-1.63px;
 }
 
 /* ---------------------------- ARROW_SCROLL -------------------------- */
