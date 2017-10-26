@@ -1,7 +1,7 @@
 /* ------------------- BACKGROUND --------------------- */
 
 .first-screen{
-    background-image: url(../../img/first-screen/video-bg.jpg);
+    background-image: url(../img/first-screen/video-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,7 +9,6 @@
 
 .first-screen__texture{
     height:100%;
-    background-color: ;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), 
     linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2));
     background-size:4px 4px;
@@ -36,26 +35,26 @@
     align-items: center;
 }
 
-.navigation__item:before{
-    content:"";
-    height: 4px;
-    width: 4px;
-    background-color:#fff;
-    border-radius: 50%;
-    margin:3px 16px;
-    display: inline-block;
-}
-
-.navigation__item:first-child:before{
-    content:"";
-    height: 0px;
-    width: 0px;
-}
-
-.navigation__item:last-child:before{
-    content:"";
-    height: 0px;
-    width: 0px;
+.navigation__item{
+    &:before{
+        content:"";
+        height: 4px;
+        width: 4px;
+        background-color:#fff;
+        border-radius: 50%;
+        margin:3px 16px;
+        display: inline-block;
+    }
+    &:first-child:before{
+        content:"";
+        height: 0px;
+        width: 0px;
+    }
+    &:last-child:before{
+        content:"";
+        height: 0px;
+        width: 0px;
+    }
 }
 
 .navigation__link{
@@ -65,22 +64,20 @@
     font-size: 13px;
     font-family: "Ubuntu";
     font-weight: 500;
+    &:hover{
+        text-decoration: underline;
+    }
+    &_btn{
+        background-color: #e45028;
+        border-radius: 4px;
+        padding: 13px 16px;
+        &:hover{
+            background-color: #c1401e;
+            text-decoration: none;
+        }
+    }
 }
 
-.navigation__link:hover{
-    text-decoration: underline;
-}
-
-.navigation__link_btn{
-    background-color: #e45028;
-    border-radius: 4px;
-    padding: 13px 16px;
-}
-
-.navigation__link_btn:hover{
-    background-color: #c1401e;
-    text-decoration: none;
-}
 
 /* --------------------------- CONTENT ------------------------ */
 
@@ -95,7 +92,7 @@
     position: relative;
     flex-basis: 451px;
     height:420px;
-    background: url(../../img/first-screen/burger.png) no-repeat;
+    background: url(../img/first-screen/burger.png) no-repeat;
     background-position: 34px -67px;
 }
 

@@ -23,13 +23,15 @@
     margin-bottom: 15px;
 }
 
-.fixed-nav-bar__item_active .fixed-nav-bar__radio:before{
-    content:"";
-    position: absolute;
-    left: -7px;
-    top:-7px;
-    width:18px;
-    height: 18px;
-    border-radius: 50%;
-    border:1px #fff solid;
+.fixed-nav-bar__item_active{
+    .fixed-nav-bar__radio:before{
+        content:"";
+        position: absolute;
+        left: -7px;
+        top:-7px;
+        width:18px;
+        height: 18px;
+        border-radius: 50%;
+        border:1px #fff solid;
+    }
 }
