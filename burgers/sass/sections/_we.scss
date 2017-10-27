@@ -1,5 +1,4 @@
 .we{
-    height: 100%;
     background-image: url(../img/we/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -14,15 +13,17 @@
     font-weight: normal;
     font-style: normal;
     font-size: 72px;
-    margin-top:78px;
-    margin-bottom: 87px;
+    margin-top:65px;
+    margin-bottom: 73px;
     text-align: center;
 }
 
 .we__benefit-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
     flex:1;
+    padding: 0 7px;
 }
 
 .we__benefit-item{
@@ -34,13 +35,10 @@
 .benefit{
     color:#2f3234;
     text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: baseline;
 }
 
 .benefit__pic{
-    flex-basis: 125px;
+    height: 119px;
 }
 
 .benefit__header{
@@ -49,8 +47,12 @@
     font-style: normal;
     font-size:24px;
     line-height: 28.11px;
-    margin-bottom: 20px;
+    margin-bottom: 13.5px;
     letter-spacing: -0.6px;
+}
+
+.benefit__header_margin{
+    margin-bottom: 7px;
 }
 
 .benefit__text{
@@ -68,11 +70,11 @@
 
 .we__veg_cream{
     left:0px;
-    top:0px;
+    top:28px;
 }
 
 .we__veg_tomato{
-    left:0px;
+    left:58px;
     bottom:0px;
 }
 .we__veg_cheese{
@@ -81,6 +83,7 @@
 }
 
 .we__veg_green{
-    top:0px;
+    top:55px;
     right: 0px;
 }
+

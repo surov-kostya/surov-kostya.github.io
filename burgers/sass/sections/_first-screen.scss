@@ -3,7 +3,7 @@
 .first-screen{
     background-image: url(../img/first-screen/video-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: cover;
 }
 
@@ -18,35 +18,39 @@
 /* -------------------- HEADER ---------------------- */
 
 .first-screen__header{
-    height: 99px;
+    height: 86px;
     display: flex;
-    align-items: center; 
+    align-items: flex-end; 
+    margin-bottom:28px;
 }
 
-.first-screen__logo{
+// .first-screen__logo{
 
-}
+// }
 
 .first-screen__menu{
     margin-left:auto;
+    margin-bottom:25px;
 }
 
 
 /* ------------------ NAVIGATION ------------------ */
 
 .navigation{
-    display:flex;
-    align-items: center;
+    font-size: 0;
 }
 
 .navigation__item{
+    display: inline-block;
+    margin-right: 14px;
     &:before{
         content:"";
         height: 4px;
         width: 4px;
         background-color:#fff;
         border-radius: 50%;
-        margin:3px 16px;
+        margin-bottom:3px;
+        margin-right:17px;
         display: inline-block;
     }
     &:first-child:before{
@@ -54,18 +58,24 @@
         height: 0px;
         width: 0px;
     }
+    &:last-child{
+        margin-right:0px;
+    }
     &:last-child:before{
         content:"";
         height: 0px;
         width: 0px;
+        margin-right:0px;
     }
 }
 
 .navigation__link{
+
     color:#fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
+    line-height: 30px;
     font-family: "Ubuntu";
     font-weight: 500;
     &:hover{
@@ -74,7 +84,8 @@
     &_btn{
         background-color: #e45028;
         border-radius: 4px;
-        padding: 13px 16px;
+        padding: 10px 16px;
+        margin-right:1px;
         &:hover{
             background-color: #c1401e;
             text-decoration: none;
@@ -88,7 +99,7 @@
 .first-screen__content{
     display:flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex:1;
 }
 
@@ -98,6 +109,7 @@
     height:420px;
     background: url(../img/first-screen/burger.png) no-repeat;
     background-position: 34px -67px;
+    margin-left:19px;
 }
 
 .first-screen__drops{
@@ -105,9 +117,10 @@
 }
 
 .first-screen__info{
-    margin-top:-60px;
-    margin-left:12px;
+    margin-top:98px;
+    margin-right:57px;
     flex-basis: 405px;
+    align-self:start;
 }
 
 .first-screen__title{
@@ -117,8 +130,7 @@
     font-weight: normal;
     font-style: normal;
     font-size: 72px;
-    margin-bottom: 5px;
-    /* letter-spacing:-1.63px; */
+    margin-bottom: 19px;
 }
 
 .first-screen__text{
@@ -127,7 +139,7 @@
     font-style: normal;
     color:#fff;
     font-size:65px;
-    line-height: 55px;
+    line-height: 60px;
     letter-spacing:-1.63px;
 }
 
@@ -136,5 +148,5 @@
 .first-screen__arrow-scroll{
     width: 29px;
     align-self: center;
-    margin-bottom: 41px;
+    margin-bottom: 35px;
 }

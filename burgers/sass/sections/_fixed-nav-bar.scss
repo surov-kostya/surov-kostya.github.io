@@ -1,9 +1,9 @@
 .fixed-nav-bar{
-    width:19px;
+    width:6px;
     height: 150px;
     position:absolute;
     top:96px;
-    right:40px;
+    right:54px;
 }
 
 .fixed-nav-bar__item{
@@ -27,8 +27,8 @@
     .fixed-nav-bar__radio:before{
         content:"";
         position: absolute;
-        left: -6px;
-        top:-5px;
+        left: -5.65px;
+        top:-5.5px;
         width:15px;
         height: 15px;
         border-radius: 50%;

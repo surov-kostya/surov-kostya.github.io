@@ -56,7 +56,7 @@ li {
 .first-screen {
   background-image: url(../img/first-screen/video-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover; }
 
 .first-screen__texture {
@@ -67,40 +67,49 @@ li {
 
 /* -------------------- HEADER ---------------------- */
 .first-screen__header {
-  height: 99px;
+  height: 86px;
   display: flex;
-  align-items: center; }
+  align-items: flex-end;
+  margin-bottom: 28px; }
 
 .first-screen__menu {
-  margin-left: auto; }
+  margin-left: auto;
+  margin-bottom: 25px; }
 
 /* ------------------ NAVIGATION ------------------ */
 .navigation {
-  display: flex;
-  align-items: center; }
+  font-size: 0; }
 
-.navigation__item:before {
-  content: "";
-  height: 4px;
-  width: 4px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin: 3px 16px;
-  display: inline-block; }
-.navigation__item:first-child:before {
-  content: "";
-  height: 0px;
-  width: 0px; }
-.navigation__item:last-child:before {
-  content: "";
-  height: 0px;
-  width: 0px; }
+.navigation__item {
+  display: inline-block;
+  margin-right: 14px; }
+  .navigation__item:before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 3px;
+    margin-right: 17px;
+    display: inline-block; }
+  .navigation__item:first-child:before {
+    content: "";
+    height: 0px;
+    width: 0px; }
+  .navigation__item:last-child {
+    margin-right: 0px; }
+  .navigation__item:last-child:before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    margin-right: 0px; }
 
 .navigation__link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 13px;
+  line-height: 30px;
   font-family: "Ubuntu";
   font-weight: 500; }
   .navigation__link:hover {
@@ -108,7 +117,8 @@ li {
   .navigation__link_btn {
     background-color: #e45028;
     border-radius: 4px;
-    padding: 13px 16px; }
+    padding: 10px 16px;
+    margin-right: 1px; }
     .navigation__link_btn:hover {
       background-color: #c1401e;
       text-decoration: none; }
@@ -117,7 +127,7 @@ li {
 .first-screen__content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex: 1; }
 
 .first-screen__burger {
@@ -125,15 +135,17 @@ li {
   flex-basis: 451px;
   height: 420px;
   background: url(../img/first-screen/burger.png) no-repeat;
-  background-position: 34px -67px; }
+  background-position: 34px -67px;
+  margin-left: 19px; }
 
 .first-screen__drops {
   width: 451px; }
 
 .first-screen__info {
-  margin-top: -60px;
-  margin-left: 12px;
-  flex-basis: 405px; }
+  margin-top: 98px;
+  margin-right: 57px;
+  flex-basis: 405px;
+  align-self: start; }
 
 .first-screen__title {
   text-transform: uppercase;
@@ -142,8 +154,7 @@ li {
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
-  margin-bottom: 5px;
-  /* letter-spacing:-1.63px; */ }
+  margin-bottom: 19px; }
 
 .first-screen__text {
   font-family: 'lifehack';
@@ -151,21 +162,21 @@ li {
   font-style: normal;
   color: #fff;
   font-size: 65px;
-  line-height: 55px;
+  line-height: 60px;
   letter-spacing: -1.63px; }
 
 /* ---------------------------- ARROW_SCROLL -------------------------- */
 .first-screen__arrow-scroll {
   width: 29px;
   align-self: center;
-  margin-bottom: 41px; }
+  margin-bottom: 35px; }
 
 .fixed-nav-bar {
-  width: 19px;
+  width: 6px;
   height: 150px;
   position: absolute;
   top: 96px;
-  right: 40px; }
+  right: 54px; }
 
 .fixed-nav-bar__item {
   display: block; }
@@ -184,15 +195,14 @@ li {
 .fixed-nav-bar__item_active .fixed-nav-bar__radio:before {
   content: "";
   position: absolute;
-  left: -6px;
-  top: -5px;
+  left: -5.65px;
+  top: -5.5px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: 1px #fff solid; }
 
 .we {
-  height: 100%;
   background-image: url(../img/we/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -206,14 +216,16 @@ li {
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
-  margin-top: 78px;
-  margin-bottom: 87px;
+  margin-top: 65px;
+  margin-bottom: 73px;
   text-align: center; }
 
 .we__benefit-list {
   display: flex;
-  justify-content: space-around;
-  flex: 1; }
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  padding: 0 7px; }
 
 .we__benefit-item {
   flex-basis: 290px; }
@@ -221,13 +233,10 @@ li {
 /* ---------------- BENEFITS ----------------- */
 .benefit {
   color: #2f3234;
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  justify-content: baseline; }
+  text-align: center; }
 
 .benefit__pic {
-  flex-basis: 125px; }
+  height: 119px; }
 
 .benefit__header {
   font-family: 'lifehack';
@@ -235,8 +244,11 @@ li {
   font-style: normal;
   font-size: 24px;
   line-height: 28.11px;
-  margin-bottom: 20px;
+  margin-bottom: 13.5px;
   letter-spacing: -0.6px; }
+
+.benefit__header_margin {
+  margin-bottom: 7px; }
 
 .benefit__text {
   font-size: 14px;
@@ -250,10 +262,10 @@ li {
 
 .we__veg_cream {
   left: 0px;
-  top: 0px; }
+  top: 28px; }
 
 .we__veg_tomato {
-  left: 0px;
+  left: 58px;
   bottom: 0px; }
 
 .we__veg_cheese {
@@ -261,7 +273,7 @@ li {
   bottom: 0px; }
 
 .we__veg_green {
-  top: 0px;
+  top: 55px;
   right: 0px; }
 
 /* ----------------- FONTS ---------------- */
