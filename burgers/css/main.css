@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   font-family: "Roboto" , sans-serif;
@@ -34,7 +35,14 @@ li {
   width: 944px;
   min-height: 650px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
   flex-flow: column; }
 
 .fixed-nav-bar {
@@ -61,6 +69,8 @@ li {
 
 .first-screen__texture {
   height: 100%;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2));
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), -o-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2));
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2));
   background-size: 4px 4px;
   background-position: 0 0, 30px 30px; }
@@ -68,7 +78,13 @@ li {
 /* -------------------- HEADER ---------------------- */
 .first-screen__header {
   height: 86px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
   margin-bottom: 28px; }
 
@@ -125,13 +141,27 @@ li {
 
 /* --------------------------- CONTENT ------------------------ */
 .first-screen__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1; }
 
 .first-screen__burger {
   position: relative;
+  -webkit-flex-basis: 451px;
+  -ms-flex-preferred-size: 451px;
   flex-basis: 451px;
   height: 420px;
   background: url(../img/first-screen/burger.png) no-repeat;
@@ -144,7 +174,11 @@ li {
 .first-screen__info {
   margin-top: 98px;
   margin-right: 57px;
+  -webkit-flex-basis: 405px;
+  -ms-flex-preferred-size: 405px;
   flex-basis: 405px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
   align-self: start; }
 
 .first-screen__title {
@@ -168,6 +202,8 @@ li {
 /* ---------------------------- ARROW_SCROLL -------------------------- */
 .first-screen__arrow-scroll {
   width: 29px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   margin-bottom: 35px; }
 
@@ -221,13 +257,27 @@ li {
   text-align: center; }
 
 .we__benefit-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding: 0 7px; }
 
 .we__benefit-item {
+  -webkit-flex-basis: 290px;
+  -ms-flex-preferred-size: 290px;
   flex-basis: 290px; }
 
 /* ---------------- BENEFITS ----------------- */
@@ -276,12 +326,32 @@ li {
   top: 55px;
   right: 0px; }
 
+.review__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%; }
+
+.review__item {
+  width: 100%/4;
+  height: 100%/2; }
+
+.comment {
+  background: url(../img/review/photo-1438.jpg) no-repeat center;
+  background-size: cover; }
+
 /* ----------------- FONTS ---------------- */
 @font-face {
   font-family: 'lifehack';
   src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
+
 @font-face {
   font-family: 'gagalin';
   src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
