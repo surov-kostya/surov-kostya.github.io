@@ -110,10 +110,13 @@
 }
 
 .first-screen__info{
-    margin-top:98px;
     margin-right:57px;
     flex-basis: 405px;
-    align-self:start;
+    min-height:420px;
+    display:flex;
+    flex-flow:column;
+    justify-content: space-between;
+    padding: 69px 0 130px 0;
 }
 
 .first-screen__title{
