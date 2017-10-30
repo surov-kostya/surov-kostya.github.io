@@ -1,5 +1,16 @@
 // --------------------------- REVIEW -----------------------
 
+.review{
+    background-image:url(../img/review/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.container_review{
+    width: 1100px;
+}
+
 .review__list{
     display:flex;
     flex-wrap: wrap;
@@ -8,13 +19,59 @@
 }
 
 .review__item{
-    width:100%/4;
-    height:100%/2;
+    flex-basis: 275px;
+    min-height:327px;
 }
 
 // ------------------------------ COMMENT ----------------------
 
 .comment{
-    background: url(../img/review/photo-1438.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size:cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 19px;
+    &:hover [class^="comment__"]{
+        visibility: visible;        
+    }
+}
+
+@for $i from 1 to 9{
+    .comment:nth-child(#{$i}){
+        background-image: url(../img/review/photo-#{$i}.jpg);
+    }
+}
+
+.comment__username{
+    text-transform: uppercase;
+    font-size:14px;
+    font-family: "gagalin";
+    font-weight: normal;
+    color:#fff;
+    visibility: hidden;
+}
+
+.comment__text{
+    font-size:14px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    color:#fff;
+    visibility: hidden;
+}
+
+.comment__btn{
+    display:inline-block;
+    padding:15px;
+    border-radius: 5px;
+    background-color:#2f3234;
+    text-transform: uppercase;
+    font-size:13px;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    color:#fff;
+    visibility: hidden;
+    text-decoration:none;
 }

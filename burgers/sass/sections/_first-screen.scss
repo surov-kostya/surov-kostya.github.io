@@ -21,12 +21,9 @@
     height: 86px;
     display: flex;
     align-items: flex-end; 
+    
     margin-bottom:28px;
 }
-
-// .first-screen__logo{
-
-// }
 
 .first-screen__menu{
     margin-left:auto;
@@ -58,19 +55,9 @@
         height: 0px;
         width: 0px;
     }
-    &:last-child{
-        margin-right:0px;
-    }
-    &:last-child:before{
-        content:"";
-        height: 0px;
-        width: 0px;
-        margin-right:0px;
-    }
 }
 
 .navigation__link{
-
     color:#fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -81,18 +68,24 @@
     &:hover{
         text-decoration: underline;
     }
-    &_btn{
-        background-color: #e45028;
-        border-radius: 4px;
-        padding: 10px 16px;
-        margin-right:1px;
-        &:hover{
-            background-color: #c1401e;
-            text-decoration: none;
-        }
-    }
 }
 
+.first-screen__btn{
+    background-color: #e45028;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-right:1px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Ubuntu";
+    font-weight: 500; 
+    margin-bottom:23px;    
+    &:hover{
+        background-color: darken(#e45028, 20%);
+    }
+}
 
 /* --------------------------- CONTENT ------------------------ */
 
