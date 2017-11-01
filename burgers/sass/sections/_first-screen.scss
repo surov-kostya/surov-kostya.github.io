@@ -117,12 +117,7 @@
 }
 
 .first-screen__title{
-    text-transform: uppercase;
-    color:#f9b43b;
-    font-family: 'gagalin';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 72px;
+    @include font-h1($color-yellow);
     margin-bottom: 19px;
 }
 

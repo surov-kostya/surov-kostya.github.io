@@ -43,11 +43,7 @@
 }
 
 .comment__username{
-    text-transform: uppercase;
-    font-size:14px;
-    font-family: "gagalin";
-    font-weight: normal;
-    color:#fff;
+    @include font-h3($color-white);
     visibility: hidden;
 }
 

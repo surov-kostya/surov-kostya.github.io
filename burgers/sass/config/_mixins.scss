@@ -1,0 +1,41 @@
+@mixin font-h1($color){
+    text-transform: uppercase;
+    font-family: 'gagalin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 72px;
+    color:$color;
+}
+
+@mixin font-h2($color){
+    text-transform: uppercase;
+    font-family: 'gagalin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    color:$color;
+}
+
+
+@mixin font-h3($color){
+    text-transform: uppercase;
+    font-size:14px;
+    font-family: "gagalin";
+    font-weight: normal;
+    font-style: normal;
+    color:$color;
+}
+
+@mixin font-h4($color){
+    font-size:14px;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    color:$color;
+}
+
+@mixin font-text($color){
+    font-size:14px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    color:$color;
+}

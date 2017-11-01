@@ -1,4 +1,7 @@
 
+@import "./config/_mixins.scss";
+@import "./config/_variables.scss";
+
 @import "./layout/_base.scss";
 @import "./sections/_first-screen.scss";
 @import "./sections/_fixed-nav-bar.scss";

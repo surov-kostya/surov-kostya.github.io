@@ -197,11 +197,11 @@ li {
 
 .first-screen__title {
   text-transform: uppercase;
-  color: #f9b43b;
   font-family: 'gagalin';
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
+  color: #f9b43b;
   margin-bottom: 19px; }
 
 .first-screen__text {
@@ -257,11 +257,11 @@ li {
 
 .we__header {
   text-transform: uppercase;
-  color: #2f3234;
   font-family: 'gagalin';
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
+  color: #2f3234;
   margin-top: 65px;
   margin-bottom: 73px;
   text-align: center; }
@@ -300,15 +300,18 @@ li {
 
 .benefit__svg_meat {
   width: 98px;
-  color: red; }
+  height: 89px;
+  fill: #df5430; }
 
 .benefit__svg_hand {
-  width: 75px;
-  color: yellow; }
+  width: 73px;
+  height: 85px;
+  fill: #f5b640; }
 
 .benefit__svg_natural {
-  width: 85px;
-  color: green; }
+  width: 91px;
+  height: 77px;
+  fill: #88c241; }
 
 .benefit__header {
   font-family: 'lifehack';
@@ -425,7 +428,8 @@ li {
   font-size: 14px;
   font-family: "gagalin";
   font-weight: normal;
-  color: #fff;
+  font-style: normal;
+  color: #ffffff;
   visibility: hidden; }
 
 .comment__text {
@@ -474,6 +478,77 @@ li {
 
 .team {
   background-image: url(../img/team/bg.jpg); }
+
+.team__right-block {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 540px;
+  height: 650px;
+  background-color: rgba(52, 55, 57, 0.95); }
+
+.team__container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: calc(100% - 80px*2); }
+
+.team__header {
+  text-transform: uppercase;
+  font-family: 'gagalin';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 72px;
+  color: #f9b43b;
+  margin-top: 90px; }
+
+.persons__name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "gagalin";
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  position: relative;
+  margin-left: 20px; }
+  .persons__name:before {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    left: -20px;
+    top: 7px;
+    position: absolute;
+    content: "";
+    border-top: 6px solid #f9b43b;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent; }
+
+.persons__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.persons__position {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px; }
+
+.persons__about {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 24px; }
 
 /* ----------------- FONTS ---------------- */
 @font-face {
