@@ -20,9 +20,10 @@ body{
 
 section{
 	background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
 	background-size: cover;
 	position:relative;
+	height:100vh;
 }
 
 ul{
@@ -32,6 +33,16 @@ ul{
 
 li{
 	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
 }
 
 .wrapper{
@@ -45,6 +56,7 @@ li{
 .container{
 	width: 944px;
 	min-height: 650px;
+	height:100%;
 	margin: 0 auto;
 	display: flex;
 	flex-flow:column;
