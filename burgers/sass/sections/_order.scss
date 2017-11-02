@@ -1,0 +1,68 @@
+.order{
+    background-image: url(../img/form/bg.jpg);
+}
+
+.order__texture{
+    background-image: url(../img/form/texture.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+	background-size: cover;
+	height:100vh;
+}
+
+.order__header{
+    @include font-h1($color-yellow);
+    text-align: center;
+    margin-top:87px;
+    margin-bottom:70px;
+}
+
+.form_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__left{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    flex:1;
+    padding-right:1%;
+}
+
+.form__right{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    flex:1;
+    padding-left:1%;
+}
+
+.form__row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.form__block{
+    flex:1;    
+    padding-right: 4%;
+    &:last-child{
+        padding-right:0;
+    }
+}
+
+.form__block-title{
+    @include font-text($color-white);
+    margin-top: 19px;
+}
+
+.form__input{
+    width: 100%;
+    height: 38px;
+    border-radius:4px;
+    margin-top:5px;
+}
+
+.form__input_textarea{
+    height:115px;
+}

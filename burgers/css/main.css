@@ -1,4 +1,17 @@
+/* ----------------- FONTS ---------------- */
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
+@font-face {
+  font-family: 'lifehack';
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gagalin';
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   margin: 0;
   padding: 0;
@@ -487,8 +500,111 @@ h1, h2, h3, h4, h5, h6, p {
 .contacts {
   background-image: url(../img/contacts/bg.jpg); }
 
-.form {
+.order {
   background-image: url(../img/form/bg.jpg); }
+
+.order__texture {
+  background-image: url(../img/form/texture.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  height: 100vh; }
+
+.order__header {
+  text-transform: uppercase;
+  font-family: 'gagalin';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 72px;
+  color: #f9b43b;
+  text-align: center;
+  margin-top: 87px;
+  margin-bottom: 70px; }
+
+.form_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.form__left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 1%; }
+
+.form__right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 1%; }
+
+.form__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.form__block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 4%; }
+  .form__block:last-child {
+    padding-right: 0; }
+
+.form__block-title {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 19px; }
+
+.form__input {
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  margin-top: 5px; }
+
+.form__input_textarea {
+  height: 115px; }
 
 .menu {
   background-image: url(../img/menu/bg.jpg); }
@@ -597,18 +713,5 @@ h1, h2, h3, h4, h5, h6, p {
     border-top: 6px solid transparent;
     border-bottom: 6px solid #f9b43b;
     top: 0; }
-
-/* ----------------- FONTS ---------------- */
-@font-face {
-  font-family: 'lifehack';
-  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gagalin';
-  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,20 +1,24 @@
 
+// ---------------- MISC -----------------
+
 @import "./config/_mixins.scss";
 @import "./config/_variables.scss";
+@import "./layout/_fonts.scss";
+
+// --------------- SECTIONS -----------------
 
 @import "./layout/_base.scss";
 @import "./sections/_first-screen.scss";
 @import "./sections/_fixed-nav-bar.scss";
 @import "./sections/_we.scss";
 @import "./sections/_review.scss";
-
 @import "./sections/_burgers.scss";
 @import "./sections/_contacts.scss";
-@import "./sections/_form.scss";
+@import "./sections/_order.scss";
 @import "./sections/_menu.scss";
 @import "./sections/_team.scss";
 
-@import "./layout/_fonts.scss";
+
 
 
 
