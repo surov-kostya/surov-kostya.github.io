@@ -33,7 +33,7 @@
 .form__right{
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex:1;
     padding-left:1%;
 }
@@ -79,9 +79,9 @@
             position:absolute;
             left: -21px;
             top:4px;
-            content:"";
+            // content:"";
             width:7px;
-            height: 0px;
+            height: 7px;
             border-radius:50%;
             background-color:$color-orange;            
         }
@@ -125,5 +125,9 @@
 }
 
 .form__radio:checked + .form__block-title_radio:after {
-    height:7px;
+    content:"";
+}
+
+.form__checkbox:checked + .form__block-title_checkbox:after{
+    content:"";
 }
