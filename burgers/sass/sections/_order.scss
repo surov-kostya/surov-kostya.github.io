@@ -25,7 +25,7 @@
 .form__left{
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex:1;
     padding-right:1%;
 }
@@ -33,7 +33,7 @@
 .form__right{
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex:1;
     padding-left:1%;
 }
@@ -41,6 +41,14 @@
 .form__row{
     display:flex;
     justify-content: space-between;
+    min-height:75px;
+}
+
+.form__chek-row{
+    min-height:30px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-start;
 }
 
 .form__block{
@@ -53,16 +61,69 @@
 
 .form__block-title{
     @include font-text($color-white);
-    margin-top: 19px;
+
+    &_radio{
+        position:relative;
+        margin: 0 25px;
+        &:before{
+            position:absolute;
+            left: -25px;
+            top:0;
+            content:"";
+            width:15px;
+            height: 15px;
+            border-radius:50%;
+            background-color:$color-white;            
+        }
+        &:after{
+            position:absolute;
+            left: -21px;
+            top:4px;
+            content:"";
+            width:7px;
+            height: 0px;
+            border-radius:50%;
+            background-color:$color-orange;            
+        }
+    }
+
+    &_checkbox{
+        position:relative;
+        margin: 0 25px;
+        &:before{
+            position:absolute;
+            left: -25px;
+            top:0;
+            content:"";
+            width:15px;
+            height: 15px;           
+            background-color:$color-white;            
+        }
+        &:after{
+            position:absolute;
+            left: -23px;
+            top:2px;
+            // content:"";
+            width:7px;
+            height:4px;            
+            border-left:4px solid $color-orange;
+            border-bottom:4px solid $color-orange;
+            transform: rotate(-45deg);             
+        }
+    }
 }
 
 .form__input{
     width: 100%;
-    height: 38px;
+    height: 50%;
     border-radius:4px;
     margin-top:5px;
 }
 
 .form__input_textarea{
     height:115px;
+}
+
+.form__radio:checked + .form__block-title_radio:after {
+    height:7px;
 }

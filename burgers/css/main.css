@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .first-screen__title {
   text-transform: uppercase;
-  font-family: 'gagalin';
+  font-family: 'gagalin', 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .we__header {
   text-transform: uppercase;
-  font-family: 'gagalin';
+  font-family: 'gagalin', 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6, p {
 .comment__username {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "gagalin";
+  font-family: "gagalin", 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
@@ -512,7 +512,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .order__header {
   text-transform: uppercase;
-  font-family: 'gagalin';
+  font-family: 'gagalin', 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
@@ -541,10 +541,10 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -561,10 +561,10 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -579,7 +579,23 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-height: 75px; }
+
+.form__chek-row {
+  min-height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
 
 .form__block {
   -webkit-box-flex: 1;
@@ -592,19 +608,64 @@ h1, h2, h3, h4, h5, h6, p {
 
 .form__block-title {
   font-size: 14px;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
   font-weight: 300;
-  color: #ffffff;
-  margin-top: 19px; }
+  color: #ffffff; }
+  .form__block-title_radio {
+    position: relative;
+    margin: 0 25px; }
+    .form__block-title_radio:before {
+      position: absolute;
+      left: -25px;
+      top: 0;
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #ffffff; }
+    .form__block-title_radio:after {
+      position: absolute;
+      left: -21px;
+      top: 4px;
+      content: "";
+      width: 7px;
+      height: 0px;
+      border-radius: 50%;
+      background-color: #e35028; }
+  .form__block-title_checkbox {
+    position: relative;
+    margin: 0 25px; }
+    .form__block-title_checkbox:before {
+      position: absolute;
+      left: -25px;
+      top: 0;
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff; }
+    .form__block-title_checkbox:after {
+      position: absolute;
+      left: -23px;
+      top: 2px;
+      width: 7px;
+      height: 4px;
+      border-left: 4px solid #e35028;
+      border-bottom: 4px solid #e35028;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
 
 .form__input {
   width: 100%;
-  height: 38px;
+  height: 50%;
   border-radius: 4px;
   margin-top: 5px; }
 
 .form__input_textarea {
   height: 115px; }
+
+.form__radio:checked + .form__block-title_radio:after {
+  height: 7px; }
 
 .menu {
   background-image: url(../img/menu/bg.jpg); }
@@ -635,7 +696,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .team__header {
   text-transform: uppercase;
-  font-family: 'gagalin';
+  font-family: 'gagalin', 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 72px;
@@ -651,7 +712,7 @@ h1, h2, h3, h4, h5, h6, p {
   clear: both;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "gagalin";
+  font-family: "gagalin", 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
@@ -684,14 +745,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 .persons__position {
   font-size: 14px;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 20px; }
 
 .persons__about {
   font-size: 14px;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
   font-weight: 300;
   color: #ffffff;
   line-height: 24px; }
