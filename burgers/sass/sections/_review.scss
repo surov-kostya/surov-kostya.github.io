@@ -16,8 +16,8 @@
 }
 
 .review__item{
-    flex-basis: 275px;
-    min-height:327px;
+    height: 50%;
+    width:25%;
 }
 
 // ------------------------------ COMMENT ----------------------
@@ -67,4 +67,8 @@
     color:#fff;
     visibility: hidden;
     text-decoration:none;
+    &:hover{
+        background-color: darken(#2f3234, 20%);
+        transition: all .3s;
+    }
 }

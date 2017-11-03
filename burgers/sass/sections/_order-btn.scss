@@ -1,0 +1,21 @@
+.order-btn {
+    background-color: #e45028;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-right:1px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Ubuntu";
+    font-weight: 500; 
+    display:block;
+    &:hover{
+        background-color: darken(#e45028, 20%);
+        transition: all .2s;
+    }
+}
+
+.order-btn_first-screen{
+    margin-bottom:23px;
+}
