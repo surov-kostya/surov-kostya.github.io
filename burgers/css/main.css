@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6, p {
   .navigation__link:hover {
     text-decoration: underline; }
 
-.first-screen__btn {
+.order-btn {
   background-color: #e45028;
   border-radius: 4px;
   padding: 10px 16px;
@@ -162,9 +162,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 13px;
   font-family: "Ubuntu";
   font-weight: 500;
-  margin-bottom: 23px; }
-  .first-screen__btn:hover {
+  display: block; }
+  .order-btn:hover {
     background-color: #932e13; }
+
+.first-screen__order-btn {
+  margin-bottom: 23px; }
 
 /* --------------------------- CONTENT ------------------------ */
 .first-screen__content {
@@ -582,8 +585,23 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: space-between;
   min-height: 75px; }
 
-.form__chek-row {
+.form__radio-row {
   min-height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.form__chek-row {
+  min-height: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -668,6 +686,28 @@ h1, h2, h3, h4, h5, h6, p {
 
 .form__checkbox:checked + .form__block-title_checkbox:after {
   content: ""; }
+
+.form__btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  min-height: 60px; }
+
+.form__reset {
+  background: transparent;
+  border: 0;
+  font-size: 14px;
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 19px;
+  height: 35px; }
 
 .menu {
   background-image: url(../img/menu/bg.jpg); }

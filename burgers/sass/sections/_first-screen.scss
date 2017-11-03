@@ -67,7 +67,9 @@
     }
 }
 
-.first-screen__btn{
+
+
+.order-btn {
     background-color: #e45028;
     border-radius: 4px;
     padding: 10px 16px;
@@ -78,10 +80,14 @@
     font-size: 13px;
     font-family: "Ubuntu";
     font-weight: 500; 
-    margin-bottom:23px;    
+    display:block;
     &:hover{
         background-color: darken(#e45028, 20%);
     }
+}
+
+.first-screen__order-btn{
+    margin-bottom:23px;
 }
 
 /* --------------------------- CONTENT ------------------------ */

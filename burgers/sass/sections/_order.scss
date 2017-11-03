@@ -44,8 +44,15 @@
     min-height:75px;
 }
 
-.form__chek-row{
+.form__radio-row{
     min-height:30px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-start;
+}
+
+.form__chek-row{
+    min-height:40px;
     display: flex;
     align-items:flex-end;
     justify-content: flex-start;
@@ -131,3 +138,19 @@
 .form__checkbox:checked + .form__block-title_checkbox:after{
     content:"";
 }
+
+.form__btns{
+    display: flex;
+    align-items: flex-end;
+    min-height:60px;
+}
+
+.form__reset{    
+    background: transparent;
+    border: 0;
+    @include font-text($color-white); 
+    cursor: pointer;
+    margin-left:19px;
+    height: 35px;   
+}
+
