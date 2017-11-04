@@ -28,13 +28,6 @@ body {
   width: 100%;
   height: 100%; }
 
-section {
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: cover;
-  position: relative;
-  height: 100vh; }
-
 ul {
   padding: 0;
   margin: 0; }
@@ -56,10 +49,17 @@ a {
 
 .wrapper {
   position: relative;
-  min-width: 95vw;
-  width: 100%;
+  width: 1100px;
   overflow: hidden;
   min-height: 100%; }
+
+section {
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  position: relative;
+  height: 650px;
+  overflow: hidden; }
 
 .container {
   width: 95%;
@@ -278,7 +278,6 @@ a {
   font-size: 72px;
   color: #2f3234;
   margin-top: 65px;
-  margin-bottom: 73px;
   text-align: center; }
 
 .we__benefit-list {
@@ -298,8 +297,7 @@ a {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0 7px;
-  padding-bottom: 73px; }
+  padding: 0 7px; }
 
 .we__benefit-item {
   -webkit-flex-basis: 290px;
@@ -346,6 +344,9 @@ a {
   font-family: "Ubuntu";
   font-weight: 300;
   line-height: 24.05px; }
+
+.we__empty-block {
+  height: 130px; }
 
 /* ----------------------------- VEGETABLES ----------------------- */
 .we__veg {
@@ -755,10 +756,22 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
+  height: 100%; }
+
+.menu-acco {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%; }
 
 .menu-acco__item {
   height: 100%;
@@ -768,14 +781,36 @@ a {
   display: flex; }
 
 .menu-acco__link {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 80px;
-  height: 100%; }
+  height: 100%;
+  background-position: center center;
+  background-size: cover; }
+  .menu-acco__link_meat {
+    background-image: url(../img/menu/meat-bg.jpg); }
+  .menu-acco__link_vegan {
+    background-image: url(../img/menu/vegan-bg.jpg); }
+  .menu-acco__link_diet {
+    background-image: url(../img/menu/diet-bg.jpg); }
 
 .menu-acco__title {
-  position: absolute;
-  top: 420px;
-  left: -390px;
+  display: inline-block;
   text-transform: uppercase;
   font-family: 'gagalin', 'Helvetica', sans-serif;
   font-weight: normal;
@@ -786,7 +821,7 @@ a {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 900px;
-  height: 80px;
+  height: 40px;
   text-align: center; }
 
 .menu-acco__text {
@@ -795,10 +830,14 @@ a {
   font-weight: 300;
   color: #ffffff;
   line-height: 24px;
-  background-color: rgba(88, 88, 88, 0.7);
+  background-color: rgba(47, 50, 52, 0.95);
   width: 540px;
   height: 100%;
-  padding: 65px 36px; }
+  padding: 65px 36px;
+  display: none; }
+
+.menu-acco__item_active .menu-acco__text {
+  display: initial; }
 
 .team {
   background-image: url(../img/team/bg.jpg); }

@@ -12,7 +12,14 @@
     top:0;
     right:0;
     bottom:0;
+    height:100%;
+}
+
+.menu-acco{
     display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .menu-acco__item{
@@ -21,19 +28,35 @@
 }
 
 .menu-acco__link{
-    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width:80px;
     height:100%;
+    background-position: center center;
+    background-size: cover;
+    
+    &_meat{
+        background-image: url(../img/menu/meat-bg.jpg);
+    }
+
+    &_vegan{
+        background-image: url(../img/menu/vegan-bg.jpg);
+    }
+
+    &_diet{
+        background-image: url(../img/menu/diet-bg.jpg);
+    }
 }
 
+
 .menu-acco__title{
-    position: absolute;
-    top:420px;
-    left:-390px;
+    display:inline-block;
     @include font-h2($color-white);
     transform:rotate(-90deg);
     width:900px;
-    height:80px;
+    height:40px;
     text-align: center;
 }
 
@@ -42,8 +65,15 @@
 .menu-acco__text{
     @include font-text($color-white);
     line-height: 24px;
-    background-color: rgba($color-gray, .7); 
+    background-color:rgba(#2f3234, 0.95); 
     width:540px;
     height:100%;
     padding:65px 36px;
+    display:none;
+}
+
+// ------------------------ ACTIVE ---------------------
+
+.menu-acco__item_active .menu-acco__text{
+    display:initial;
 }
