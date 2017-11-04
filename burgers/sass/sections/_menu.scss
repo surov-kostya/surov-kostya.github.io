@@ -1,3 +1,49 @@
 .menu{
     background-image: url(../img/menu/bg.jpg);
 }
+
+.menu__header{
+    @include font-h1($color-white);
+    margin-top:112px;
+}
+
+.menu__accordeon{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    display:flex;
+}
+
+.menu-acco__item{
+    height:100%;
+    display:flex;
+}
+
+.menu-acco__link{
+    position: relative;
+    width:80px;
+    height:100%;
+}
+
+.menu-acco__title{
+    position: absolute;
+    top:420px;
+    left:-390px;
+    @include font-h2($color-white);
+    transform:rotate(-90deg);
+    width:900px;
+    height:80px;
+    text-align: center;
+}
+
+
+
+.menu-acco__text{
+    @include font-text($color-white);
+    line-height: 24px;
+    background-color: rgba($color-gray, .7); 
+    width:540px;
+    height:100%;
+    padding:65px 36px;
+}

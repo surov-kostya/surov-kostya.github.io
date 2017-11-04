@@ -18,8 +18,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  font-family: "Roboto" , sans-serif;
-  color: #221f1f;
   -webkit-font-smoothing: antialiased; }
 
 html {
@@ -53,9 +51,12 @@ h1, h2, h3, h4, h5, h6, p {
   vertical-align: baseline;
   outline: none; }
 
+a {
+  text-decoration: none; }
+
 .wrapper {
   position: relative;
-  min-width: 100vw;
+  min-width: 95vw;
   width: 100%;
   overflow: hidden;
   min-height: 100%; }
@@ -238,7 +239,7 @@ h1, h2, h3, h4, h5, h6, p {
 .fixed-nav-bar {
   width: 6px;
   height: 150px;
-  position: absolute;
+  position: fixed;
   top: 96px;
   right: 54px; }
 
@@ -739,6 +740,65 @@ h1, h2, h3, h4, h5, h6, p {
 
 .menu {
   background-image: url(../img/menu/bg.jpg); }
+
+.menu__header {
+  text-transform: uppercase;
+  font-family: 'gagalin', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 72px;
+  color: #ffffff;
+  margin-top: 112px; }
+
+.menu__accordeon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu-acco__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu-acco__link {
+  position: relative;
+  width: 80px;
+  height: 100%; }
+
+.menu-acco__title {
+  position: absolute;
+  top: 420px;
+  left: -390px;
+  text-transform: uppercase;
+  font-family: 'gagalin', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  color: #ffffff;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 900px;
+  height: 80px;
+  text-align: center; }
+
+.menu-acco__text {
+  font-size: 14px;
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 24px;
+  background-color: rgba(88, 88, 88, 0.7);
+  width: 540px;
+  height: 100%;
+  padding: 65px 36px; }
 
 .team {
   background-image: url(../img/team/bg.jpg); }

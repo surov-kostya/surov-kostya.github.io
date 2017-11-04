@@ -3,8 +3,6 @@
 	padding:0;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	font-family: "Roboto" , sans-serif;
-	color:#221f1f;
 	-webkit-font-smoothing:antialiased;
 }
 
@@ -45,9 +43,13 @@ h1, h2, h3, h4, h5, h6, p{
 	outline: none;
 }
 
+a{
+	text-decoration: none;
+}
+
 .wrapper{
 	position: relative;
-	min-width: 100vw;
+	min-width: 95vw;
 	width:100%;
 	overflow: hidden;
 	min-height: 100%;
