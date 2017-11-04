@@ -1,3 +1,53 @@
 .contacts{
     background-image: url(../img/contacts/bg.jpg);
 }
+
+.footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:60px;
+    background: url(../img/contacts/footer-bg.jpg) top right no-repeat;
+}
+
+.footer__container{
+    flex-flow:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contacts p{
+    @include font-text($color-white);
+    margin-bottom:14px;
+}
+
+.footer__link{
+    position:relative;
+    margin-left:20px;
+    text-decoration: none;
+    @include font-h4($color-orange);
+}
+
+.footer__svg-phone{
+    position:absolute;
+    bottom:2px;
+    left:-20px;
+    height: 12px;
+    width:14px;
+    fill: $color-orange;
+}
+
+.footer__socials{
+
+}
+
+.socials__svg{
+    width:20px;
+    height:20px;
+    fill: $color-gray;
+    margin-left:20px;
+    &:hover{
+        fill:$color-white;
+    }
+}

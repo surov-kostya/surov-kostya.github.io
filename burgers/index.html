@@ -3,7 +3,7 @@
     <head>
         <title>Burgers</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=1100" >
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="icon" type="image/png" href="./img/favicon.png">
         <link rel="stylesheet" href="./css/normalize.css">	
@@ -262,7 +262,7 @@
                                         <use xlink:href="./img/sprite.svg#natural"/>
                                     </svg>
                                 </div>
-                                <div class="benefit__header benefit__header_margin">Натуральные  ингредиенты</div>
+                                <div class="benefit__header benefit__header_margin">Натуральные ингредиенты</div>
                                 <div class="benefit__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
                             </li>
                         </ul>
@@ -292,7 +292,7 @@
                                             </div>
                                             <div class="persons__info">
                                                 <div class="persons__position">Оператор</div>
-                                                 <div class="persons__about">С радостью поможет подобрать идеальный бургер и оформить заказ. </div>
+                                                <div class="persons__about">С радостью поможет подобрать идеальный бургер и оформить заказ. </div>
                                             </div>
                                         </div>
                                     </li>
@@ -328,7 +328,7 @@
                                             </div>
                                             <div class="persons__info">
                                                 <div class="persons__position">Оператор</div>
-                                                 <div class="persons__about">С радостью поможет подобрать идеальный бургер и оформить заказ. </div>
+                                                <div class="persons__about">С радостью поможет подобрать идеальный бургер и оформить заказ. </div>
                                             </div>                                                
                                         </div>
                                     </li>
@@ -350,53 +350,69 @@
                 <section class="review">
                     <!-- <div class="container container_review "> -->
                         <ul class="review__list">
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-1.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-1.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-1.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-2.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-2.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-2.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-3.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-3.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-3.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-4.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-4.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-4.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-5.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-5.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-5.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-6.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-6.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-6.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-7.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-7.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-7.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
-                            <li class="review__item comment">
-                                <img src="./img/review/photo-8.jpg" alt="avatar" class="comment__avatar visually-hidden">
-                                <div class="comment__username">Константин Спилберг</div>
-                                <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                                <a href="#" class="comment__btn">Подробнее</a>
+                            <li class="review__item" style="background-image: url(./img/review/photo-8.jpg)">
+                                <div class="comment">
+                                    <img src="./img/review/photo-8.jpg" alt="avatar" class="comment__avatar visually-hidden">
+                                    <div class="comment__username">Константин Спилберг</div>
+                                    <div class="comment__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <button class="comment__btn">Подробнее</button>
+                                </div>
                             </li>
                         </ul>
                     <!-- </div>  -->
@@ -486,9 +502,35 @@
                 </section>
                 <!-- ------------------------------ CONTACTS ------------------------------- -->
                 <section class="contacts">
-                    <div class="container">
-                        
+                    
+                    <div class="footer">
+                        <div class="container footer__container">
+                            <div class="footer__contacts">
+                                <p>Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
+                                <a class="footer__link" href="tel:+78123771377">
+                                    <svg class="footer__svg-phone">
+                                        <use xlink:href="./img/sprite.svg#phone" />
+                                    </svg>
+                                    +7 (812) 377-13-77
+                                </a>
+                            </div>
+                            <div class="footer__socials socials">
+                                <a href="#" class="socials__link"><svg class="socials__svg socials__svg_vk">
+                                    <use xlink:href="./img/sprite.svg#vk" />
+                                </svg></a>
+                                <a href="#" class="socials__link"><svg class="socials__svg socials__svg_fb">
+                                    <use xlink:href="./img/sprite.svg#fb" />
+                                </svg></a>
+                                <a href="#" class="socials__link"><svg class="socials__svg socials__svg_inst">
+                                    <use xlink:href="./img/sprite.svg#inst" />
+                                </svg></a>
+                                <a href="#" class="socials__link"><svg class="socials__svg socials__svg_twitter">
+                                    <use xlink:href="./img/sprite.svg#twitter" />
+                                </svg></a>
+                            </div>
+                        </div>
                     </div>
+                    
                 </section>
 
 

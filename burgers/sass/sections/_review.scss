@@ -18,29 +18,36 @@
 .review__item{
     height: 50%;
     width:25%;
+    filter:grayscale(100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 
 // ------------------------------ COMMENT ----------------------
 
 .comment{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 50px 19px;
+    &:hover{
+        transition: .1s;
+        background: rgba(#454545, .7);
+    }
     &:hover [class^="comment__"]{
         visibility: visible;        
     }
 }
 
-@for $i from 1 to 9{
-    .comment:nth-child(#{$i}){
-        background-image: url(../img/review/photo-#{$i}.jpg);
-    }
-}
+// @for $i from 1 to 9{
+//     .comment:nth-child(#{$i}){
+//         background-image: url(../img/review/photo-#{$i}.jpg);
+//     }
+// }
 
 .comment__username{
     @include font-h3($color-white);
@@ -67,6 +74,8 @@
     color:#fff;
     visibility: hidden;
     text-decoration:none;
+    border:0;
+    cursor: pointer;
     &:hover{
         background-color: darken(#2f3234, 20%);
         transition: all .3s;

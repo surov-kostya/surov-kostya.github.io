@@ -125,10 +125,11 @@
     height: 50%;
     border-radius:4px;
     margin-top:5px;
+    overflow:hidden;
 }
 
 .form__input_textarea{
-    height:115px;
+    height:115px;    
 }
 
 .form__radio:checked + .form__block-title_radio:after {
