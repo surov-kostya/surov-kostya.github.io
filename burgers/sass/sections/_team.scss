@@ -22,8 +22,8 @@
 
 .team__header{
     @include font-h1($color-yellow);
-    margin-top:90px;
-    margin-bottom: 45px;
+    margin-top:76px;
+    margin-bottom: 68px;
 }
 
 // --------------------------------- TEAM PERSON ---------------------------
@@ -38,7 +38,7 @@
     @include font-h3($color-white);   
     position:relative;
     margin-left:20px;
-    margin-bottom:35px;
+    margin-bottom:33px;
     &:before{
         display:inline-block;
         left:-20px;
@@ -66,7 +66,7 @@
 
 .persons__position{
     @include font-h4($color-white);
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .persons__about{
@@ -87,7 +87,7 @@
 
 .persons__item_active .persons__name{
     color:$color-yellow;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     &:before{
         border-top:6px solid transparent;
         border-bottom:6px solid $color-yellow;

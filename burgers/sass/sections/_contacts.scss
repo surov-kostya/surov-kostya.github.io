@@ -7,7 +7,7 @@
     bottom:0;
     left:0;
     right:0;
-    height:60px;
+    height:58px;
     background: url(../img/contacts/footer-bg.jpg) top right no-repeat;
 }
 
@@ -17,9 +17,12 @@
     align-items: center;
 }
 
+.footer__contacts{
+}
+
 .footer__contacts p{
     @include font-text($color-white);
-    margin-bottom:14px;
+    margin-bottom:7px;
 }
 
 .footer__link{
@@ -38,15 +41,14 @@
     fill: $color-orange;
 }
 
-.footer__socials{
-
+.socials__link{
+    margin-left:17px;
 }
 
 .socials__svg{
     width:20px;
     height:20px;
     fill: $color-gray;
-    margin-left:20px;
     &:hover{
         fill:$color-white;
     }

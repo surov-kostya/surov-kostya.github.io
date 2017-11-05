@@ -9,12 +9,17 @@
     text-align: center;
 }
 
+.we__benefit-wrap{
+    flex:1;
+    display:flex;
+    padding: 0 7px;
+    align-items: center;
+}
+
 .we__benefit-list{
     display: flex;
+
     justify-content: space-between;
-    align-items: center;
-    flex:1;
-    padding: 0 7px;
 }
 
 .we__benefit-item{
@@ -29,24 +34,24 @@
 }
 
 .benefit__pic{
-    height: 119px;
+    height: 123px;
 }
 
 .benefit__svg_meat{
     width:98px;
-    height:89px;
+    height:94px;
     fill:#df5430;
 }
 
 .benefit__svg_hand{
     width:73px;
-    height:85px;
+    height:93px;
     fill:#f5b640;
 }
 
 .benefit__svg_natural{
-    width:91px;
-    height:77px;
+    width:90px;
+    height:86px;
     fill:#88c241;
 }
 
@@ -56,12 +61,12 @@
     font-style: normal;
     font-size:24px;
     line-height: 28.11px;
-    margin-bottom: 13.5px;
+    margin-bottom: 14px;
     letter-spacing: -0.6px;
 }
 
 .benefit__header_margin{
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .benefit__text{
@@ -74,7 +79,7 @@
 // ------------------------------ EMPTY BLOCK -------------------------
 
 .we__empty-block{
-    height:130px;
+    height:102px;
 }
 
 

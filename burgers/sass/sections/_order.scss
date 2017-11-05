@@ -13,7 +13,7 @@
 .order__header{
     @include font-h1($color-yellow);
     text-align: center;
-    margin-top:87px;
+    margin-top:77px;
     margin-bottom:70px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .form__radio-row{
-    min-height:30px;
+    min-height:31px;
     display: flex;
     align-items:flex-end;
     justify-content: flex-start;
@@ -71,7 +71,7 @@
 
     &_radio{
         position:relative;
-        margin: 0 25px;
+        margin: 0 23px;
         &:before{
             position:absolute;
             left: -25px;
@@ -129,7 +129,7 @@
 }
 
 .form__input_textarea{
-    height:115px;    
+    height:111px;    
 }
 
 .form__radio:checked + .form__block-title_radio:after {
@@ -143,7 +143,7 @@
 .form__btns{
     display: flex;
     align-items: flex-end;
-    min-height:60px;
+    min-height:55px;
 }
 
 .form__reset{    
