@@ -17,8 +17,7 @@
 .first-screen__header{
     height: 86px;
     display: flex;
-    align-items: flex-end; 
-    
+    align-items: flex-end;     
     margin-bottom:28px;
 }
 
@@ -31,7 +30,13 @@
 /* ------------------ NAVIGATION ------------------ */
 
 .navigation{
-    font-size: 0;
+    @include tablets{
+        display:none;
+    }
+
+    @include phones{
+        display:none;
+    }    
 }
 
 .navigation__item{
@@ -75,6 +80,16 @@
     align-items: center;
     justify-content: space-between;
     flex:1;
+
+    @include tablets{
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+
+    @include phones{
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
 }
 
 .first-screen__burger{
@@ -84,6 +99,18 @@
     background: url(../img/first-screen/burger.png) no-repeat;
     background-position: 34px -67px;
     margin-left:19px;
+
+    @include tablets{
+        margin-left:-5px;
+        flex-basis:457px;
+        height:380px;
+    }
+
+    @include phones{
+        margin-left:-5px;
+        flex-basis:457px;
+        height:380px;
+    }
 }
 
 .first-screen__drops{
@@ -98,6 +125,20 @@
     flex-flow:column;
     justify-content: space-between;
     padding: 69px 0 130px 0;
+
+    @include tablets{
+        margin-right:0;
+        text-align: center;
+        padding:0;
+        min-height:0;
+    }
+
+    @include phones{
+        margin-right:0;
+        text-align: center;
+        padding:0;
+        min-height:0;
+    }
 }
 
 .first-screen__title{
@@ -127,4 +168,38 @@
     fill: $color-white;
     width: 29px;
     height:17px;
+}
+
+// -------------------------- HAMBURGER MENU -------------------------
+
+.hamburger{
+    display:none;
+    height:22px;
+    width:24px;
+    margin-bottom:29px;
+    margin-left:30px;
+
+    @include tablets{
+        display:block;
+    }
+
+    @include phones{
+        display:block;
+    }
+}
+
+.hamburger__outer{
+    border-top: 4px solid $color-white;
+    border-bottom: 4px solid $color-white;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+}
+
+.hamburger__inner{
+    height:4px;
+    width:100%;
+    background-color: $color-white;
 }

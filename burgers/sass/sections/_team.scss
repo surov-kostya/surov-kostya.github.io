@@ -11,6 +11,16 @@
     width:540px;
     height: 100%;
     background-color:rgba(#2f3234, 0.95);
+
+    @include tablets{
+        left:0;
+        width:100vw;
+    }
+
+    @include phones{
+        left:0;
+        width:100vw;
+    }
 }
 
 .team__container{
@@ -18,6 +28,16 @@
 	display: flex;
     flex-flow:column;
     width:calc(100% - 80px*2);
+
+    @include tablets{
+        width:335px;
+        text-align:center;
+    }
+
+    @include phones{
+        width:335px;
+        text-align:center;
+    }
 }
 
 .team__header{
@@ -82,7 +102,17 @@
 
 .persons__item_active .persons__detail{
     display:flex;
-    margin-bottom:40px;    
+    margin-bottom:40px;
+    
+    @include tablets{
+        flex-flow:column;
+        align-items:center;
+    }
+
+    @include phones{
+        flex-flow:column;
+        align-items:center;
+    }
 }
 
 .persons__item_active .persons__name{

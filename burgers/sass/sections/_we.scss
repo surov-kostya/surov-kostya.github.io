@@ -5,7 +5,6 @@
 .we__header{
     @include font-h1($color-black);
     margin-top:65px;
-    // margin-bottom: 73px;
     text-align: center;
 }
 
@@ -97,6 +96,14 @@
 .we__veg_tomato{
     left:58px;
     bottom:0px;
+
+    @include tablets{
+        left:-10px;
+    }
+
+    @include phones{
+        left:-20px;
+    }
 }
 .we__veg_cheese{
     right:0px;
