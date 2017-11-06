@@ -62,6 +62,7 @@
 
     @include tablets{
         text-align: start;
+        width:99vh;
     }
 
     @include phones{

@@ -1,17 +1,25 @@
 .we{
     background-image: url(../img/we/bg.jpg);
+
+    @include tablets{
+        background-image: url(../img/we/bg-tablets.jpg);
+    }
 }
 
 .we__header{
     @include font-h1($color-black);
     margin-top:65px;
     text-align: center;
+
+    @include tablets{
+        margin-top: 112px;
+    }
 }
 
 .we__benefit-wrap{
     flex:1;
     display:flex;
-    padding: 0 7px;
+    padding: 0 6px 107px 0;
     align-items: center;
 }
 
@@ -23,6 +31,10 @@
 
 .we__benefit-item{
     flex-basis: 290px;
+
+    @include tablets{
+        flex-basis: 219px;
+    }
 }
 
 /* ---------------- BENEFITS ----------------- */

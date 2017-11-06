@@ -51,12 +51,13 @@
 
     @include tablets{
         align-items: center;
-        padding-top:20px;
+        text-align:center;
+        padding:33px 50px 40px 50px;
     }
 
     @include tablets{
         align-items: center;
-        padding-top:20px;
+        padding:33px 50px 40px 50px;
     }
 }
 
@@ -71,6 +72,13 @@
     line-height:24px;
     color:#fff;
     visibility: hidden;
+
+    @include tablets{
+        margin-bottom:25px;
+    }
+        
+    @include tablets{
+    }
 }
 
 .comment__btn{

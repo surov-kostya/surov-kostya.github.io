@@ -2,12 +2,11 @@
     background-image: url(../img/form/bg.jpg);
 }
 
-.order__texture{
-    background-image: url(../img/form/texture.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-	background-size: cover;
-	height:100vh;
+.order__container{
+    @include tablets{
+        display:flex;
+        align-items:center;
+    }
 }
 
 .order__header{
@@ -15,6 +14,10 @@
     text-align: center;
     margin-top:77px;
     margin-bottom:70px;
+
+    @include tablets{
+        margin-top:109px;
+    }
 }
 
 // --------------------------- FORM --------------------------
@@ -25,6 +28,7 @@
 
     @include tablets{
         flex-wrap:wrap;
+        width:470px;
     }
 
     @include phones{
@@ -88,6 +92,10 @@
     display: flex;
     align-items:flex-end;
     justify-content: flex-start;
+
+    @include tablets{
+        min-height:43px;
+    }
 
     @include phones{
         justify-content: center;
@@ -174,6 +182,7 @@
     border-radius:7px;
     margin-top:5px;
     overflow:hidden;
+    padding: 0 23px;
     @include font-text($color-black);
 
     &:focus{
@@ -198,6 +207,10 @@
     display: flex;
     align-items: flex-end;
     min-height:55px;
+
+    @include tablets{
+        min-height:75px;
+    }
 
     @include phones{
         justify-content: center;

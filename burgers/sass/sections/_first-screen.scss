@@ -80,46 +80,46 @@
 
 .first-screen__content{
     display:flex;
+    flex-wrap:wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex:1;
-    padding:50px 56px 0px 17px;
+    padding:53px 37px 0px 0px;
 
     @include tablets{
-        flex-wrap:wrap;
         justify-content:space-around;
+        padding:50px 0 70px 0;
     }
 
     @include phones{
-        flex-wrap:wrap;
         justify-content:space-around;
     }
 }
 
 .first-screen__burger-wrap{
-    flex-basis: 451px;
+    flex-basis: 465px;
     height:325px;
     width:367px;
     display:flex;
     align-items: flex-end;
+
+    
+    @include tablets{
+        height:424px;
+        padding-left:5px;
+    }
+        
+    // @include phones{
+    //     margin-left:-5px;
+    //     flex-basis:457px;
+    //     height:380px;
+    // }
 }
 
 .first-screen__burger{
     height:424px;
     width:451px;
     background: url(../img/first-screen/burger.png) no-repeat center bottom;
-
-    // @include tablets{
-    //     margin-left:-5px;
-    //     flex-basis:457px;
-    //     height:380px;
-    // }
-
-    // @include phones{
-    //     margin-left:-5px;
-    //     flex-basis:457px;
-    //     height:380px;
-    // }
 }
 
 .first-screen__info{
@@ -128,13 +128,15 @@
     display:flex;
     flex-flow:column;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
 
     @include tablets{
         margin-right:0;
         text-align: center;
-        padding:0;
+        padding-bottom:0;
+        padding-right:7px;
         min-height:0;
+        height:235px;
     }
 
     @include phones{
@@ -182,8 +184,9 @@
     display:none;
     height:22px;
     width:24px;
-    margin-bottom:29px;
-    margin-left:33px;
+    margin-bottom:28px;
+    margin-left:29px;
+    margin-right:9px;
 
     @include tablets{
         display:block;
