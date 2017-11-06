@@ -17,9 +17,19 @@
     margin-bottom:70px;
 }
 
+// --------------------------- FORM --------------------------
+
 .form_container{
     display: flex;
     justify-content: space-between;
+
+    @include tablets{
+        flex-wrap:wrap;
+    }
+
+    @include phones{
+        flex-wrap:wrap;
+    }
 }
 
 .form__left{
@@ -28,6 +38,15 @@
     justify-content: flex-start;
     flex:1;
     padding-right:1%;
+    flex-basis:460px;
+
+    @include tablets{
+        padding:0;
+    }
+
+    @include phones{
+        padding:0;
+    }
 }
 
 .form__right{
@@ -36,6 +55,15 @@
     justify-content: space-between;
     flex:1;
     padding-left:1%;
+    flex-basis:460px;
+
+    @include tablets{
+        padding:0;
+    }
+
+    @include phones{
+        padding:0;
+    }
 }
 
 .form__row{
@@ -49,6 +77,10 @@
     display: flex;
     align-items:flex-end;
     justify-content: flex-start;
+
+    @include phones{
+        justify-content: center;
+    }
 }
 
 .form__chek-row{
@@ -56,6 +88,10 @@
     display: flex;
     align-items:flex-end;
     justify-content: flex-start;
+
+    @include phones{
+        justify-content: center;
+    }
 }
 
 .form__block{
@@ -63,6 +99,18 @@
     padding-right: 4%;
     &:last-child{
         padding-right:0;
+    }
+    
+    @include phones{
+        &:nth-child(3){
+            padding-right:0;
+        }
+    }
+}
+
+.form__block_phone{
+    @include phones{
+        display:none;
     }
 }
 
@@ -123,9 +171,15 @@
 .form__input{
     width: 100%;
     height: 50%;
-    border-radius:4px;
+    border-radius:7px;
     margin-top:5px;
     overflow:hidden;
+    @include font-text($color-black);
+
+    &:focus{
+        outline: none;
+        border: 2px solid $color-yellow;
+    }
 }
 
 .form__input_textarea{
@@ -144,6 +198,10 @@
     display: flex;
     align-items: flex-end;
     min-height:55px;
+
+    @include phones{
+        justify-content: center;
+    }
 }
 
 .form__reset{    

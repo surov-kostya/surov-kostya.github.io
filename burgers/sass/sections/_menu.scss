@@ -56,9 +56,17 @@
     display:inline-block;
     @include font-h2($color-white);
     transform:rotate(-90deg);
-    width:900px;
+    width:95vh;
     height:40px;
     text-align: center;
+
+    @include tablets{
+        text-align: start;
+    }
+
+    @include phones{
+        text-align: start;
+    }
 }
 
 
@@ -71,10 +79,34 @@
     height:100%;
     padding:65px 36px;
     display:none;
+
+    @include tablets{
+        width:auto;
+        flex-grow:1;
+        flex-shrink: 9;
+    }
+    @include phones{
+        width:auto;
+        flex-grow:1;
+        flex-shrink: 9;
+    }
 }
 
 // ------------------------ ACTIVE ---------------------
 
+.menu-acco__item_active{
+    @include tablets{
+        flex:1;
+    }
+    @include phones{
+        flex:1;
+    }
+}
+
 .menu-acco__item_active .menu-acco__text{
     display:initial;
+}
+
+.menu-acco__item_active .menu-acco__title{
+    color: $color-yellow;
 }
