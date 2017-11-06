@@ -82,36 +82,4 @@
 }
 
 
-/* ----------------------------- VEGETABLES ----------------------- */
-
-.we__veg{
-    position:absolute;
-}
-
-.we__veg_cream{
-    left:0px;
-    top:28px;
-}
-
-.we__veg_tomato{
-    left:58px;
-    bottom:0px;
-
-    @include tablets{
-        left:-10px;
-    }
-
-    @include phones{
-        left:-20px;
-    }
-}
-.we__veg_cheese{
-    right:0px;
-    bottom:0px;
-}
-
-.we__veg_green{
-    top:55px;
-    right: 0px;
-}
 
