@@ -57,7 +57,7 @@ a {
 
 .wrapper {
   position: relative;
-  width: 68.75rem;
+  width: 100%;
   overflow: hidden;
   min-height: 100%; }
 
@@ -66,7 +66,7 @@ section {
   background-position: right top;
   background-size: cover;
   position: relative;
-  height: 40.625rem;
+  height: 100vh;
   min-height: 40.625rem;
   overflow: hidden; }
 
@@ -85,6 +85,13 @@ section {
 
 .fixed-nav-bar {
   position: fixed; }
+
+.title-h1 {
+  text-transform: uppercase;
+  font-family: 'gagalin', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.5rem; }
 
 .visually-hidden {
   position: absolute;
@@ -584,6 +591,15 @@ section {
   fill: #585858; }
   .socials__svg:hover {
     fill: #ffffff; }
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/contacts/bg.jpg) no-repeat center center;
+  background-size: cover; }
 
 .order {
   background-image: url(../img/form/bg.jpg); }
