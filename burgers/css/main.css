@@ -625,7 +625,9 @@ section {
   color: #fff;
   visibility: hidden;
   text-overflow: hidden;
-  overflow: hidden; }
+  overflow: hidden;
+  -ms-flex-negative: 9;
+  flex-shrink: 9; }
   @media screen and (max-width: 768px) {
     .comment__text {
       margin-top: -0.625rem; } }
@@ -639,6 +641,8 @@ section {
   width: 6.875rem;
   -ms-flex-preferred-size: 2.3125rem;
   flex-basis: 2.3125rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-radius: 0.3125rem;
   background-color: #2f3234;
   visibility: hidden;
