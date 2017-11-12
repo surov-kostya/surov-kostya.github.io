@@ -20,6 +20,22 @@
     align-items: flex-end;     
 }
 
+.first-screen__logo{
+    margin-right:20px;
+
+    @include tablets{
+        margin-left:2px;
+    }
+
+    @include phones{
+		margin-left:7px;
+	}
+}
+
+.logo-link{
+    display:block;
+}
+
 .first-screen__menu{
     margin-left:auto;
     margin-bottom:25px;
@@ -84,15 +100,15 @@
     align-items: center;
     justify-content: center;
     flex:1;
-    padding:53px 37px 0px 0px;
+    padding:43px 37px 0px 0px;
 
     @include tablets{
         justify-content:space-around;
-        padding:50px 0 70px 0;
+        padding:46px 0 73px 0;
     }
 
     @include phones{
-        justify-content:space-around;
+        padding:107px 0 0 42px;        
     }
 }
 
@@ -109,18 +125,26 @@
         padding-left:5px;
     }
         
-    // @include phones{
-    //     margin-left:-5px;
-    //     flex-basis:457px;
-    //     height:380px;
-    // }
+    @include phones{
+        height:261px;
+        width:295px;
+        margin-bottom:18px;
+    }
 }
 
 .first-screen__burger{
     height:424px;
     width:451px;
     background: url(../img/first-screen/burger.png) no-repeat center bottom;
+
+    @include phones{
+        height:333px;
+        width:363px;
+        background: url(../img/first-screen/burger-phones.png) no-repeat center bottom;
+    }
 }
+
+
 
 .first-screen__info{
     flex-basis: 405px;
@@ -142,7 +166,7 @@
     @include phones{
         margin-right:0;
         text-align: center;
-        padding:0;
+        padding-right:45px;
         min-height:0;
     }
 }
@@ -150,6 +174,11 @@
 .first-screen__title{
     @include font-h1($color-yellow);
     margin-bottom: 19px;
+
+    @include phones{
+        font-size:63px;
+        margin-bottom: 0px;
+    }
 }
 
 .first-screen__text{
@@ -160,6 +189,10 @@
     font-size:65px;
     line-height: 60px;
     letter-spacing:-1.63px;
+
+    @include phones{
+        font-size:54px;
+    }
 }
 
 /* ---------------------------- ARROW_SCROLL -------------------------- */
@@ -168,14 +201,26 @@
     width: 29px;
     align-self: center;
     margin-bottom: 35px;
-    height: 86px;
+    height:75px;
+
+    @include tablets{
+        height: 85px;
+    }
+
+    @include phones{
+        height: 75px;
+    }
 }
 
 .arrow-scroll{
     fill: $color-white;
     width: 29px;
     height:17px;
-    margin-top:64px
+    margin-top:54px;    
+
+    @include tablets{
+        margin-top:64px;
+    }
 }
 
 // -------------------------- HAMBURGER MENU -------------------------

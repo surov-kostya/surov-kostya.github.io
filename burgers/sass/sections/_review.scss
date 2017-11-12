@@ -40,7 +40,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 48px 20px;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
     &:hover{
         transition: .1s;
         background: rgba(#454545, .7);
@@ -52,51 +52,83 @@
     @include tablets{
         align-items: center;
         text-align:center;
-        padding:33px 50px 40px 50px;
+        padding:32px 54px 20px 54px;
     }
 
-    @include tablets{
-        align-items: center;
-        padding:33px 50px 40px 50px;
+    @include phones{
+        padding:43px 54px;
     }
 }
 
 .comment__username{
     @include font-h3($color-white);
     visibility: hidden;
+    margin-bottom:7px;
+
+    @include tablets{
+        align-items: center;
+        margin-bottom:0;
+    }
+
+    @include phones{
+        font-size:24px;          
+    }
 }
 
 .comment__text{
     @include font-text($color-white);
-    margin-top:7px;
     line-height:24px;
     color:#fff;
     visibility: hidden;
+    text-overflow: hidden;
+    overflow:hidden;
 
     @include tablets{
-        margin-bottom:25px;
+        margin-top:-10px;
     }
         
-    @include tablets{
+    @include phones{
+        height:0;
     }
 }
 
 .comment__btn{
+    position:relative;
     display:inline-block;
-    padding:10px 15px;;
+    width:110px;
+    flex-basis:37px;
     border-radius: 5px;
     background-color:#2f3234;
-    text-transform: uppercase;
-    font-size:13px;
-    font-family: "Ubuntu";
-    font-weight: 500;
-    color:#fff;
     visibility: hidden;
-    text-decoration:none;
     border:0;
     cursor: pointer;
+
+    @include phones{
+        width:126px;
+    }
+
     &:hover{
         background-color: darken(#2f3234, 20%);
         transition: all .3s;
+    }
+
+    &:after{
+        position:absolute;
+        content:"Подробнее";
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        text-transform: uppercase;
+        font-size:13px;
+        font-family: "Ubuntu";
+        font-weight: 500;
+        color:#fff;
+        text-decoration:none;
+        line-height:37px;
+
+        @include phones{
+            content:"Читать отзыв";
+        }
     }
 }

@@ -2,6 +2,8 @@
     background-image: url(../img/contacts/bg.jpg);
 }
 
+// ---------------------------- FOOTER ---------------------------
+
 .footer{
     position:absolute;
     bottom:0;
@@ -9,20 +11,40 @@
     right:0;
     height:58px;
     background: url(../img/contacts/footer-bg.jpg) top right no-repeat;
+
+    @include tablets{
+        height:61px;
+    }
+
+    @include phones{
+        height:115px;
+    }
 }
 
 .footer__container{
     flex-flow:row;
     justify-content: space-between;
     align-items: center;
+
+    @include phones{
+        flex-flow:column;
+        justify-content: space-around;
+    }
 }
 
 .footer__contacts{
+    @include phones{
+        text-align: center;
+    }
 }
 
 .footer__contacts p{
     @include font-text($color-white);
     margin-bottom:7px;
+
+    @include phones{
+        margin-top:7px;
+    }
 }
 
 .footer__link{
@@ -41,6 +63,15 @@
     fill: $color-orange;
 }
 
+.footer__socials{       
+    @include phones{
+        margin-bottom:5px;
+        margin-right:21px;
+    }
+}
+
+// ---------------------------------- SOCIALS --------------------------
+
 .socials__link{
     margin-left:17px;
 }
@@ -53,6 +84,8 @@
         fill:$color-white;
     }
 }
+
+// ------------------------------ MAP ---------------------------------
 
 
 .contacts__map{

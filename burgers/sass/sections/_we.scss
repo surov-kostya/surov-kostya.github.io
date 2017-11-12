@@ -4,6 +4,10 @@
     @include tablets{
         background-image: url(../img/we/bg-tablets.jpg);
     }
+
+    @include phones{
+        background-image: url(../img/we/bg-phones.jpg);
+    }
 }
 
 .we__header{
@@ -14,19 +18,43 @@
     @include tablets{
         margin-top: 112px;
     }
+
+    @include phones{
+        font-size: 50px;
+        margin-top:49px;
+    }
 }
 
 .we__benefit-wrap{
     flex:1;
     display:flex;
-    padding: 0 6px 107px 0;
+    padding: 0 6px 107px 4px;
     align-items: center;
+
+    @include tablets{
+        padding-bottom:210px;
+    }
+
+    @include phones{
+        padding-top:70px;
+        padding-bottom:143px;
+    }
 }
 
 .we__benefit-list{
     display: flex;
-
     justify-content: space-between;
+
+    @include tablets{
+        
+    }
+
+    @include phones{
+        height:100%;
+        flex-flow: column;
+        justify-content: space-around;
+
+    }
 }
 
 .we__benefit-item{
@@ -35,6 +63,10 @@
     @include tablets{
         flex-basis: 219px;
     }
+
+    @include phones{
+        flex-basis:160px;
+    }
 }
 
 /* ---------------- BENEFITS ----------------- */
@@ -42,28 +74,65 @@
 .benefit{
     color:$color-black;
     text-align: center;
+
+    @include phones{
+        display:flex;
+        align-items: flex-start;
+        text-align:left;
+    }
 }
 
 .benefit__pic{
     height: 123px;
+
+    @include phones{
+        width:135px;
+        height:91px;
+        text-align:center;
+    }
 }
+
+// ---------------------------- SVG SIZES ---------------------------
 
 .benefit__svg_meat{
     width:98px;
     height:94px;
     fill:#df5430;
+
+    @include phones{
+        height:96px;
+        margin-right:20px;
+    }
 }
 
 .benefit__svg_hand{
     width:73px;
     height:93px;
     fill:#f5b640;
+
+    @include phones{
+        height:87px;
+        margin-right:19px;
+    }
 }
 
 .benefit__svg_natural{
     width:90px;
     height:86px;
     fill:#88c241;
+
+    @include phones{        
+        margin-right:20px;
+        height:76px;
+    }
+}
+
+// ------------------------ BENEFIT INFORMATION ---------------------
+
+.benefit__info{
+    @include phones{
+        flex:1;
+    }
 }
 
 .benefit__header{
@@ -78,6 +147,11 @@
 
 .benefit__header_margin{
     margin-bottom: 5px;
+
+    @include phones{
+        margin-bottom: 10px;
+        margin-top:20px;
+    }
 }
 
 .benefit__text{
@@ -86,12 +160,4 @@
     font-weight: 300;
     line-height: 24.05px;
 }
-
-// ------------------------------ EMPTY BLOCK -------------------------
-
-.we__empty-block{
-    height:102px;
-}
-
-
 

@@ -7,6 +7,10 @@
         display:flex;
         align-items:center;
     }
+
+    // @include phones{
+    //     width:94%;
+    // }
 }
 
 .order__header{
@@ -17,6 +21,12 @@
 
     @include tablets{
         margin-top:109px;
+    }
+
+    @include phones{
+        font-size:50px;
+        margin-top:61px;
+        margin-bottom:26px;
     }
 }
 
@@ -32,7 +42,7 @@
     }
 
     @include phones{
-        flex-wrap:wrap;
+        width: 100%;
     }
 }
 
@@ -84,6 +94,8 @@
 
     @include phones{
         justify-content: center;
+        padding-left: 23px;
+        padding-top:35px;
     }
 }
 
@@ -94,11 +106,14 @@
     justify-content: flex-start;
 
     @include tablets{
-        min-height:43px;
+        min-height:41px;
     }
 
     @include phones{
+        min-height:43px;
         justify-content: center;
+        padding-left: 22px;
+        padding-top:37px;
     }
 }
 
@@ -110,6 +125,8 @@
     }
     
     @include phones{
+        padding-right:2%;
+
         &:nth-child(3){
             padding-right:0;
         }
@@ -153,6 +170,7 @@
     &_checkbox{
         position:relative;
         margin: 0 25px;
+
         &:before{
             position:absolute;
             left: -25px;
@@ -162,6 +180,7 @@
             height: 15px;           
             background-color:$color-white;            
         }
+
         &:after{
             position:absolute;
             left: -23px;
@@ -189,6 +208,11 @@
         outline: none;
         border: 2px solid $color-yellow;
     }
+
+    @include phones{
+        border-radius:4px;
+        padding: 0 20px;
+    }
 }
 
 .form__input_textarea{
@@ -214,6 +238,8 @@
 
     @include phones{
         justify-content: center;
+        padding-right:8px;
+        padding-bottom:1px;
     }
 }
 
