@@ -51,10 +51,10 @@ a{
 
 .wrapper{
 	position: relative;
-	// width:100%;  //real
+	width:100%;  //real
 	// width:1100px;  // desktop
 	// width:calc(768 / 16 * 1rem);  // tablets
-	width:calc(480 / 16 * 1rem);  // phones
+	// width:calc(480 / 16 * 1rem);  // phones
 	overflow: hidden;
 	min-height: 100%;
 }
@@ -64,10 +64,10 @@ section{
     background-position: center top;
 	background-size: cover;
 	position:relative;
-	// height:100vh;  // real
+	height:100vh;  // real
 	// height:650px;  // desktop
 	// height:calc(1024 / 16 * 1rem);  //tablets
-	height: calc(800 / 16 * 1rem);  //phones
+	// height: calc(800 / 16 * 1rem);  //phones
 	min-height:650px;
 	overflow:hidden;
 }
