@@ -1019,8 +1019,18 @@ section {
 .form__radio:checked + .form__block-title_radio:after {
   content: ""; }
 
+.form__radio:focus + .form__block-title_radio:before {
+  border: 0.125rem solid #f9b43b;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .form__checkbox:checked + .form__block-title_checkbox:after {
   content: ""; }
+
+.form__checkbox:focus + .form__block-title_checkbox:before {
+  border: 0.125rem solid #f9b43b;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .form__btns {
   display: -webkit-box;
@@ -1050,7 +1060,11 @@ section {
   color: #ffffff;
   cursor: pointer;
   margin-left: 1.1875rem;
-  height: 2.1875rem; }
+  height: 2.1875rem;
+  padding: 0 0.625rem; }
+  .form__reset:focus {
+    outline: none;
+    border: 0.125rem solid #f9b43b; }
 
 .menu {
   background-image: url(../img/menu/bg.jpg); }
@@ -1332,9 +1346,11 @@ section {
     top: 0; }
 
 .order-btn {
+  border: 0px;
   background-color: #e45028;
   border-radius: 0.25rem;
-  padding: 0.625rem 1rem;
+  height: 2.1875rem;
+  width: 6.0625rem;
   margin-right: 1px;
   color: #fff;
   text-decoration: none;
@@ -1342,11 +1358,15 @@ section {
   font-size: 0.8125rem;
   font-family: "Ubuntu";
   font-weight: 500;
-  display: block; }
+  display: block;
+  cursor: pointer; }
   .order-btn:hover {
     background-color: #932e13;
     -webkit-transition: all .2s;
     transition: all .2s; }
+  .order-btn:focus {
+    outline: none;
+    border: 0.125rem solid #f9b43b; }
 
 .order-btn_first-screen {
   margin-bottom: 1.4375rem;

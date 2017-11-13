@@ -1,7 +1,9 @@
 .order-btn {
+    border: 0px;
     background-color: #e45028;
     border-radius: 4px;
-    padding: 10px 16px;
+    height: 35px;
+    width: 97px;
     margin-right:1px;
     color:#fff;
     text-decoration: none;
@@ -10,9 +12,15 @@
     font-family: "Ubuntu";
     font-weight: 500; 
     display:block;
+    cursor: pointer;
     &:hover{
         background-color: darken(#e45028, 20%);
         transition: all .2s;
+    }
+
+    &:focus{
+        outline: none;
+        border: 2px solid $color-yellow;
     }
 }
 
