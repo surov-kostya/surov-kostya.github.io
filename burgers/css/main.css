@@ -1076,8 +1076,9 @@ section {
   font-style: normal;
   font-size: 4.5rem;
   color: #ffffff;
-  margin-top: 6.125rem;
-  margin-left: 1.125rem; }
+  position: absolute;
+  left: 5.875rem;
+  top: 6.9375rem; }
 
 .menu__accordeon {
   position: absolute;
