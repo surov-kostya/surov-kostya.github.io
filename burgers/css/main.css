@@ -71,6 +71,12 @@ section {
   font-weight: normal;
   font-style: normal;
   font-size: 4.5rem; }
+  .section-title_black {
+    color: #2f3234; }
+  .section-title_yellow {
+    color: #f9b43b; }
+  .section-title_white {
+    color: #ffffff; }
 
 .container {
   width: 86%;
@@ -1007,6 +1013,7 @@ section {
       padding: 0 1.25rem; } }
 
 .form__input_textarea {
+  resize: none;
   height: 6.9375rem; }
 
 .form__radio:checked + .form__block-title_radio:after {
