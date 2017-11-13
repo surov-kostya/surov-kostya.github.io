@@ -21,7 +21,7 @@ function init(){
     for (var i = 0; i < placeList.length; i++) {
         myPlacemark = new ymaps.Placemark(placeList[i], { 
             hintContent: 'Burgers', 
-            balloonContent: 'Caffee'            
+            balloonContent: 'Самые вкусные бургеры на свете'            
         },
         
         {
