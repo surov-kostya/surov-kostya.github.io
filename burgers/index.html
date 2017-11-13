@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" href="./img/favicon.png">
         <link rel="stylesheet" href="./css/normalize.css">	
         <link rel="stylesheet" href="./css/main.css">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="./js/svg4everybody.js"></script>
         <script>
           svg4everybody();
@@ -448,7 +449,9 @@
                         <li class="contacts__item">Санкт-Петербург, ул. Куйбышева, д.5</li>
                         <li class="contacts__item">Санкт-Петербург, ул. Ленина, д.32</li>
                     </ul>
-                    <div class="contacts__map"></div>                  
+                    <div class="contacts__map" id="map">
+                        
+                    </div>                  
                     <div class="footer">
                         <div class="container footer__container">
                             <div class="footer__contacts">
@@ -524,5 +527,6 @@
                 </div>
             </div>
         </div>
+        <script src="./js/map.js"></script>      
     </body>
 </html>
