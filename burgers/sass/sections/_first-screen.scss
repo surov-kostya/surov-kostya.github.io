@@ -96,13 +96,14 @@
 
 .first-screen__content{
     display:flex;
-    flex-wrap:wrap;
+    // flex-wrap:wrap;
     align-items: center;
     justify-content: center;
     flex:1;
     padding:43px 37px 0px 0px;
 
     @include tablets{
+        flex-wrap:wrap;
         justify-content:space-around;
         padding:46px 0 73px 0;
     }
