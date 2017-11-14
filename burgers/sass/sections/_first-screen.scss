@@ -45,6 +45,8 @@
 /* ------------------ NAVIGATION ------------------ */
 
 .navigation{
+    text-align:center;
+
     @include tablets{
         display:none;
     }

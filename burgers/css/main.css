@@ -155,13 +155,14 @@ section {
   margin-bottom: 1.5625rem; }
 
 /* ------------------ NAVIGATION ------------------ */
-@media screen and (max-width: 768px) {
-  .navigation {
-    display: none; } }
-
-@media screen and (max-width: 480px) {
-  .navigation {
-    display: none; } }
+.navigation {
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .navigation {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .navigation {
+      display: none; } }
 
 .navigation__item {
   display: inline-block;
