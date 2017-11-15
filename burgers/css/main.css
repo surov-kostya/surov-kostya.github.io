@@ -1379,3 +1379,120 @@ section {
 .order-btn_first-screen {
   margin-bottom: 1.4375rem;
   margin-right: 0.125rem; }
+
+.fullscreen-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(47, 50, 52, 0.99);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  z-index: -1; }
+
+.fullscreen-menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.fullscreen-menu__logo {
+  margin-top: 0.75rem;
+  margin-left: 1.75rem; }
+
+.fullscreen-menu__exit-btn {
+  border: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-top: 2rem;
+  margin-right: 2.125rem; }
+
+.fullscreen-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.fullscreen-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .fullscreen-menu__item:after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 0.4375rem;
+    height: 0.4375rem;
+    margin: 1.75rem 0; }
+  .fullscreen-menu__item:last-child:after {
+    display: none; }
+
+.fullscreen-menu__link {
+  font-size: 1.5rem;
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase; }
+  .fullscreen-menu__link:hover {
+    text-decoration: underline; }
+
+.exit-btn {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer; }
+
+.exit-btn__block {
+  position: absolute;
+  height: 1.5rem;
+  width: 0.3125rem;
+  background-color: #c1c2c2;
+  border-radius: 0.1875rem;
+  top: -0.125rem;
+  left: 0.5rem; }
+
+.exit-btn__block_first {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.exit-btn__block_second {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }

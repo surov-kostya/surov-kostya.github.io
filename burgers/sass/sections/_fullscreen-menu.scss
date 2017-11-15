@@ -1,0 +1,106 @@
+.fullscreen-menu{
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background-color: rgba(#2f3234, .99);
+    display:flex;
+    justify-content: center;
+    flex-flow:column;
+    z-index: -1;
+}
+
+// ------------------------------- HEADER ------------------------------
+
+.fullscreen-menu__header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fullscreen-menu__logo{
+    margin-top: 12px;
+    margin-left: 28px;
+}
+
+.fullscreen-menu__exit-btn{
+    border: 0;
+    height:20px;
+    width:20px;
+    margin-top:32px;
+    margin-right:34px;
+}
+
+// ------------------------------- MENU -------------------------------
+
+
+.fullscreen-menu__list{
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items:center;
+    flex:1;
+}
+
+.fullscreen-menu__item{
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+
+    &:after{
+        content:"";
+        display:block;
+        border-radius:50%;
+        background-color:$color-white;
+        width:7px;
+        height:7px;
+        margin:28px 0;
+    }
+
+    &:last-child{
+        &:after{
+            display:none;
+        }
+    }
+
+}
+
+.fullscreen-menu__link{
+    @include font-ham-menu($color-white);
+
+    &:hover{
+        text-decoration:underline;
+    }
+}
+
+
+
+// ---------------------------- EXIT BUTTON ---------------------------
+
+.exit-btn{
+    position:relative;
+    background-color: rgba(#fff, 0);
+    cursor: pointer;
+}
+
+.exit-btn__block{
+    position:absolute;
+    height:24px;
+    width: 5px;
+    background-color: #c1c2c2;
+    border-radius:3px;
+    top:-2px;
+    left:8px;
+}
+
+.exit-btn__block_first{
+    transform: rotate(45deg);
+}
+
+.exit-btn__block_second{
+    transform: rotate(-45deg);
+}
