@@ -24,6 +24,12 @@ html {
   font-size: 1rem;
   width: 100%;
   height: 100%; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 0.8125rem; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 0.75rem; } }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -215,6 +221,7 @@ section {
       padding: 6.6875rem 0 0 2.625rem; } }
 
 .first-screen__burger-wrap {
+  position: relative;
   -ms-flex-preferred-size: 29.0625rem;
   flex-basis: 29.0625rem;
   height: 20.3125rem;
@@ -236,13 +243,15 @@ section {
       margin-bottom: 1.125rem; } }
 
 .first-screen__burger {
+  position: absolute;
   height: 26.5rem;
   width: 28.1875rem;
-  background: url(../img/first-screen/burger.png) no-repeat center bottom; }
+  background: url(../img/first-screen/burger.png) no-repeat center bottom;
+  background-size: cover; }
   @media screen and (max-width: 480px) {
     .first-screen__burger {
       height: 20.8125rem;
-      width: 22.6875rem;
+      width: 25rem;
       background: url(../img/first-screen/burger-phones.png) no-repeat center bottom; } }
 
 .first-screen__info {
@@ -545,6 +554,10 @@ section {
   font-family: "Ubuntu";
   font-weight: 300;
   line-height: 1.50313rem; }
+  @media screen and (max-width: 480px) {
+    .benefit__text {
+      overflow: hidden;
+      max-height: 4.375rem; } }
 
 .review {
   background-image: url(../img/review/bg.jpg); }
@@ -1168,6 +1181,8 @@ section {
   width: 33.75rem;
   height: 100%;
   padding: 4.0625rem 2.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: none; }
   @media screen and (max-width: 768px) {
     .menu-acco__text {

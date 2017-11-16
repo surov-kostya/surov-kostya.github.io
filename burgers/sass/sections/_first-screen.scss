@@ -116,12 +116,12 @@
 }
 
 .first-screen__burger-wrap{
+    position:relative;
     flex-basis: 465px;
     height:325px;
     width:367px;
     display:flex;
     align-items: flex-end;
-
     
     @include tablets{
         height:424px;
@@ -137,13 +137,15 @@
 }
 
 .first-screen__burger{
+    position:absolute;
     height:424px;
     width:451px;
     background: url(../img/first-screen/burger.png) no-repeat center bottom;
+    background-size:cover;
 
     @include phones{
         height:333px;
-        width:363px;
+        width:400px;
         background: url(../img/first-screen/burger-phones.png) no-repeat center bottom;
     }
 }

@@ -80,6 +80,8 @@
     width:540px;
     height:100%;
     padding:65px 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display:none;
 
     @include tablets{

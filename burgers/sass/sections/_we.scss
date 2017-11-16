@@ -159,5 +159,10 @@
     font-family: "Ubuntu";
     font-weight: 300;
     line-height: 24.05px;
+
+    @include phones{
+        overflow: hidden;
+        max-height: 70px;
+    }
 }
 
