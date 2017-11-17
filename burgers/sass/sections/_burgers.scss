@@ -1,8 +1,208 @@
 .burgers{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,ed9139+50,f9b43b+100 */
     background: #f9b43b; /* Old browsers */
     background: -moz-linear-gradient(top, #f9b43b 0%, #ed9139 50%, #f9b43b 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #f9b43b 0%,#ed9139 50%,#f9b43b 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #f9b43b 0%,#ed9139 50%,#f9b43b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 ); /* IE6-9 */
+}
+
+.burgers__container{
+    margin:0 20px;
+}
+
+.burgers__carousel{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+
+.burgers__item{
+    flex:1;
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.burgers__pic{
+    background-image: url(/../img/burgers/burger-1.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size:auto auto;
+    flex-basis:451px;
+    min-height:472px;
+    flex-shrink:1;
+    flex-grow: 1;
+    position:relative;
+}
+
+.burgers__energy{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    &:after{
+        display:block;
+        content:'ККАЛ';
+        @include font-h3($color-white);
+        text-align: center;
+        color: rgba($color-white, .5);
+    }
+}
+
+.burgers__energy-svg{
+    width:62px;
+    height: 62px;
+    fill:$color-white;
+    fill-opacity: .5;
+}
+
+.burgers__kkal{
+    position: absolute;
+    top:30px;
+    left:13px;
+    @include font-h3($color-white);
+    font-size:23px;
+    color: rgba($color-white, .5);
+}
+
+.burgers__info{
+    display: flex;
+    flex-flow:column;
+    flex-shrink:1;
+    flex-grow: 1;
+    flex-basis:445px;
+}
+
+.burgers__title{
+    line-height: 62px;
+}
+
+.burgers__text{
+    @include font-text($color-white);
+    margin:40px 0;
+}
+
+.burgers__order{
+    display: flex;
+    align-items:flex-end;
+}
+
+.burgers__price{
+    h1{
+        @include font-h1($color-orange);
+        display: inline;
+    }
+
+    h2{
+        @include font-h2($color-orange);
+        display: inline;
+    }
+}
+
+// ------------------------ CONSIST ----------------
+
+.consist__btn{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:90px;
+    height:90px;
+    background-color: $color-orange;
+    border-radius:5px;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    &:hover{
+        background-color: darken($color-orange, 20%);
+    }
+}
+
+.consist__svg{
+    fill: $color-white;
+    width:47px;
+    height:44px;
+    margin-bottom:8px;
+}
+
+.consist__title{
+    @include font-h3($color-white);
+}
+
+.consist__table{
+    position:absolute;
+    top:0;
+    left:90px;
+}
+
+// ----------------- CONSIST-TABLE --------------
+
+.consist-table{
+    background-color: rgba($color-white, .8);
+    border-radius: 5px;
+    width:270px;
+    @include font-text($color-black);
+    padding: 20px;
+    display:none;
+}
+
+.consist-table__svg{
+    width:45px;
+    height:40px;
+
+    &_beef, &_sauce{
+        fill: $color-orange;
+    }
+    &_buns, &_cucumber{
+        fill: $color-yellow;
+    }
+    &_salad, &_cheese{
+        fill: $color-green;
+    }
+}
+
+.consist-table__cell{
+    &:first-child{
+        text-align: left;
+    }
+
+    &::nth-child(2){
+        text-align: left;
+    }
+
+    &:last-child{
+        text-align: right;
+    }
+}
+
+// --------------------- CAROUSEL ----------------
+
+.burgers__btn{
+    width:20px;
+    height:28px;
+    border: 0;
+    background-color:transparent;
+}
+
+.burgers__svg{
+    width:28px;
+    height:17px;
+    fill:$color-white;
+}
+
+.burgers__svg_prev{
+    transform: rotate(90deg);
+
+}
+
+.burgers__svg_next{
+    transform: rotate(-90deg);
 }

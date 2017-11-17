@@ -700,6 +700,15 @@ section {
         content: "Читать отзыв"; } }
 
 .burgers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,ed9139+50,f9b43b+100 */
   background: #f9b43b;
   /* Old browsers */
@@ -710,6 +719,235 @@ section {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
   /* IE6-9 */ }
+
+.burgers__container {
+  margin: 0 1.25rem; }
+
+.burgers__carousel {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.burgers__item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.burgers__pic {
+  background-image: url(/../img/burgers/burger-1.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto auto;
+  -ms-flex-preferred-size: 28.1875rem;
+  flex-basis: 28.1875rem;
+  min-height: 29.5rem;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative; }
+
+.burgers__energy {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+  .burgers__energy:after {
+    display: block;
+    content: 'ККАЛ';
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-family: "gagalin", 'Helvetica', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); }
+
+.burgers__energy-svg {
+  width: 3.875rem;
+  height: 3.875rem;
+  fill: #ffffff;
+  fill-opacity: .5; }
+
+.burgers__kkal {
+  position: absolute;
+  top: 1.875rem;
+  left: 0.8125rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "gagalin", 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1.4375rem;
+  color: rgba(255, 255, 255, 0.5); }
+
+.burgers__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 27.8125rem;
+  flex-basis: 27.8125rem; }
+
+.burgers__title {
+  line-height: 3.875rem; }
+
+.burgers__text {
+  font-size: 0.875rem;
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 2.5rem 0; }
+
+.burgers__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.burgers__price h1 {
+  text-transform: uppercase;
+  font-family: 'gagalin', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.5rem;
+  color: #e35028;
+  display: inline; }
+
+.burgers__price h2 {
+  text-transform: uppercase;
+  font-family: 'gagalin', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #e35028;
+  display: inline; }
+
+.consist__btn {
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5.625rem;
+  height: 5.625rem;
+  background-color: #e35028;
+  border-radius: 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+  .consist__btn:hover {
+    background-color: #922e13; }
+
+.consist__svg {
+  fill: #ffffff;
+  width: 2.9375rem;
+  height: 2.75rem;
+  margin-bottom: 0.5rem; }
+
+.consist__title {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "gagalin", 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff; }
+
+.consist__table {
+  position: absolute;
+  top: 0;
+  left: 5.625rem; }
+
+.consist-table {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.3125rem;
+  width: 16.875rem;
+  font-size: 0.875rem;
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #2f3234;
+  padding: 1.25rem;
+  display: none; }
+
+.consist-table__svg {
+  width: 2.8125rem;
+  height: 2.5rem; }
+  .consist-table__svg_beef, .consist-table__svg_sauce {
+    fill: #e35028; }
+  .consist-table__svg_buns, .consist-table__svg_cucumber {
+    fill: #f9b43b; }
+  .consist-table__svg_salad, .consist-table__svg_cheese {
+    fill: #8bc940; }
+
+.consist-table__cell:first-child {
+  text-align: left; }
+
+.consist-table__cell::nth-child(2) {
+  text-align: left; }
+
+.consist-table__cell:last-child {
+  text-align: right; }
+
+.burgers__btn {
+  width: 1.25rem;
+  height: 1.75rem;
+  border: 0;
+  background-color: transparent; }
+
+.burgers__svg {
+  width: 1.75rem;
+  height: 1.0625rem;
+  fill: #ffffff; }
+
+.burgers__svg_prev {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.burgers__svg_next {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
 
 .contacts {
   background-image: url(../img/contacts/bg.jpg); }
@@ -1394,6 +1632,10 @@ section {
 .order-btn_first-screen {
   margin-bottom: 1.4375rem;
   margin-right: 0.125rem; }
+
+.order-btn_burgers {
+  margin-bottom: 1.0625rem;
+  margin-left: 1.875rem; }
 
 .fullscreen-menu {
   position: absolute;
