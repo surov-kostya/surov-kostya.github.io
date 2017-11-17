@@ -4,13 +4,13 @@ let hamburgerBtn = document.querySelector('.hamburger');
 let hamburgerMenu = document.querySelector('.fullscreen-menu');
 
 hamburgerBtn.addEventListener('click', () => {
-    hamburgerMenu.style.zIndex = 1;
+    hamburgerMenu.style.display = 'flex';
 });
 
 let hamburgerExitBtn = document.querySelector('.exit-btn');
 
 hamburgerExitBtn.addEventListener('click', () => {
-    hamburgerMenu.style.zIndex = -1;
+    hamburgerMenu.style.display = 'none';
 });
 
 // ------- TEAM ACCORDION WITH VANILLA JS -----------------
