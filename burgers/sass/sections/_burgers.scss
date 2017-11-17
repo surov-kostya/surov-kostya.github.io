@@ -37,6 +37,9 @@
 }
 
 .burgers__pic{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
     background-image: url(/../img/burgers/burger-1.png);
     background-repeat: no-repeat;
     background-position: left center;
@@ -238,4 +241,17 @@
 
 .burgers__svg_next{
     transform: rotate(-90deg);
+}
+
+.burgers__pic .burgers__btn{
+    flex:1;
+    margin-bottom: 80px;
+}
+
+.burgers__pic .burgers__btn_left{
+    text-align: left;
+}
+
+.burgers__pic .burgers__btn_right{
+    flex:1;
 }

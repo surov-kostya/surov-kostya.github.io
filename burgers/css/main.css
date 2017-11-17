@@ -765,6 +765,15 @@ section {
       flex-flow: column; } }
 
 .burgers__pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-image: url(/../img/burgers/burger-1.png);
   background-repeat: no-repeat;
   background-position: left center;
@@ -986,6 +995,20 @@ section {
 .burgers__svg_next {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
+
+.burgers__pic .burgers__btn {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 5rem; }
+
+.burgers__pic .burgers__btn_left {
+  text-align: left; }
+
+.burgers__pic .burgers__btn_right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 .contacts {
   background-image: url(../img/contacts/bg.jpg); }
