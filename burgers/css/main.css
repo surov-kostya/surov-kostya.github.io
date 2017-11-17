@@ -774,7 +774,7 @@ section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-image: url(/../img/burgers/burger-1.png);
+  background-image: url(../img/burgers/burger-1.png);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 28.125rem 19.6875rem;
