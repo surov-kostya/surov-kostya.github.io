@@ -21,15 +21,15 @@
   -moz-box-sizing: border-box; }
 
 html {
-  font-size: 1rem;
+  font-size: calc(16 * 1px);
   width: 100%;
   height: 100%; }
   @media screen and (max-width: 768px) {
     html {
-      font-size: 0.8125rem; } }
+      font-size: calc(14 * 1px); } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 0.75rem; } }
+      font-size: calc(12 * 1px); } }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -721,7 +721,7 @@ section {
   /* IE6-9 */ }
 
 .burgers__container {
-  margin: 0 1.25rem; }
+  margin: 0; }
 
 .burgers__carousel {
   -webkit-box-flex: 1;
@@ -730,9 +730,12 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .burgers__item {
   -webkit-box-flex: 1;
@@ -745,27 +748,40 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-flow: row;
   flex-flow: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .burgers__item {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column; } }
 
 .burgers__pic {
   background-image: url(/../img/burgers/burger-1.png);
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: auto auto;
-  -ms-flex-preferred-size: 28.1875rem;
-  flex-basis: 28.1875rem;
-  min-height: 29.5rem;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  background-size: 28.125rem 19.6875rem;
+  width: 27.6875rem;
+  height: 29.5rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 27.6875rem;
+  flex: 0 1 27.6875rem;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .burgers__pic {
+      width: 29.8125rem;
+      height: 24.375rem;
+      -ms-flex-preferred-size: 24.375rem;
+      flex-basis: 24.375rem;
+      background-position: center bottom; } }
 
 .burgers__energy {
   position: absolute;
@@ -782,6 +798,16 @@ section {
     color: #ffffff;
     text-align: center;
     color: rgba(255, 255, 255, 0.5); }
+  @media screen and (max-width: 768px) {
+    .burgers__energy {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      left: auto;
+      bottom: auto;
+      top: 0;
+      right: 0; } }
 
 .burgers__energy-svg {
   width: 3.875rem;
@@ -812,11 +838,16 @@ section {
   flex-flow: column;
   -ms-flex-negative: 1;
   flex-shrink: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 27.8125rem;
   flex-basis: 27.8125rem; }
+  @media screen and (max-width: 768px) {
+    .burgers__info {
+      text-align: center;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto; } }
 
 .burgers__title {
   line-height: 3.875rem; }
@@ -835,6 +866,11 @@ section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .burgers__order {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .burgers__price h1 {
   text-transform: uppercase;
@@ -862,7 +898,7 @@ section {
   top: 0;
   width: 5.625rem;
   height: 5.625rem;
-  background-color: #e35028;
+  background-color: #f08c33;
   border-radius: 0.3125rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -879,7 +915,7 @@ section {
   align-items: center;
   text-align: center; }
   .consist__btn:hover {
-    background-color: #922e13; }
+    background-color: #e35028; }
 
 .consist__svg {
   fill: #ffffff;
@@ -931,10 +967,12 @@ section {
   text-align: right; }
 
 .burgers__btn {
-  width: 1.25rem;
+  width: 1.875rem;
   height: 1.75rem;
   border: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center; }
 
 .burgers__svg {
   width: 1.75rem;
