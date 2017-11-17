@@ -771,9 +771,9 @@ section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   background-image: url(../img/burgers/burger-1.png);
   background-repeat: no-repeat;
   background-position: left center;
@@ -976,6 +976,7 @@ section {
   text-align: right; }
 
 .burgers__btn {
+  display: block;
   width: 1.875rem;
   height: 1.75rem;
   border: 0;
@@ -996,19 +997,18 @@ section {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-.burgers__pic .burgers__btn {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-bottom: 5rem; }
+.burgers__pic > .burgers__btn {
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .burgers__pic > .burgers__btn {
+      display: initial; } }
 
-.burgers__pic .burgers__btn_left {
-  text-align: left; }
+.burgers__pic .burgers__btn_next {
+  margin-left: auto; }
 
-.burgers__pic .burgers__btn_right {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
+@media screen and (max-width: 480px) {
+  .burgers > .burgers__btn {
+    display: none; } }
 
 .contacts {
   background-image: url(../img/contacts/bg.jpg); }

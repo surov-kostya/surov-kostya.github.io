@@ -12,7 +12,6 @@
 
 .burgers__container{
     margin:0;
-
 }
 
 .burgers__carousel{
@@ -39,7 +38,7 @@
 .burgers__pic{
     display:flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-image: url(../img/burgers/burger-1.png);
     background-repeat: no-repeat;
     background-position: left center;
@@ -220,6 +219,7 @@
 // --------------------- CAROUSEL ----------------
 
 .burgers__btn{
+    display:block;
     width:30px;
     height:28px;
     border: 0;
@@ -243,15 +243,20 @@
     transform: rotate(-90deg);
 }
 
-.burgers__pic .burgers__btn{
-    flex:1;
-    margin-bottom: 80px;
+.burgers__pic > .burgers__btn{
+    display:none;
+
+    @include phones{
+        display:initial;
+    }
 }
 
-.burgers__pic .burgers__btn_left{
-    text-align: left;
+.burgers__pic .burgers__btn_next{
+    margin-left:auto;
 }
 
-.burgers__pic .burgers__btn_right{
-    flex:1;
+.burgers > .burgers__btn{
+    @include phones{
+        display:none;
+    }
 }
