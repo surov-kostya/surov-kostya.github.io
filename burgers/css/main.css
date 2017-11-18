@@ -699,16 +699,7 @@ section {
       .comment__btn:after {
         content: "Читать отзыв"; } }
 
-.burgers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.gradient-orange {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,ed9139+50,f9b43b+100 */
   background: #f9b43b;
   /* Old browsers */
@@ -719,6 +710,17 @@ section {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
   /* IE6-9 */ }
+
+.burgers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .burgers__container {
   margin: 0; }
@@ -985,32 +987,43 @@ section {
   text-align: center; }
   .burgers__btn:focus {
     outline: none; }
+  @media screen and (max-width: 480px) {
+    .burgers__btn {
+      position: relative; } }
 
 .burgers__svg {
   width: 1.75rem;
   height: 1.0625rem;
   fill: #ffffff; }
+  .burgers__svg:hover {
+    fill: #e35028; }
+  @media screen and (max-width: 480px) {
+    .burgers__svg {
+      position: absolute; } }
 
 .burgers__svg_prev {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
+  @media screen and (max-width: 480px) {
+    .burgers__svg_prev {
+      bottom: 0px;
+      right: -1.25rem;
+      z-index: 1; } }
 
 .burgers__svg_next {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
+  @media screen and (max-width: 480px) {
+    .burgers__svg_next {
+      bottom: 0px;
+      left: -1.25rem;
+      z-index: 1; } }
 
 .burgers__pic > .burgers__btn {
   display: none; }
-  @media screen and (max-width: 480px) {
-    .burgers__pic > .burgers__btn {
-      display: initial; } }
 
 .burgers__pic .burgers__btn_next {
   margin-left: auto; }
-
-@media screen and (max-width: 480px) {
-  .burgers > .burgers__btn {
-    display: none; } }
 
 .contacts {
   background-image: url(../img/contacts/bg.jpg); }

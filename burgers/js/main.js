@@ -69,9 +69,10 @@ $(function(){
     
 
 //     $(".owl-carousel").owlCarousel({
-//         loop:true,
+//         loop:false,
 //         items:1,
-//         autoHeight:true
+//         autoHeight:true,
+//         autoWidth:true
 //     });
         
 //     var owl = $('.owl-carousel');
@@ -100,6 +101,10 @@ $(function(){
     const nextBtn = $('.burgers__btn_next');
     const ctrlBtn = $('.burgers__btn');
     const slideItem = $('.burgers__item');
+    const btnAction = 'wobble';
+    const regularBtnAction = 'rubberBand';
+    const prevSlideAction = 'bounceInRight';
+    const nextSlideAction = 'bounceInLeft';
 
     function toggleAnimationClass(animClass, animLmnt){
         animLmnt.addClass(animClass);
@@ -108,25 +113,31 @@ $(function(){
         }, 500);
     };
 
-    function changeActiveClass(notActLmnt, activeLmnt){
-        notActLmnt.removeClass('visually-hidden');
-        notActLmnt.addClass('zoomIn');
-        notActLmnt.addClass('burgers__item_active');
+    function changeActiveClass(notActLmnt, activeLmnt, slideAction){
         activeLmnt.addClass('visually-hidden');
-        activeLmnt.removeClass('burgers__item_active'); 
-        activeLmnt.removeClass('zoomIn');        
+        activeLmnt.removeClass('burgers__item_active');
+        activeLmnt.removeClass(slideAction);
+
+        setTimeout(()=>{
+            notActLmnt.removeClass('visually-hidden');
+            notActLmnt.addClass(slideAction);
+            notActLmnt.addClass('burgers__item_active');
+        }, 200);
+                
     };
 
     prevBtn.on('click', e =>{
         e.preventDefault();
+        
 
         let slideItemActive = $('.burgers__item_active');
         let slideItemPrev = slideItemActive.prev(slideItem);  
 
         if (slideItemPrev.length){
-            changeActiveClass(slideItemPrev, slideItemActive);
+            toggleAnimationClass(regularBtnAction, prevBtn);
+            changeActiveClass(slideItemPrev, slideItemActive, prevSlideAction);
         }else{
-            toggleAnimationClass('bounceIn', prevBtn);                      
+            toggleAnimationClass(btnAction, prevBtn);                      
         };
         
         
@@ -134,16 +145,32 @@ $(function(){
 
     nextBtn.on('click', e =>{
         e.preventDefault();
+        
 
         let slideItemActive = $('.burgers__item_active');
         let slideItemNext = slideItemActive.next(slideItem);  
 
         if (slideItemNext.length){
-            changeActiveClass(slideItemNext, slideItemActive);
+            toggleAnimationClass(regularBtnAction, nextBtn); 
+            changeActiveClass(slideItemNext, slideItemActive, nextSlideAction);
         }else{
-            toggleAnimationClass('bounceIn', nextBtn);                      
+            toggleAnimationClass(btnAction, nextBtn);                      
         };
 
+        
     });
+
+});
+
+
+// ---------------------- FULLPAGE.JS ---------------------------
+
+$(function (){
+
+
+    $('#fullpage').fullpage({
+        anchors:['firstPage', 'secondPage', 'thirdPage']
+    });
+
 
 });

@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" href="./img/favicon.png">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/animate.css">
+        <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
         <link rel="stylesheet" href="./css/main.css">
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="./js/svg4everybody.js"></script>
@@ -15,6 +16,7 @@
           svg4everybody();
         </script>
         <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/jquery.fullpage.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -23,10 +25,10 @@
             </p>
         <![endif]-->
         <div class="wrapper">
-            <div class="maincontent">
+            <div class="maincontent" id="fullpage">
                 
                 <!-- ------------------------------ WELCOME ------------------++++++-------- -->
-                <section class="first-screen">
+                <section class="section first-screen">
                     <div class="container">
                         <header class="first-screen__header">
                             <div class="first-screen__logo"><a href="#" class="logo-link">
@@ -172,7 +174,7 @@
 
                 </section>
                 <!-- -------------------------------- ABOUT US ---------------++++++-------- -->
-                <section class="we">
+                <section class="section we">
                     <div class="container">
                         <header class="section-title section-title_black we__header"><h1>Мы лучшие</h1></header>
                         <div class="we__benefit-wrap">           
@@ -215,315 +217,287 @@
                     </div>
                 </section>
                 <!-- -------------------------------- BURGERS ------------------------------ -->
-                <section class="burgers">
-                    <button class="burgers__btn burgers__btn_prev animated">
-                        <svg class="burgers__svg burgers__svg_prev">
-                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                        </svg>
-                    </button>
-                    <div class="container burgers__container">
-                        <ul class="burgers__carousel">
-                            <li class="burgers__item animated burgers__item_active">
-                                <div class="burgers__pic">
-                                    <div class="burgers__consist consist">
-                                        <a href="#" class="consist__btn">
-                                            <svg class="consist__svg">
-                                                <use xlink:href="./img/sprite.svg#burger" />
-                                            </svg>
-                                            <span class="consist__title">Состав</span>
-                                        </a>
-                                        <table class="consist__table consist-table">
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_beef">
-                                                        <use xlink:href="./img/sprite.svg#beef" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Говядина</td>
-                                                <td class="consist-table__cell">300 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_buns">
-                                                        <use xlink:href="./img/sprite.svg#buns" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Булочки</td>
-                                                <td class="consist-table__cell">100 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_salad">
-                                                        <use xlink:href="./img/sprite.svg#salad" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Зелень</td>
-                                                <td class="consist-table__cell">70 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_sauce">
-                                                        <use xlink:href="./img/sprite.svg#sauce" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Соус</td>
-                                                <td class="consist-table__cell">150 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_cucumber">
-                                                        <use xlink:href="./img/sprite.svg#cucumber" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Овощи</td>
-                                                <td class="consist-table__cell">200 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_cheese">
-                                                        <use xlink:href="./img/sprite.svg#cheese" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Сыр</td>
-                                                <td class="consist-table__cell">80 г</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="burgers__energy">
-                                        <span class="burgers__kkal">1200</span>                                        
-                                        <svg class="burgers__energy-svg">                                            
-                                            <use xlink:href="./img/sprite.svg#kkal" />
-                                        </svg>
-                                    </div>
-                                    <button class="burgers__btn burgers__btn_prev animated">
-                                        <svg class="burgers__svg burgers__svg_prev">
-                                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                                        </svg>
-                                    </button>
-                                    <button class="burgers__btn burgers__btn_next animated">
-                                        <svg class="burgers__svg burgers__svg_next">
-                                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="burgers__info">
-                                    <div class="section-title section-title_white burgers__title"><h1>Dark beef burger</h1></div>
-                                    <div class="burgers__text">
-                                        Ваш старый добрый знакомыйб с рубленым бифштексом из 100% говядиныб тремя кусочками нежнейшего сыра эмменталь, двумя помиджорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                                    </div>
-                                    <div class="burgers__order">
-                                        <div class="burgers__price">
-                                            <h1>500</h1>
-                                            <h2>рублей</h2>
+                <section class="section gradient-orange">
+                    <div class="burgers">
+                        <button class="burgers__btn burgers__btn_prev animated">
+                            <svg class="burgers__svg burgers__svg_prev">
+                                <use xlink:href="./img/sprite.svg#arrow-scroll"/>
+                            </svg>
+                        </button>
+                        <div class="container burgers__container">
+                            <ul class="burgers__carousel">
+                                <li class="burgers__item animated burgers__item_active">
+                                    <div class="burgers__pic">
+                                        <div class="burgers__consist consist">
+                                            <a href="#" class="consist__btn">
+                                                <svg class="consist__svg">
+                                                    <use xlink:href="./img/sprite.svg#burger" />
+                                                </svg>
+                                                <span class="consist__title">Состав</span>
+                                            </a>
+                                            <table class="consist__table consist-table">
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_beef">
+                                                            <use xlink:href="./img/sprite.svg#beef" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Говядина</td>
+                                                    <td class="consist-table__cell">300 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_buns">
+                                                            <use xlink:href="./img/sprite.svg#buns" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Булочки</td>
+                                                    <td class="consist-table__cell">100 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_salad">
+                                                            <use xlink:href="./img/sprite.svg#salad" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Зелень</td>
+                                                    <td class="consist-table__cell">70 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_sauce">
+                                                            <use xlink:href="./img/sprite.svg#sauce" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Соус</td>
+                                                    <td class="consist-table__cell">150 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_cucumber">
+                                                            <use xlink:href="./img/sprite.svg#cucumber" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Овощи</td>
+                                                    <td class="consist-table__cell">200 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_cheese">
+                                                            <use xlink:href="./img/sprite.svg#cheese" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Сыр</td>
+                                                    <td class="consist-table__cell">80 г</td>
+                                                </tr>
+                                            </table>
                                         </div>
-                                        <button href="#" class="order-btn order-btn_burgers">Заказать</button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="burgers__item animated visually-hidden">
-                                <div class="burgers__pic">
-                                    <div class="burgers__consist consist">
-                                        <a href="#" class="consist__btn">
-                                            <svg class="consist__svg">
-                                                <use xlink:href="./img/sprite.svg#burger" />
+                                        <div class="burgers__energy">
+                                            <span class="burgers__kkal">1200</span>                                        
+                                            <svg class="burgers__energy-svg">                                            
+                                                <use xlink:href="./img/sprite.svg#kkal" />
                                             </svg>
-                                            <span class="consist__title">Состав</span>
-                                        </a>
-                                        <table class="consist__table consist-table">
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_beef">
-                                                        <use xlink:href="./img/sprite.svg#beef" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Говядина</td>
-                                                <td class="consist-table__cell">300 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_buns">
-                                                        <use xlink:href="./img/sprite.svg#buns" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Булочки</td>
-                                                <td class="consist-table__cell">100 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_salad">
-                                                        <use xlink:href="./img/sprite.svg#salad" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Зелень</td>
-                                                <td class="consist-table__cell">70 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_sauce">
-                                                        <use xlink:href="./img/sprite.svg#sauce" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Соус</td>
-                                                <td class="consist-table__cell">150 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_cucumber">
-                                                        <use xlink:href="./img/sprite.svg#cucumber" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Овощи</td>
-                                                <td class="consist-table__cell">200 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_cheese">
-                                                        <use xlink:href="./img/sprite.svg#cheese" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Сыр</td>
-                                                <td class="consist-table__cell">80 г</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="burgers__energy">
-                                        <span class="burgers__kkal">1200</span>                                        
-                                        <svg class="burgers__energy-svg">                                            
-                                            <use xlink:href="./img/sprite.svg#kkal" />
-                                        </svg>
-                                    </div>
-                                    <button class="burgers__btn burgers__btn_prev">
-                                        <svg class="burgers__svg burgers__svg_prev">
-                                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                                        </svg>
-                                    </button>
-                                    <button class="burgers__btn burgers__btn_next">
-                                        <svg class="burgers__svg burgers__svg_next">
-                                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="burgers__info">
-                                    <div class="section-title section-title_white burgers__title"><h1>Light beef burger</h1></div>
-                                    <div class="burgers__text">
-                                        Ваш старый добрый знакомыйб с рубленым бифштексом из 100% говядиныб тремя кусочками нежнейшего сыра эмменталь, двумя помиджорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                                    </div>
-                                    <div class="burgers__order">
-                                        <div class="burgers__price">
-                                            <h1>500</h1>
-                                            <h2>рублей</h2>
                                         </div>
-                                        <button href="#" class="order-btn order-btn_burgers">Заказать</button>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="burgers__item animated visually-hidden">
-                                <div class="burgers__pic">
-                                    <div class="burgers__consist consist">
-                                        <a href="#" class="consist__btn">
-                                            <svg class="consist__svg">
-                                                <use xlink:href="./img/sprite.svg#burger" />
+                                    <div class="burgers__info">
+                                        <div class="section-title section-title_white burgers__title"><h1>Dark beef burger</h1></div>
+                                        <div class="burgers__text">
+                                            Ваш старый добрый знакомыйб с рубленым бифштексом из 100% говядиныб тремя кусочками нежнейшего сыра эмменталь, двумя помиджорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <h1>500</h1>
+                                                <h2>рублей</h2>
+                                            </div>
+                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burgers__item animated visually-hidden">
+                                    <div class="burgers__pic">
+                                        <div class="burgers__consist consist">
+                                            <a href="#" class="consist__btn">
+                                                <svg class="consist__svg">
+                                                    <use xlink:href="./img/sprite.svg#burger" />
+                                                </svg>
+                                                <span class="consist__title">Состав</span>
+                                            </a>
+                                            <table class="consist__table consist-table">
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_beef">
+                                                            <use xlink:href="./img/sprite.svg#beef" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Говядина</td>
+                                                    <td class="consist-table__cell">300 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_buns">
+                                                            <use xlink:href="./img/sprite.svg#buns" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Булочки</td>
+                                                    <td class="consist-table__cell">100 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_salad">
+                                                            <use xlink:href="./img/sprite.svg#salad" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Зелень</td>
+                                                    <td class="consist-table__cell">70 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_sauce">
+                                                            <use xlink:href="./img/sprite.svg#sauce" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Соус</td>
+                                                    <td class="consist-table__cell">150 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_cucumber">
+                                                            <use xlink:href="./img/sprite.svg#cucumber" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Овощи</td>
+                                                    <td class="consist-table__cell">200 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_cheese">
+                                                            <use xlink:href="./img/sprite.svg#cheese" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Сыр</td>
+                                                    <td class="consist-table__cell">80 г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="burgers__energy">
+                                            <span class="burgers__kkal">1200</span>                                        
+                                            <svg class="burgers__energy-svg">                                            
+                                                <use xlink:href="./img/sprite.svg#kkal" />
                                             </svg>
-                                            <span class="consist__title">Состав</span>
-                                        </a>
-                                        <table class="consist__table consist-table">
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_beef">
-                                                        <use xlink:href="./img/sprite.svg#beef" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Говядина</td>
-                                                <td class="consist-table__cell">300 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_buns">
-                                                        <use xlink:href="./img/sprite.svg#buns" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Булочки</td>
-                                                <td class="consist-table__cell">100 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_salad">
-                                                        <use xlink:href="./img/sprite.svg#salad" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Зелень</td>
-                                                <td class="consist-table__cell">70 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_sauce">
-                                                        <use xlink:href="./img/sprite.svg#sauce" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Соус</td>
-                                                <td class="consist-table__cell">150 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_cucumber">
-                                                        <use xlink:href="./img/sprite.svg#cucumber" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Овощи</td>
-                                                <td class="consist-table__cell">200 г</td>
-                                            </tr>
-                                            <tr class="consist-table__row">
-                                                <td class="consist-table__cell">
-                                                    <svg class="consist-table__svg consist-table__svg_cheese">
-                                                        <use xlink:href="./img/sprite.svg#cheese" />
-                                                    </svg>
-                                                </td>
-                                                <td class="consist-table__cell">Сыр</td>
-                                                <td class="consist-table__cell">80 г</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="burgers__energy">
-                                        <span class="burgers__kkal">1200</span>                                        
-                                        <svg class="burgers__energy-svg">                                            
-                                            <use xlink:href="./img/sprite.svg#kkal" />
-                                        </svg>
-                                    </div>
-                                    <button class="burgers__btn burgers__btn_prev">
-                                        <svg class="burgers__svg burgers__svg_prev">
-                                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                                        </svg>
-                                    </button>
-                                    <button class="burgers__btn burgers__btn_next">
-                                        <svg class="burgers__svg burgers__svg_next">
-                                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="burgers__info">
-                                    <div class="section-title section-title_white burgers__title"><h1>Green beef burger</h1></div>
-                                    <div class="burgers__text">
-                                        Ваш старый добрый знакомыйб с рубленым бифштексом из 100% говядиныб тремя кусочками нежнейшего сыра эмменталь, двумя помиджорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                                    </div>
-                                    <div class="burgers__order">
-                                        <div class="burgers__price">
-                                            <h1>500</h1>
-                                            <h2>рублей</h2>
                                         </div>
-                                        <button href="#" class="order-btn order-btn_burgers">Заказать</button>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                    <div class="burgers__info">
+                                        <div class="section-title section-title_white burgers__title"><h1>Light beef burger</h1></div>
+                                        <div class="burgers__text">
+                                            Ваш старый добрый знакомыйб с рубленым бифштексом из 100% говядиныб тремя кусочками нежнейшего сыра эмменталь, двумя помиджорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <h1>500</h1>
+                                                <h2>рублей</h2>
+                                            </div>
+                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burgers__item animated visually-hidden">
+                                    <div class="burgers__pic">
+                                        <div class="burgers__consist consist">
+                                            <a href="#" class="consist__btn">
+                                                <svg class="consist__svg">
+                                                    <use xlink:href="./img/sprite.svg#burger" />
+                                                </svg>
+                                                <span class="consist__title">Состав</span>
+                                            </a>
+                                            <table class="consist__table consist-table">
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_beef">
+                                                            <use xlink:href="./img/sprite.svg#beef" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Говядина</td>
+                                                    <td class="consist-table__cell">300 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_buns">
+                                                            <use xlink:href="./img/sprite.svg#buns" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Булочки</td>
+                                                    <td class="consist-table__cell">100 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_salad">
+                                                            <use xlink:href="./img/sprite.svg#salad" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Зелень</td>
+                                                    <td class="consist-table__cell">70 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_sauce">
+                                                            <use xlink:href="./img/sprite.svg#sauce" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Соус</td>
+                                                    <td class="consist-table__cell">150 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_cucumber">
+                                                            <use xlink:href="./img/sprite.svg#cucumber" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Овощи</td>
+                                                    <td class="consist-table__cell">200 г</td>
+                                                </tr>
+                                                <tr class="consist-table__row">
+                                                    <td class="consist-table__cell">
+                                                        <svg class="consist-table__svg consist-table__svg_cheese">
+                                                            <use xlink:href="./img/sprite.svg#cheese" />
+                                                        </svg>
+                                                    </td>
+                                                    <td class="consist-table__cell">Сыр</td>
+                                                    <td class="consist-table__cell">80 г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="burgers__energy">
+                                            <span class="burgers__kkal">1200</span>                                        
+                                            <svg class="burgers__energy-svg">                                            
+                                                <use xlink:href="./img/sprite.svg#kkal" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__info">
+                                        <div class="section-title section-title_white burgers__title"><h1>Green beef burger</h1></div>
+                                        <div class="burgers__text">
+                                            Ваш старый добрый знакомыйб с рубленым бифштексом из 100% говядиныб тремя кусочками нежнейшего сыра эмменталь, двумя помиджорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <h1>500</h1>
+                                                <h2>рублей</h2>
+                                            </div>
+                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="burgers__btn burgers__btn_next animated">
+                            <svg class="burgers__svg burgers__svg_next">
+                                <use xlink:href="./img/sprite.svg#arrow-scroll"/>
+                            </svg>
+                        </button>
                     </div>
-                    <button class="burgers__btn burgers__btn_next animated">
-                        <svg class="burgers__svg burgers__svg_next">
-                            <use xlink:href="./img/sprite.svg#arrow-scroll"/>
-                        </svg>
-                    </button>
                 </section>
                 <!-- --------------------------------- TEAM -----------------+++++++--------- -->
-                <section class="team">
+                <section class="section team">
                     <div class="team__right-block">
                         <div class="team__container">
                             <div class="section-title section-title_yellow team__header"><h1>Команда</h1></div>
@@ -581,7 +555,7 @@
                     </div>
                 </section>
                 <!-- --------------------------------- MENU -------------------------------- -->
-                <section class="menu">
+                <section class="section menu">
                     <div class="section-title section-title_white menu__header"><h1>Меню</h1></div>
                     <div class="menu__accordeon">
                         <ul class="menu-acco">
@@ -616,7 +590,7 @@
                     </div>
                 </section>
                 <!-- ------------------------------- REVIEW ------------------++++++------- -->
-                <section class="review">
+                <section class="section review">
                     <div class="section-title section-title_white review__title visually-hidden"><h1>Отзывы</h1></div>
                     <ul class="review__list">
                         <li class="review__item" style="background-image: url(./img/review/photo-1.jpg)">
@@ -686,7 +660,7 @@
                     </ul>
                 </section>
                 <!-- -------------------------------- ORDER ----------------++++++++--------- -->
-                <section class="order">
+                <section class="section order">
                     <div class="container order__container">
                         <div class="section-title section-title_yellow order__header"><h1>Закажите доставку</h1></div>
                         <form action="#" class="order__form form">
@@ -761,7 +735,7 @@
                     </div>
                 </section>
                 <!-- ------------------------------ CONTACTS ----------------+++++++--------- -->
-                <section class="contacts">
+                <section class="section contacts">
                     <div class="section-title section-title_black contacts__title"><h1>Наши контакты</h1></div>
                     <ul class="contacts__list">
                         <li class="contacts__item">Санкт-Петербург, ул. Лени Голикова, д.12</li>
@@ -801,53 +775,53 @@
                     </div>                    
                 </section>
                 
-                <div class="fixed-nav-bar">
-                    <ul class="fixed-nav-bar__list">
-                        <li class="fixed-nav-bar__item fixed-nav-bar__item_active">
+                
+            </div>
+
+            <div class="fixed-nav-bar">
+                <ul class="fixed-nav-bar__list">
+                    <li class="fixed-nav-bar__item fixed-nav-bar__item_active">
+                        <a href="" class="fixed-nav-bar__link">
+                            <div class="fixed-nav-bar__radio"></div>
+                        </a>
+                    </li>
+                    <li class="fixed-nav-bar__item">
                             <a href="" class="fixed-nav-bar__link">
                                 <div class="fixed-nav-bar__radio"></div>
                             </a>
-                        </li>
-                        <li class="fixed-nav-bar__item">
-                                <a href="" class="fixed-nav-bar__link">
-                                    <div class="fixed-nav-bar__radio"></div>
-                                </a>
-                        </li>
-                        <li class="fixed-nav-bar__item">
-                                <a href="" class="fixed-nav-bar__link">
-                                    <div class="fixed-nav-bar__radio"></div>
-                                </a>
-                        </li>
-                        <li class="fixed-nav-bar__item">
-                                <a href="" class="fixed-nav-bar__link">
-                                    <div class="fixed-nav-bar__radio"></div>
-                                </a>
-                        </li>
-                        <li class="fixed-nav-bar__item">
-                                <a href="" class="fixed-nav-bar__link">
-                                    <div class="fixed-nav-bar__radio"></div>
-                                </a>
-                        </li>
-                        <li class="fixed-nav-bar__item">
-                                <a href="" class="fixed-nav-bar__link">
-                                    <div class="fixed-nav-bar__radio"></div>
-                                </a>
-                        </li>
-                        <li class="fixed-nav-bar__item">
-                                <a href="" class="fixed-nav-bar__link">
-                                    <div class="fixed-nav-bar__radio"></div>
-                                </a>
-                        </li>
-                        <li class="fixed-nav-bar__item">
-                                <a href="" class="fixed-nav-bar__link">
-                                    <div class="fixed-nav-bar__radio"></div>
-                                </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            
+                    </li>
+                    <li class="fixed-nav-bar__item">
+                            <a href="" class="fixed-nav-bar__link">
+                                <div class="fixed-nav-bar__radio"></div>
+                            </a>
+                    </li>
+                    <li class="fixed-nav-bar__item">
+                            <a href="" class="fixed-nav-bar__link">
+                                <div class="fixed-nav-bar__radio"></div>
+                            </a>
+                    </li>
+                    <li class="fixed-nav-bar__item">
+                            <a href="" class="fixed-nav-bar__link">
+                                <div class="fixed-nav-bar__radio"></div>
+                            </a>
+                    </li>
+                    <li class="fixed-nav-bar__item">
+                            <a href="" class="fixed-nav-bar__link">
+                                <div class="fixed-nav-bar__radio"></div>
+                            </a>
+                    </li>
+                    <li class="fixed-nav-bar__item">
+                            <a href="" class="fixed-nav-bar__link">
+                                <div class="fixed-nav-bar__radio"></div>
+                            </a>
+                    </li>
+                    <li class="fixed-nav-bar__item">
+                            <a href="" class="fixed-nav-bar__link">
+                                <div class="fixed-nav-bar__radio"></div>
+                            </a>
+                    </li>
+                </ul>
+            </div>            
 
         </div>
         <script src="./js/map.js"></script>

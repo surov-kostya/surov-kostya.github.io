@@ -1,7 +1,4 @@
-.burgers{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.gradient-orange{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,ed9139+50,f9b43b+100 */
     background: #f9b43b; /* Old browsers */
     background: -moz-linear-gradient(top, #f9b43b 0%, #ed9139 50%, #f9b43b 100%); /* FF3.6-15 */
@@ -10,8 +7,14 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 ); /* IE6-9 */
 }
 
+.burgers{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .burgers__container{
-    margin:0;
+    margin: 0;
 }
 
 .burgers__carousel{
@@ -219,6 +222,7 @@
 // --------------------- CAROUSEL ----------------
 
 .burgers__btn{
+
     display:block;
     width:30px;
     height:28px;
@@ -230,29 +234,54 @@
     &:focus{
         outline: none;
     }
+
+    @include phones{
+        position: relative;
+    }
 }
 
 .burgers__svg{
     width:28px;
     height:17px;
     fill:$color-white;
+
+    &:hover{
+        fill: $color-orange;
+    }
+
+    @include phones{
+        position: absolute;
+    }
+
 }
 
 .burgers__svg_prev{
     transform: rotate(90deg);
 
+    @include phones{
+        bottom:0px;
+        right:-20px;
+        z-index: 1;
+    }
+
 }
 
 .burgers__svg_next{
     transform: rotate(-90deg);
+
+    @include phones{
+        bottom:0px;
+        left:-20px;
+        z-index: 1;
+    }
 }
 
 .burgers__pic > .burgers__btn{
     display:none;
 
-    @include phones{
-        display:initial;
-    }
+    // @include phones{
+    //     display:initial;
+    // }
 }
 
 .burgers__pic .burgers__btn_next{
@@ -260,7 +289,7 @@
 }
 
 .burgers > .burgers__btn{
-    @include phones{
-        display:none;
-    }
+    // @include phones{
+    //     display:none;
+    // }
 }
