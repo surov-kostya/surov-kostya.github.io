@@ -106,19 +106,25 @@ $(function(){
         setTimeout(()=>{
             animLmnt.removeClass(animClass); 
         }, 500);
-    }
+    };
+
+    function changeActiveClass(notActLmnt, activeLmnt){
+        notActLmnt.removeClass('visually-hidden');
+        notActLmnt.addClass('zoomIn');
+        notActLmnt.addClass('burgers__item_active');
+        activeLmnt.addClass('visually-hidden');
+        activeLmnt.removeClass('burgers__item_active'); 
+        activeLmnt.removeClass('zoomIn');        
+    };
 
     prevBtn.on('click', e =>{
         e.preventDefault();
-        let slideItemActive = $('.burgers__item_active');
 
-        if (slideItemActive.prev(slideItem).length){
-            slideItemActive.prev(slideItem).removeClass('visually-hidden');
-            slideItemActive.prev(slideItem).addClass('zoomIn');
-            slideItemActive.prev(slideItem).addClass('burgers__item_active');
-            slideItemActive.addClass('visually-hidden');
-            slideItemActive.removeClass('burgers__item_active'); 
-            slideItemActive.removeClass('zoomIn');
+        let slideItemActive = $('.burgers__item_active');
+        let slideItemPrev = slideItemActive.prev(slideItem);  
+
+        if (slideItemPrev.length){
+            changeActiveClass(slideItemPrev, slideItemActive);
         }else{
             toggleAnimationClass('bounceIn', prevBtn);                      
         };
@@ -130,14 +136,10 @@ $(function(){
         e.preventDefault();
 
         let slideItemActive = $('.burgers__item_active');
+        let slideItemNext = slideItemActive.next(slideItem);  
 
-        if (slideItemActive.next(slideItem).length){
-            slideItemActive.next(slideItem).removeClass('visually-hidden');
-            slideItemActive.next(slideItem).addClass('burgers__item_active');
-            slideItemActive.next(slideItem).addClass('zoomIn');
-            slideItemActive.addClass('visually-hidden');
-            slideItemActive.removeClass('burgers__item_active');
-            slideItemActive.removeClass('zoomIn');  
+        if (slideItemNext.length){
+            changeActiveClass(slideItemNext, slideItemActive);
         }else{
             toggleAnimationClass('bounceIn', nextBtn);                      
         };
