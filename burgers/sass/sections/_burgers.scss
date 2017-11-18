@@ -226,6 +226,10 @@
     background-color:transparent;
     cursor: pointer;
     text-align: center;
+
+    &:focus{
+        outline: none;
+    }
 }
 
 .burgers__svg{

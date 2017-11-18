@@ -61,3 +61,87 @@ $(function(){
         $('.consist-table').toggle();
     });
 });
+
+// -------------------- OWL CAROUSEL ------------------------
+
+// $(function(){
+
+    
+
+//     $(".owl-carousel").owlCarousel({
+//         loop:true,
+//         items:1,
+//         autoHeight:true
+//     });
+        
+//     var owl = $('.owl-carousel');
+//     owl.owlCarousel();
+        
+//     // Go to the next item
+//     $('.burgers__btn_next').click(function() {
+//         owl.trigger('next.owl.carousel');
+//     })
+//     // Go to the previous item
+//     $('.burgers__btn_prev').click(function() {
+//         // With optional speed parameter
+//         // Parameters has to be in square bracket '[]'
+//         owl.trigger('prev.owl.carousel', [300]);
+//     })
+    
+   
+
+// })
+
+// ------------------- MY SLIDER ----------------------
+
+$(function(){
+
+    const prevBtn = $('.burgers__btn_prev');
+    const nextBtn = $('.burgers__btn_next');
+    const ctrlBtn = $('.burgers__btn');
+    const slideItem = $('.burgers__item');
+
+    function toggleAnimationClass(animClass, animLmnt){
+        animLmnt.addClass(animClass);
+        setTimeout(()=>{
+            animLmnt.removeClass(animClass); 
+        }, 500);
+    }
+
+    prevBtn.on('click', e =>{
+        e.preventDefault();
+        let slideItemActive = $('.burgers__item_active');
+
+        if (slideItemActive.prev(slideItem).length){
+            slideItemActive.prev(slideItem).removeClass('visually-hidden');
+            slideItemActive.prev(slideItem).addClass('zoomIn');
+            slideItemActive.prev(slideItem).addClass('burgers__item_active');
+            slideItemActive.addClass('visually-hidden');
+            slideItemActive.removeClass('burgers__item_active'); 
+            slideItemActive.removeClass('zoomIn');
+        }else{
+            toggleAnimationClass('bounceIn', prevBtn);                      
+        };
+        
+        
+    });
+
+    nextBtn.on('click', e =>{
+        e.preventDefault();
+
+        let slideItemActive = $('.burgers__item_active');
+
+        if (slideItemActive.next(slideItem).length){
+            slideItemActive.next(slideItem).removeClass('visually-hidden');
+            slideItemActive.next(slideItem).addClass('burgers__item_active');
+            slideItemActive.next(slideItem).addClass('zoomIn');
+            slideItemActive.addClass('visually-hidden');
+            slideItemActive.removeClass('burgers__item_active');
+            slideItemActive.removeClass('zoomIn');  
+        }else{
+            toggleAnimationClass('bounceIn', nextBtn);                      
+        };
+
+    });
+
+});

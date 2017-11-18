@@ -983,6 +983,8 @@ section {
   background-color: transparent;
   cursor: pointer;
   text-align: center; }
+  .burgers__btn:focus {
+    outline: none; }
 
 .burgers__svg {
   width: 1.75rem;
