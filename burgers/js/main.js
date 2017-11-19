@@ -24,7 +24,12 @@ $(function(){
 
     personNameBtns.on('click', (e) => {
         e.preventDefault();
-        $(e.currentTarget).parent().toggleClass('persons__item_active');
+
+        const thisItemLink = e.currentTarget;
+        const thisItem = $(e.currentTarget).parent();
+
+        $('.persons__item').not(thisItem).removeClass('persons__item_active');
+        thisItem.toggleClass('persons__item_active');
     });
 });
 
