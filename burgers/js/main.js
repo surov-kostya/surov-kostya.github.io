@@ -2,54 +2,44 @@
 
 $(function(){
 
-    let hamburgerBtn = document.querySelector('.hamburger');
-    let hamburgerMenu = document.querySelector('.fullscreen-menu');
+    let hamburgerBtn = $('.hamburger');
+    let hamburgerMenu = $('.fullscreen-menu');
+    let hamburgerExitBtn = $('.exit-btn');
 
-    hamburgerBtn.addEventListener('click', () => {
-        hamburgerMenu.style.display = 'flex';
-    });
+    hamburgerBtn.on('click', () => {
+        hamburgerMenu.toggle();
+    });   
 
-    let hamburgerExitBtn = document.querySelector('.exit-btn');
-
-    hamburgerExitBtn.addEventListener('click', () => {
-        hamburgerMenu.style.display = 'none';
+    hamburgerExitBtn.on('click', () => {
+        hamburgerMenu.toggle();
     });
 
 });
 
-// ------- TEAM ACCORDION WITH VANILLA JS -----------------
+// --------------------- TEAM ACCORDION --------------------------
 
 $(function(){
 
-    let personNameBtns = document.querySelectorAll('.persons__link');
-    let personItems = document.querySelectorAll('.persons__item');
+    let personNameBtns = $('.persons__link');
 
-
-
-    for(let i = 0; i < personNameBtns.length; i++){
-        personNameBtns[i].addEventListener('click', (e) => {
-            e.preventDefault();
-            // REMOVE ACTIVE-CLASS FOR ALL ITEMS AFTER CLICK
-            for(let x = 0; x < personItems.length; x++){
-            personItems[x].classList.remove('persons__item_active');
-            }
-            // ADD ACTIVE-CLASS FOR CHOSEN ITEM
-            e.currentTarget.parentNode.classList.toggle('persons__item_active');
-            });
-        };
-
+    personNameBtns.on('click', (e) => {
+        e.preventDefault();
+        $(e.currentTarget).parent().toggleClass('persons__item_active');
+    });
 });
 
-// --------- MENU ACCORDION WITH JQUERY -------------------
+// --------------------- MENU ACCORDION -------------------------
 
 
 $(function(){
     $('.menu-acco__link').on('click', (e)=>{
         e.preventDefault();
-        // REMOVE ACTIVE-CLASS FOR ALL ITEMS AFTER CLICK
-        $('.menu-acco__item').removeClass('menu-acco__item_active');
-        // ADD ACTIVE-CLASS FOR CHOSEN ITEM
-        $(e.currentTarget).parent().toggleClass('menu-acco__item_active');
+
+        const thisItemLink = e.currentTarget;
+        const thisItem = $(e.currentTarget).parent();
+
+        $('.menu-acco__item').not(thisItem).removeClass('menu-acco__item_active');
+        thisItem.toggleClass('menu-acco__item_active');
     });
 });
 
@@ -62,36 +52,6 @@ $(function(){
     });
 });
 
-// -------------------- OWL CAROUSEL ------------------------
-
-// $(function(){
-
-    
-
-//     $(".owl-carousel").owlCarousel({
-//         loop:false,
-//         items:1,
-//         autoHeight:true,
-//         autoWidth:true
-//     });
-        
-//     var owl = $('.owl-carousel');
-//     owl.owlCarousel();
-        
-//     // Go to the next item
-//     $('.burgers__btn_next').click(function() {
-//         owl.trigger('next.owl.carousel');
-//     })
-//     // Go to the previous item
-//     $('.burgers__btn_prev').click(function() {
-//         // With optional speed parameter
-//         // Parameters has to be in square bracket '[]'
-//         owl.trigger('prev.owl.carousel', [300]);
-//     })
-    
-   
-
-// })
 
 // ------------------- MY SLIDER ----------------------
 
@@ -103,8 +63,8 @@ $(function(){
     const slideItem = $('.burgers__item');
     const btnAction = 'wobble';
     const regularBtnAction = 'rubberBand';
-    const prevSlideAction = 'bounceInRight';
-    const nextSlideAction = 'bounceInLeft';
+    const prevSlideAction = 'bounceInLeft';
+    const nextSlideAction = 'bounceInRight';
 
     function toggleAnimationClass(animClass, animLmnt){
         animLmnt.addClass(animClass);
@@ -116,14 +76,11 @@ $(function(){
     function changeActiveClass(notActLmnt, activeLmnt, slideAction){
         activeLmnt.addClass('visually-hidden');
         activeLmnt.removeClass('burgers__item_active');
+        notActLmnt.addClass('burgers__item_active');
+        notActLmnt.removeClass('visually-hidden');
         activeLmnt.removeClass(slideAction);
-
-        setTimeout(()=>{
-            notActLmnt.removeClass('visually-hidden');
-            notActLmnt.addClass(slideAction);
-            notActLmnt.addClass('burgers__item_active');
-        }, 200);
-                
+        notActLmnt.addClass(slideAction);
+        notActLmnt.removeClass('visually-hidden');
     };
 
     prevBtn.on('click', e =>{
@@ -166,11 +123,8 @@ $(function(){
 // ---------------------- FULLPAGE.JS ---------------------------
 
 $(function (){
-
-
     $('#fullpage').fullpage({
-        anchors:['firstPage', 'secondPage', 'thirdPage']
+        anchors:['Page1', 'Page2', 'Page3','Page4', 'Page5', 'Page6','Page7', 'Page8'],
+        menu: '#menu'
     });
-
-
 });

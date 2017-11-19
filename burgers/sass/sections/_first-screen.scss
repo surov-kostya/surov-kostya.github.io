@@ -17,19 +17,7 @@
 .first-screen__header{
     height: 86px;
     display: flex;
-    align-items: flex-end;     
-}
-
-.first-screen__logo{
-    margin-right:20px;
-
-    @include tablets{
-        margin-left:2px;
-    }
-
-    @include phones{
-		margin-left:7px;
-	}
+    align-items: center;    
 }
 
 .logo-link{
@@ -38,7 +26,6 @@
 
 .first-screen__menu{
     margin-left:auto;
-    margin-bottom:25px;
 }
 
 
@@ -50,10 +37,6 @@
     @include tablets{
         display:none;
     }
-
-    @include phones{
-        display:none;
-    }    
 }
 
 .navigation__item{
@@ -98,55 +81,29 @@
 
 .first-screen__content{
     display:flex;
-    // flex-wrap:wrap;
+    flex-wrap:wrap;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
     flex:1;
-    padding:43px 37px 0px 0px;
 
     @include tablets{
-        flex-wrap:wrap;
-        justify-content:space-around;
-        padding:46px 0 73px 0;
-    }
-
-    @include phones{
-        padding:107px 0 0 42px;        
-    }
-}
-
-.first-screen__burger-wrap{
-    position:relative;
-    flex-basis: 465px;
-    height:325px;
-    width:367px;
-    display:flex;
-    align-items: flex-end;
-    
-    @include tablets{
-        height:424px;
-        
-        padding-left:5px;
-    }
-        
-    @include phones{
-        height:261px;
-        width:295px;
-        margin-bottom:18px;
+        flex-flow:column;
     }
 }
 
 .first-screen__burger{
-    position:absolute;
+    flex-basis: 451px;
     height:424px;
     width:451px;
     background: url(../img/first-screen/burger.png) no-repeat center bottom;
-    background-size:cover;
-
+    background-size:451px 424px;
+        
     @include phones{
-        height:333px;
-        width:400px;
-        background: url(../img/first-screen/burger-phones.png) no-repeat center bottom;
+        height:339px;
+        width:361px;
+        margin-bottom:18px;
+        background-image: url(../img/first-screen/burger-phones.png);
+        background-size:361px 339px;
     }
 }
 
@@ -154,36 +111,24 @@
 
 .first-screen__info{
     flex-basis: 405px;
-    height:424px;
     display:flex;
     flex-flow:column;
     justify-content: center;
-    padding-bottom: 27px;
 
     @include tablets{
-        margin-right:0;
         text-align: center;
-        padding-bottom:0;
-        padding-right:7px;
-        min-height:0;
-        height:235px;
     }
 
     @include phones{
-        margin-right:0;
         text-align: center;
-        padding-right:45px;
-        min-height:0;
     }
 }
 
 .first-screen__title{
     @include font-h1($color-yellow);
-    margin-bottom: 19px;
 
     @include phones{
         font-size:63px;
-        margin-bottom: 0px;
     }
 }
 
@@ -206,60 +151,10 @@
 .first-screen__arrow-scroll{
     width: 29px;
     align-self: center;
-    margin-bottom: 35px;
-    height:75px;
-
-    @include tablets{
-        height: 85px;
-    }
-
-    @include phones{
-        height: 75px;
-    }
 }
 
 .arrow-scroll{
     fill: $color-white;
     width: 29px;
     height:17px;
-    margin-top:54px;    
-
-    @include tablets{
-        margin-top:64px;
-    }
-}
-
-// -------------------------- HAMBURGER MENU -------------------------
-
-.hamburger{
-    display:none;
-    height:22px;
-    width:24px;
-    margin-bottom:28px;
-    margin-left:29px;
-    margin-right:9px;
-
-    @include tablets{
-        display:block;
-    }
-
-    @include phones{
-        display:block;
-    }
-}
-
-.hamburger__outer{
-    border-top: 4px solid $color-white;
-    border-bottom: 4px solid $color-white;
-    height:100%;
-    width:100%;
-    display:flex;
-    flex-flow:column;
-    justify-content:center;
-}
-
-.hamburger__inner{
-    height:4px;
-    width:100%;
-    background-color: $color-white;
 }

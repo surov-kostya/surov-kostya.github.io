@@ -24,22 +24,24 @@
 
 .fixed-nav-bar__radio{
     position: relative;
-    width:6px;
-    height: 6px;
+    width:5px;
+    height: 5px;
     border-radius: 50%;
     background-color: #fff;
-    margin-bottom: 15.3px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.7);
 }
 
-.fixed-nav-bar__item_active{
+#menu .active .fixed-nav-bar__link{
     .fixed-nav-bar__radio:before{
         content:"";
         position: absolute;
-        left: -5.65px;
-        top:-5.5px;
-        width:15px;
-        height: 15px;
+        left: -5px;
+        top:-5px;
+        width:13px;
+        height: 13px;
         border-radius: 50%;
         border:1px #fff solid;
+        box-shadow: 0 0 1px rgba(0,0,0,0.7);
     }
 }
