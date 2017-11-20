@@ -32,6 +32,10 @@
     box-shadow: 0 0 3px rgba(0,0,0,0.7);
 }
 
+#menu .active {
+    animation-name: zoomIn;
+}
+
 #menu .active .fixed-nav-bar__link{
     .fixed-nav-bar__radio:before{
         content:"";
@@ -42,6 +46,6 @@
         height: 13px;
         border-radius: 50%;
         border:1px #fff solid;
-        box-shadow: 0 0 1px rgba(0,0,0,0.7);
+        box-shadow: 0 0 1px rgba(0,0,0,0.7);  
     }
 }

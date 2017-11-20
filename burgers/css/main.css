@@ -301,6 +301,10 @@ section {
   -webkit-box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.7); }
 
+#menu .active {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
 #menu .active .fixed-nav-bar__link .fixed-nav-bar__radio:before {
   content: "";
   position: absolute;
