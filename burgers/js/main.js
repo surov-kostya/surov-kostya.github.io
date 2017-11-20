@@ -5,6 +5,7 @@ $(function(){
     let hamburgerBtn = $('.hamburger');
     let hamburgerMenu = $('.fullscreen-menu');
     let hamburgerExitBtn = $('.exit-btn');
+    let anyMenuItem = $('.fullscreen-menu__link');
 
     hamburgerBtn.on('click', () => {
         hamburgerMenu.toggle();
@@ -12,6 +13,10 @@ $(function(){
 
     hamburgerExitBtn.on('click', () => {
         hamburgerMenu.toggle();
+    });
+
+    anyMenuItem.on('click', () => {
+        hamburgerMenu.hide();
     });
 
 });

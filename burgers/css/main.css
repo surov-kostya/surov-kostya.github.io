@@ -1627,41 +1627,39 @@ section {
 
 .hamburger {
   position: fixed;
-  display: none;
   height: 1.375rem;
   width: 1.5rem;
   top: 2.125rem;
-  right: 1.875rem; }
-  @media screen and (max-width: 768px) {
-    .hamburger {
-      display: block; } }
-  @media screen and (max-width: 480px) {
-    .hamburger {
-      display: block; } }
-
-.hamburger__outer {
-  border-top: 0.1875rem solid #ffffff;
-  border-bottom: 0.1875rem solid #ffffff;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  right: 1.875rem;
+  background: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
-.hamburger__inner {
+.hamburger__line {
   height: 0.1875rem;
-  width: 100%;
-  background-color: #ffffff; }
-  @media screen and (max-width: 480px) {
-    .hamburger__inner {
-      height: 0.125rem; } }
+  -ms-flex-preferred-size: 0.1875rem;
+  flex-basis: 0.1875rem;
+  width: 1.5rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.7);
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.1875rem; }
 
 .fullscreen-menu {
   position: absolute;
