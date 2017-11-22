@@ -77,11 +77,11 @@
     @include font-text($color-white);
     line-height: 24px;
     background-color:rgba(#2f3234, 0.95); 
-    width:540px;
     height:100%;
-    padding:65px 36px;
     overflow: hidden;
     text-overflow: ellipsis;
+    width:540px;
+    padding:65px 36px;
     display:none;
 
     @include tablets{
@@ -109,6 +109,8 @@
 
 .menu-acco__item_active .menu-acco__text{
     display:initial;
+    animation-name: fadeIn;
+    
 }
 
 .menu-acco__item_active .menu-acco__title{

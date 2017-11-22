@@ -47,6 +47,7 @@ $(function(){
 
         const thisItemLink = e.currentTarget;
         const thisItem = $(e.currentTarget).parent();
+        const itemText = $('.menu-acco__text');
 
         $('.menu-acco__item').not(thisItem).removeClass('menu-acco__item_active');
         thisItem.toggleClass('menu-acco__item_active');
@@ -56,7 +57,7 @@ $(function(){
 // ---------- BURGER CONSISTANCE TABLE TOGGLE ---------------
 
 $(function(){
-    $('.consist__btn').on('click', (e) =>{
+    $('.consist__btn').on("mouseenter mouseleave", (e) =>{
         e.preventDefault();
         $('.consist-table').toggle();
     });

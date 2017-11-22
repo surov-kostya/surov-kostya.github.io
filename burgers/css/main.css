@@ -1405,11 +1405,11 @@ section {
   color: #ffffff;
   line-height: 1.5rem;
   background-color: rgba(47, 50, 52, 0.95);
-  width: 33.75rem;
   height: 100%;
-  padding: 4.0625rem 2.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 33.75rem;
+  padding: 4.0625rem 2.25rem;
   display: none; }
   @media screen and (max-width: 768px) {
     .menu-acco__text {
@@ -1441,7 +1441,9 @@ section {
     flex: 1; } }
 
 .menu-acco__item_active .menu-acco__text {
-  display: initial; }
+  display: initial;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
 
 .menu-acco__item_active .menu-acco__title {
   color: #f9b43b; }
@@ -1566,6 +1568,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
   margin-bottom: 2.5rem; }
   @media screen and (max-width: 768px) {
     .persons__item_active .persons__detail {

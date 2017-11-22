@@ -119,6 +119,7 @@
 
 .persons__item_active .persons__detail{
     display:flex;
+    animation-name: fadeIn;
     margin-bottom:40px;
     
     @include tablets{
