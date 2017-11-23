@@ -1,16 +1,11 @@
 .order-btn {
+    @include font-btn;
     border: 0px;
     background-color: #e45028;
     border-radius: 4px;
     height: 35px;
     width: 97px;
     margin-right:1px;
-    color:#fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-family: "Ubuntu";
-    font-weight: 500; 
     display:block;
     cursor: pointer;
     &:hover{

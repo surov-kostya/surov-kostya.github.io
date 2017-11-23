@@ -11,22 +11,24 @@
     border: 0;
     cursor: pointer;
     display:none;
-    flex-flow: column;
-    justify-content: space-between;
 
     @include tablets{
-        display:flex;
+        display:block;
     }
 }
 
 .hamburger__line{
-    height:3px;
-    flex-basis:3px;
-    width:24px;
+    height:4px;
+    width:100%;
     background-color: $color-white;
     box-shadow: 0 0 3px rgba(0,0,0,0.7);
     flex-shrink:0;
     border-radius:3px;
+    margin-bottom:5px;
+
+    &:last-child{
+        margin-bottom:o;
+    }
 }
 
 // ---------------------------- MENU ------------------------------

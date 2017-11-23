@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/animate.css">
         <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
-        <link rel="stylesheet" href="./css/jquery.fancybox.css">
         <link rel="stylesheet" href="./css/main.css">
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="./js/svg4everybody.js"></script>
@@ -42,8 +41,10 @@
                                     <li class="navigation__item"><a href="#Page6" class="navigation__link">Отзывы</a></li>
                                     <li class="navigation__item"><a href="#Page8" class="navigation__link">Контакты</a></li>
                                 </ul>
-                            </nav>                        
-                            <button href="#" class="order-btn order-btn_first-screen">Заказать</button>
+                            </nav> 
+                            <a href='#Page7' class="order-link">                    
+                                <button class="order-btn order-btn_first-screen">Заказать</button>
+                            </a>
                                          
                         </header>
                         <div class="first-screen__content">
@@ -201,7 +202,9 @@
                                                 <h1>500</h1>
                                                 <h2>рублей</h2>
                                             </div>
-                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                            <a href='#Page7' class="order-link">
+                                                <button class="order-btn order-btn_burgers">Заказать</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -288,7 +291,9 @@
                                                 <h1>500</h1>
                                                 <h2>рублей</h2>
                                             </div>
-                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                            <a href='#Page7' class="order-link">
+                                                <button class="order-btn order-btn_burgers">Заказать</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -375,7 +380,9 @@
                                                 <h1>500</h1>
                                                 <h2>рублей</h2>
                                             </div>
-                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                            <a href='#Page7' class="order-link">
+                                                <button class="order-btn order-btn_burgers">Заказать</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -462,7 +469,9 @@
                                                 <h1>500</h1>
                                                 <h2>рублей</h2>
                                             </div>
-                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                            <a href='#Page7' class="order-link">
+                                                <button class="order-btn order-btn_burgers">Заказать</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -549,7 +558,9 @@
                                                 <h1>500</h1>
                                                 <h2>рублей</h2>
                                             </div>
-                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                            <a href='#Page7' class="order-link">
+                                                <button class="order-btn order-btn_burgers">Заказать</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -636,7 +647,9 @@
                                                 <h1>500</h1>
                                                 <h2>рублей</h2>
                                             </div>
-                                            <button href="#" class="order-btn order-btn_burgers">Заказать</button>
+                                            <a href='#Page7' class="order-link">
+                                                <button class="order-btn order-btn_burgers">Заказать</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -879,11 +892,15 @@
                                         </label>
                                     </div>
                                     <div class="form__btns">
-                                        <input class="order-btn" type="submit" value="Заказать">
+                                        <input class="order-btn order-btn_inform" type="submit" value="Заказать">
                                         <input class="form__reset" type="reset" value="Очистить">
                                     </div>                                
                                 </div>
-                            </div>   
+                            </div>
+                            <div class="order-message">
+                                <span class="order-message__text">Сообщение отправлено</span>
+                                <button class="order-message__btn">Закрыть</button>
+                            </div>
                         </form>
                     </div>
                 </section>
@@ -1000,12 +1017,11 @@
                     <li class="fullscreen-menu__item"><a href="#Page8" class="fullscreen-menu__link">Контакты</a></li>
                     <li class="fullscreen-menu__item"><a href="#Page5" class="fullscreen-menu__link">Меню</a></li>
                 </ul>
-            </nav>         
+            </nav>
 
         </div>
         <script src="./js/jquery-3.2.1.min.js"></script>
         <script src="./js/jquery.fullpage.min.js"></script>
-        <script src="./js/jquery.fancybox.min.js"></script>
         <script src="./js/map.js"></script>
         <script src="./js/main.js"></script>   
     </body>

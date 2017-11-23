@@ -947,7 +947,8 @@ section {
   left: 0;
   right: 0;
   height: 3.625rem;
-  background: url(../img/contacts/footer-bg.jpg) top right no-repeat; }
+  background: url(../img/contacts/footer-bg.jpg) top right no-repeat;
+  background-size: cover; }
   @media screen and (max-width: 768px) {
     .footer {
       height: 3.8125rem; } }
@@ -1313,6 +1314,52 @@ section {
     outline: none;
     border: 0.125rem solid #f9b43b; }
 
+.order-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 12.25rem;
+  height: 6.625rem;
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  -webkit-box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.order-message__text {
+  font-size: 0.875rem;
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #2f3234; }
+
+.order-message__btn {
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  width: 6.0625rem;
+  height: 2.1875rem;
+  background-color: #e35028;
+  border-radius: 0.3125rem;
+  cursor: pointer; }
+
 .menu {
   background-image: url(../img/menu/bg.jpg); }
 
@@ -1600,18 +1647,18 @@ section {
     top: 0; }
 
 .order-btn {
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 500;
   border: 0px;
   background-color: #e45028;
   border-radius: 0.25rem;
   height: 2.1875rem;
   width: 6.0625rem;
   margin-right: 1px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.8125rem;
-  font-family: "Ubuntu";
-  font-weight: 500;
   display: block;
   cursor: pointer; }
   .order-btn:hover {
@@ -1643,31 +1690,23 @@ section {
   outline: none;
   border: 0;
   cursor: pointer;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  display: none; }
   @media screen and (max-width: 768px) {
     .hamburger {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+      display: block; } }
 
 .hamburger__line {
-  height: 0.1875rem;
-  -ms-flex-preferred-size: 0.1875rem;
-  flex-basis: 0.1875rem;
-  width: 1.5rem;
+  height: 0.25rem;
+  width: 100%;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.7);
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  border-radius: 0.1875rem; }
+  border-radius: 0.1875rem;
+  margin-bottom: 0.3125rem; }
+  .hamburger__line:last-child {
+    margin-bottom: o; }
 
 .fullscreen-menu {
   position: absolute;

@@ -141,12 +141,19 @@ $(function (){
 });
 
 
-// ------------------------- FANCYBOX ----------------------------
+
+// -------------------- ORDER MESSAGE --------------------------
 
 $(function (){
+    $('.order-message').hide();
 
-	$("[data-fancybox]").fancybox({
-		// Options will go here
+    $('.order-btn_inform').on('click', e=>{
+        e.preventDefault();
+        $('.order-message').show();
     });
 
-});
+    $('.order-message__btn').on('click', e=>{
+        $('.form__reset').trigger('click');
+        $('.order-message').hide();
+    });
+})

@@ -282,3 +282,35 @@
     }
 }
 
+// --------------------- ORDER MESSAGE ------------------------
+
+.order-message{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:196px;
+    height: 106px;
+    background-color:$color-white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    display:flex;
+    flex-flow:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.order-message__text{
+    @include font-text($color-black);
+}
+
+.order-message__btn{
+    @include font-btn;
+    outline:none;
+    border:none;
+    width:97px;
+    height:35px;
+    background-color:$color-orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
