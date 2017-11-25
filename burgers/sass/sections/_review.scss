@@ -30,6 +30,76 @@
     }
 }
 
+.review__popup{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:rgba(#2f3234, .92);
+}
+
+.popup__comment{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color:$color-white;
+    border-radius: 5px;
+    width:475px;
+    min-height:256px;
+    display:flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start; 
+    padding:28px 28px;
+
+    @include phones{
+        width:461px;
+    }
+}
+
+.popup__username{
+    flex:0;
+    @include font-h3($color-black);
+    margin-bottom:30px;
+}
+
+.popup__text{
+    flex:0;
+    @include font-text($color-black);
+    line-height:24px;
+}
+
+.close-btn{
+    position:absolute;
+    background-color: transparent;
+    cursor: pointer;
+    top:20px;
+    right:35px;
+    border:0;
+    width:14px;
+    height:14px;
+}
+
+.close-btn__block{
+    position:absolute;
+    height:21px;
+    width: 4px;
+    background-color: #ec8468;
+    border-radius:3px;
+    top:-2px;
+    left:8px;
+}
+
+.close-btn__block_first{
+    transform: rotate(45deg);
+}
+
+.close-btn__block_second{
+    transform: rotate(-45deg);
+}
+
 // ------------------------------ COMMENT ----------------------
 
 .comment{
@@ -78,14 +148,16 @@
 .comment__text{
     @include font-text($color-white);
     line-height:24px;
-    color:#fff;
     visibility: hidden;
     text-overflow: hidden;
     overflow:hidden;
     flex-shrink: 9;
+    height:140px;
+    position:relative;
 
     @include tablets{
         margin-top:-10px;
+        height:140px;
     }
         
     @include phones{

@@ -1,9 +1,9 @@
 .gradient-orange{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,ed9139+50,f9b43b+100 */
-    background: #f9b43b; /* Old browsers */
-    background: -moz-linear-gradient(top, #f9b43b 0%, #ed9139 50%, #f9b43b 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f9b43b 0%,#ed9139 50%,#f9b43b 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f9b43b 0%,#ed9139 50%,#f9b43b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,eb8d38+50,f9b43b+100 */
+    background: rgb(249,180,59); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(249,180,59,1) 0%, rgba(235,141,56,1) 50%, rgba(249,180,59,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(249,180,59,1) 0%,rgba(235,141,56,1) 50%,rgba(249,180,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(249,180,59,1) 0%,rgba(235,141,56,1) 50%,rgba(249,180,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 ); /* IE6-9 */
 }
 
@@ -162,7 +162,7 @@
     }
 }
 
-.consist__svg{
+.consist__image{
     fill: $color-white;
     width:47px;
     height:44px;
@@ -190,7 +190,7 @@
     display:none;
 }
 
-.consist-table__svg{
+.consist-table__image{
     width:45px;
     height:40px;
 
@@ -240,7 +240,7 @@
     }
 }
 
-.burgers__svg{
+.burgers__image{
     width:28px;
     height:17px;
     fill:$color-white;
@@ -255,7 +255,7 @@
 
 }
 
-.burgers__svg_prev{
+.burgers__image_prev{
     transform: rotate(90deg);
 
     @include phones{
@@ -266,7 +266,7 @@
 
 }
 
-.burgers__svg_next{
+.burgers__image_next{
     transform: rotate(-90deg);
 
     @include phones{

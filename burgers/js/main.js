@@ -16,7 +16,7 @@ $(function(){
     });
 
     anyMenuItem.on('click', () => {
-        hamburgerMenu.hide();
+        hamburgerMenu.fadeOut();
     });
 
 });
@@ -128,6 +128,33 @@ $(function(){
         
     });
 
+    // ------------------- TOUCHSWIPE -------------------
+
+    slideItem.swipe( {
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            let slideItemActive = $('.burgers__item_active');
+            if (direction == 'left') {            
+                let slideItemNext = slideItemActive.next(slideItem);
+
+                if (slideItemNext.length){
+                    toggleAnimationClass(regularBtnAction, prevBtn);
+                    changeActiveClass(slideItemNext, slideItemActive, nextSlideAction);
+                }else{
+                    toggleAnimationClass(btnAction, nextBtn);                      
+                }; 
+            }else{
+                let slideItemPrev = slideItemActive.prev(slideItem);  
+                
+                if (slideItemPrev.length){
+                    toggleAnimationClass(regularBtnAction, nextBtn);                    
+                    changeActiveClass(slideItemPrev, slideItemActive, prevSlideAction);
+                }else{
+                    toggleAnimationClass(btnAction, prevBtn);                      
+                };
+            };  
+        }
+      });
+
 });
 
 
@@ -147,13 +174,42 @@ $(function (){
 $(function (){
     $('.order-message').hide();
 
-    $('.order-btn_inform').on('click', e=>{
+    $('.order__form').on('submit', e=>{
         e.preventDefault();
         $('.order-message').show();
     });
 
     $('.order-message__btn').on('click', e=>{
+        e.preventDefault();
         $('.form__reset').trigger('click');
         $('.order-message').hide();
     });
 })
+
+// ---------------------- REVIEW POPUP ---------------------
+
+$(function(){
+    const popup = $('.review__popup');
+    const popupInfo = $('.popup__text');
+    const popupUser = $('.popup__username');
+
+    popup.hide();
+
+    $('.comment__btn').on('click', e=>{
+        let user = $(e.currentTarget).siblings('.comment__username').text();
+        let review = $(e.currentTarget).siblings('.comment__text').text();
+        
+        console.log(user);
+        console.log(review);
+
+        popupUser.html(user);
+        popupInfo.html(review);
+        popup.fadeIn();
+    });
+
+    $('.close-btn').on('click', e=>{
+        popupUser.empty();
+        popupInfo.empty();
+        popup.fadeOut();
+    });
+});

@@ -413,30 +413,30 @@ section {
       height: 5.6875rem;
       text-align: center; } }
 
-.benefit__svg_meat {
+.benefit__image_meat {
   width: 6.125rem;
   height: 5.875rem;
   fill: #df5430; }
   @media screen and (max-width: 480px) {
-    .benefit__svg_meat {
+    .benefit__image_meat {
       height: 6rem;
       margin-right: 1.25rem; } }
 
-.benefit__svg_hand {
+.benefit__image_hand {
   width: 4.5625rem;
   height: 5.8125rem;
   fill: #f5b640; }
   @media screen and (max-width: 480px) {
-    .benefit__svg_hand {
+    .benefit__image_hand {
       height: 5.4375rem;
       margin-right: 1.1875rem; } }
 
-.benefit__svg_natural {
+.benefit__image_natural {
   width: 5.625rem;
   height: 5.375rem;
   fill: #88c241; }
   @media screen and (max-width: 480px) {
-    .benefit__svg_natural {
+    .benefit__image_natural {
       margin-right: 1.25rem;
       height: 4.75rem; } }
 
@@ -501,6 +501,90 @@ section {
       height: 25%;
       width: 50%; } }
 
+.review__popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 50, 52, 0.92); }
+
+.popup__comment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  width: 29.6875rem;
+  min-height: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 1.75rem 1.75rem; }
+  @media screen and (max-width: 480px) {
+    .popup__comment {
+      width: 28.8125rem; } }
+
+.popup__username {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "gagalin", 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #2f3234;
+  margin-bottom: 1.875rem; }
+
+.popup__text {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  font-size: 0.875rem;
+  font-family: "Ubuntu", 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #2f3234;
+  line-height: 1.5rem; }
+
+.close-btn {
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  top: 1.25rem;
+  right: 2.1875rem;
+  border: 0;
+  width: 0.875rem;
+  height: 0.875rem; }
+
+.close-btn__block {
+  position: absolute;
+  height: 1.3125rem;
+  width: 0.25rem;
+  background-color: #ec8468;
+  border-radius: 0.1875rem;
+  top: -0.125rem;
+  left: 0.5rem; }
+
+.close-btn__block_first {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.close-btn__block_second {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .comment {
   height: 100%;
   width: 100%;
@@ -561,15 +645,17 @@ section {
   font-weight: 300;
   color: #ffffff;
   line-height: 1.5rem;
-  color: #fff;
   visibility: hidden;
   text-overflow: hidden;
   overflow: hidden;
   -ms-flex-negative: 9;
-  flex-shrink: 9; }
+  flex-shrink: 9;
+  height: 8.75rem;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .comment__text {
-      margin-top: -0.625rem; } }
+      margin-top: -0.625rem;
+      height: 8.75rem; } }
   @media screen and (max-width: 480px) {
     .comment__text {
       height: 0; } }
@@ -613,13 +699,13 @@ section {
         content: "Читать отзыв"; } }
 
 .gradient-orange {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,ed9139+50,f9b43b+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,eb8d38+50,f9b43b+100 */
   background: #f9b43b;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(50%, #ed9139), to(#f9b43b));
-  background: linear-gradient(to bottom, #f9b43b 0%, #ed9139 50%, #f9b43b 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(50%, #eb8d38), to(#f9b43b));
+  background: linear-gradient(to bottom, #f9b43b 0%, #eb8d38 50%, #f9b43b 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
   /* IE6-9 */ }
@@ -841,7 +927,7 @@ section {
   .consist__btn:hover {
     background-color: #e35028; }
 
-.consist__svg {
+.consist__image {
   fill: #ffffff;
   width: 2.9375rem;
   height: 2.75rem;
@@ -871,14 +957,14 @@ section {
   padding: 1.25rem;
   display: none; }
 
-.consist-table__svg {
+.consist-table__image {
   width: 2.8125rem;
   height: 2.5rem; }
-  .consist-table__svg_beef, .consist-table__svg_sauce {
+  .consist-table__image_beef, .consist-table__image_sauce {
     fill: #e35028; }
-  .consist-table__svg_buns, .consist-table__svg_cucumber {
+  .consist-table__image_buns, .consist-table__image_cucumber {
     fill: #f9b43b; }
-  .consist-table__svg_salad, .consist-table__svg_cheese {
+  .consist-table__image_salad, .consist-table__image_cheese {
     fill: #8bc940; }
 
 .consist-table__cell:first-child {
@@ -904,30 +990,30 @@ section {
     .burgers__btn {
       position: relative; } }
 
-.burgers__svg {
+.burgers__image {
   width: 1.75rem;
   height: 1.0625rem;
   fill: #ffffff; }
-  .burgers__svg:hover {
+  .burgers__image:hover {
     fill: #e35028; }
   @media screen and (max-width: 480px) {
-    .burgers__svg {
+    .burgers__image {
       position: absolute; } }
 
-.burgers__svg_prev {
+.burgers__image_prev {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
   @media screen and (max-width: 480px) {
-    .burgers__svg_prev {
+    .burgers__image_prev {
       bottom: 0px;
       right: -1.25rem;
       z-index: 1; } }
 
-.burgers__svg_next {
+.burgers__image_next {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
   @media screen and (max-width: 480px) {
-    .burgers__svg_next {
+    .burgers__image_next {
       bottom: 0px;
       left: -1.25rem;
       z-index: 1; } }
@@ -999,7 +1085,7 @@ section {
   font-weight: 700;
   color: #e35028; }
 
-.footer__svg-phone {
+.footer__image-phone {
   position: absolute;
   bottom: 0.125rem;
   left: -1.25rem;
@@ -1015,11 +1101,11 @@ section {
 .socials__link {
   margin-left: 1.0625rem; }
 
-.socials__svg {
+.socials__image {
   width: 1.25rem;
   height: 1.25rem;
   fill: #585858; }
-  .socials__svg:hover {
+  .socials__image:hover {
     fill: #ffffff; }
 
 .contacts__map {
