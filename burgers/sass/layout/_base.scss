@@ -15,7 +15,7 @@ html{
 	}
 
 	@include phones{
-		font-size:calc(12 * 1px);
+		font-size:calc(13 * 1px);
 	}
 }
 
@@ -72,11 +72,11 @@ section{
 	overflow:hidden;
 
 	@include tablets{
-		min-height: 1024px;
+		min-height: calc(1024 / 16 * 1rem);
 	}
 
 	@include phones{
-		min-height: 800px;
+		min-height: calc(800 / 16 * 1rem);
 	}
 }
 

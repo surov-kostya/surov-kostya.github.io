@@ -169,23 +169,6 @@ $(function (){
 
 
 
-// -------------------- ORDER MESSAGE --------------------------
-
-$(function (){
-    $('.order-message').hide();
-
-    $('.order__form').on('submit', e=>{
-        e.preventDefault();
-        $('.order-message').show();
-    });
-
-    $('.order-message__btn').on('click', e=>{
-        e.preventDefault();
-        $('.form__reset').trigger('click');
-        $('.order-message').hide();
-    });
-})
-
 // ---------------------- REVIEW POPUP ---------------------
 
 $(function(){
@@ -213,3 +196,45 @@ $(function(){
         popup.fadeOut();
     });
 });
+
+
+
+// -------------------- ORDER MESSAGE --------------------------
+
+$(function(){
+
+    $('.order-message').hide();
+
+    $('.order__form').on('submit', e=>{
+        e.preventDefault();
+
+        let form = $(e.currentTarget),
+            url = form.attr('action'),
+            data = form.serialize();            
+            request = $.ajax({
+                type: 'POST',
+                url: url,
+                data: data,
+                dataType: 'JSON'
+            });
+
+        request.done(function(mes) {
+            if (mes.status === 'OK') {
+                orderMsg.prepend('<span class="order-message__text">' + mes.msg + '</span>');
+            } else {
+                orderMsg.prepend('<span class="order-message__text">' + mes.msg + '</span>');
+            }
+        });
+
+        $('.order-message').show();
+
+    });
+
+    $('.order-message__btn').on('click', e=>{
+        e.preventDefault();
+        $('.form__reset').trigger('click');
+        $('.order-message').hide();
+        $('.order-message__text').remove();
+    });
+});
+

@@ -20,8 +20,17 @@
     align-items: center;    
 }
 
-.logo-link{
+.first-screen__logo-link{
     display:block;
+}
+
+.first-screen__logo-pic{
+    width:90px;
+    height:70px;
+}
+
+.logo-pic{
+
 }
 
 .first-screen__menu{
@@ -157,4 +166,5 @@
     fill: $color-white;
     width: 29px;
     height:17px;
+    margin-bottom:40px;
 }

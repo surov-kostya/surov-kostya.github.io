@@ -29,8 +29,8 @@
                 <section class="section first-screen">
                     <div class="container">
                         <header class="first-screen__header">
-                            <div class="first-screen__logo"><a href="#" class="logo-link">
-                                <img src="./img/fullscreen-menu/logo.svg" />
+                            <div class="first-screen__logo"><a href="#" class="first-screen__logo-link">
+                                <img class="first-screen__logo-pic" src="./img/fullscreen-menu/logo.svg" />
                             </a></div>
                             <nav class="first-screen__menu">
                                 <ul class="navigation">
@@ -839,41 +839,41 @@
                 <section class="section order">
                     <div class="container order__container">
                         <div class="section-title section-title_yellow order__header"><h2>Закажите доставку</h2></div>
-                        <form action="#" class="order__form form">
+                        <form action="server.php" method="POST" class="order__form form" name="form-name">
                             <div class="form_container"> 
                                 <div class="form__left">
                                     <div class="form__row">
                                         <label class="form__block">
                                             <div class="form__block-title">Имя</div>
-                                            <input type="text" class="form__input">
+                                            <input type="text" class="form__input" name="username">
                                         </label>
                                         <label class="form__block">
                                             <div class="form__block-title">Телефон</div>
-                                            <input type="text" class="form__input" placeholder="89212264923">
+                                            <input type="text" class="form__input" name="phone">
                                         </label>
                                     </div>
                                     <div class="form__row">
                                         <label class="form__block">
                                             <div class="form__block-title">Улица</div>
-                                            <input type="text" class="form__input">
+                                            <input type="text" class="form__input" name="street">
                                         </label>
                                     </div>
                                     <div class="form__row">
                                         <label class="form__block">
                                             <div class="form__block-title">Дом</div>
-                                            <input type="text" class="form__input">
+                                            <input type="text" class="form__input" name="house">
                                         </label>
                                         <label class="form__block">
                                             <div class="form__block-title">Корпус</div>
-                                            <input type="text" class="form__input">
+                                            <input type="text" class="form__input" name="building">
                                         </label>
                                         <label class="form__block">
                                             <div class="form__block-title">Квартира</div>
-                                            <input type="text" class="form__input">
+                                            <input type="text" class="form__input" name="flat">
                                         </label>
                                         <label class="form__block form__block_phone">
                                             <div class="form__block-title">Этаж</div>
-                                            <input type="text" class="form__input">
+                                            <input type="text" class="form__input" name="floor">
                                         </label>
                                     </div>
                                     
@@ -882,7 +882,7 @@
                                     <div class="form__row">
                                         <label class="form__block">
                                             <div class="form__block-title">Комментарий</div>
-                                            <textarea class="form__input form__input_textarea"></textarea>
+                                            <textarea class="form__input form__input_textarea" name="comment"></textarea>
                                         </label>
                                     </div>
                                     <div class="form__radio-row">
@@ -897,7 +897,7 @@
                                     </div>
                                     <div class="form__chek-row">
                                         <label class="form__check-block">
-                                            <input class="form__checkbox visually-hidden" type="checkbox" value="no-callback">
+                                            <input class="form__checkbox visually-hidden" type="checkbox" value="no-callback" name="dont-disturb">
                                             <div class="form__block-title form__block-title_checkbox">Не перезванивать</div>
                                         </label>
                                     </div>
@@ -908,7 +908,7 @@
                                 </div>
                             </div>
                             <div class="order-message">
-                                <span class="order-message__text">Сообщение отправлено</span>
+                                <!-- <span class="order-message__text">Сообщение отправлено</span> -->
                                 <button class="order-message__btn">Закрыть</button>
                             </div>
                         </form>
