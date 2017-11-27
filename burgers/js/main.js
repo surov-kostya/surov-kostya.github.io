@@ -249,3 +249,11 @@ $(function(){
         $('.order-message__text').remove();
     });
 });
+
+// ------------------ DOTDOTDOT ---------------------
+
+$(function () {
+    $(".menu-acco__text").dotdotdot({
+        // Options go here
+     });
+});
