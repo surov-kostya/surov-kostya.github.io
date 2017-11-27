@@ -19,6 +19,11 @@ $(function(){
         hamburgerMenu.fadeOut();
     });
 
+    hamburgerMenu.on('mousewheel', e =>{
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
 });
 
 // --------------------- TEAM ACCORDION --------------------------
