@@ -152,7 +152,7 @@ $(function(){
                 }else{
                     toggleAnimationClass(btnAction, nextBtn);                      
                 }; 
-            }else{
+            }else if (direction == 'right') {
                 let slideItemPrev = slideItemActive.prev(slideItem);  
                 
                 if (slideItemPrev.length){
