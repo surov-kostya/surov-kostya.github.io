@@ -161,9 +161,13 @@ $(function(){
                 }else{
                     toggleAnimationClass(btnAction, prevBtn);                      
                 };
+            } else if (direction == 'up') {
+                window.scrollBy(0,300);
+            } else if (direction == 'down'){
+                window.scrollBy(0,-300);
             };  
         }
-      });
+    });
 
 });
 
