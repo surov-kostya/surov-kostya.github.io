@@ -796,7 +796,12 @@ section {
       height: 24.375rem;
       -ms-flex-preferred-size: 24.375rem;
       flex-basis: 24.375rem;
-      background-position: center bottom; } }
+      background-position: center bottom;
+      margin-bottom: 2.5rem; } }
+  @media screen and (max-width: 480px) {
+    .burgers__pic {
+      width: 21.875rem;
+      background-size: 21.875rem 16.25rem; } }
 
 .burgers__energy {
   position: absolute;
@@ -1772,7 +1777,7 @@ section {
       margin-right: 3.75rem; } }
 
 .order-btn_burgers {
-  margin-bottom: 1.0625rem;
+  margin-bottom: 0.4375rem;
   margin-left: 1.875rem; }
 
 .hamburger {

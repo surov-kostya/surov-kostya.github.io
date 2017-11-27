@@ -56,6 +56,12 @@
         height:390px;
         flex-basis:390px;
         background-position: center bottom;
+        margin-bottom:40px;
+    }
+
+    @include phones{  
+        width: 350px;
+        background-size: 350px 260px;
     }
 }
 
