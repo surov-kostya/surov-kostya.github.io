@@ -141,7 +141,8 @@ $(function(){
     // ------------------- TOUCHSWIPE -------------------
 
     slideItem.swipe( {
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData, allowPageScroll) {
+            allowPageScroll = "auto";
             let slideItemActive = $('.burgers__item_active');
             if (direction == 'left') {            
                 let slideItemNext = slideItemActive.next(slideItem);
@@ -161,18 +162,6 @@ $(function(){
                 }else{
                     toggleAnimationClass(btnAction, prevBtn);                      
                 };
-            } else if (direction == 'up') {
-                window.scrollBy({ 
-                    top: 500,
-                    left: 0, 
-                    behavior: 'smooth' 
-                  });
-            } else if (direction == 'down'){
-                window.scrollBy({ 
-                    top: -500,
-                    left: 0, 
-                    behavior: 'smooth' 
-                  });
             };  
         }
     });
