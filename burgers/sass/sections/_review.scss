@@ -37,25 +37,28 @@
     bottom:0;
     left:0;
     background-color:rgba(#2f3234, .92);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .popup__comment{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    position:relative;
     background-color:$color-white;
     border-radius: 5px;
-    width:475px;
+    flex-basis:475px;
     min-height:256px;
     display:flex;
     flex-flow: column;
     justify-content: space-around;
     align-items: flex-start; 
     padding:28px 28px;
+    overflow:hidden;
 
     @include phones{
-        width:461px;
+        flex-basis:461px;
+        flex-shrink:1;
+        margin: 5px;
     }
 }
 

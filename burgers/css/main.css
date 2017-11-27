@@ -512,17 +512,23 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(47, 50, 52, 0.92); }
+  background-color: rgba(47, 50, 52, 0.92);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .popup__comment {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
   background-color: #ffffff;
   border-radius: 0.3125rem;
-  width: 29.6875rem;
+  -ms-flex-preferred-size: 29.6875rem;
+  flex-basis: 29.6875rem;
   min-height: 16rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,10 +542,15 @@ section {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 1.75rem 1.75rem; }
+  padding: 1.75rem 1.75rem;
+  overflow: hidden; }
   @media screen and (max-width: 480px) {
     .popup__comment {
-      width: 28.8125rem; } }
+      -ms-flex-preferred-size: 28.8125rem;
+      flex-basis: 28.8125rem;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      margin: 0.3125rem; } }
 
 .popup__username {
   -webkit-box-flex: 0;
