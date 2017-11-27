@@ -142,7 +142,7 @@ $(function(){
 
     slideItem.swipe( {
         swipe:function(event, direction, distance, duration, fingerCount, fingerData, allowPageScroll) {
-            allowPageScroll = "auto";
+            allowPageScroll = "vertical";
             let slideItemActive = $('.burgers__item_active');
             if (direction == 'left') {            
                 let slideItemNext = slideItemActive.next(slideItem);
