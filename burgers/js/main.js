@@ -52,6 +52,11 @@ $(function(){
         $('.menu-acco__item').not(thisItem).removeClass('menu-acco__item_active');
         thisItem.toggleClass('menu-acco__item_active');
     });
+
+    $('.menu_empty-block').on('click', e =>{
+        e.preventDefault();
+        $('.menu-acco__item').removeClass('menu-acco__item_active');
+    });
 });
 
 // ---------- BURGER CONSISTANCE TABLE TOGGLE ---------------
