@@ -162,9 +162,17 @@ $(function(){
                     toggleAnimationClass(btnAction, prevBtn);                      
                 };
             } else if (direction == 'up') {
-                window.scrollBy(0,500,'smooth');
+                window.scrollBy({ 
+                    top: 500,
+                    left: 0, 
+                    behavior: 'smooth' 
+                  });
             } else if (direction == 'down'){
-                window.scrollBy(0,-500,'smooth');
+                window.scrollBy({ 
+                    top: -500,
+                    left: 0, 
+                    behavior: 'smooth' 
+                  });
             };  
         }
     });
