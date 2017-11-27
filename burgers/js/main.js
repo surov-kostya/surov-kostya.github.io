@@ -141,10 +141,10 @@ $(function(){
         
     });
 
-    // ------------------- TOUCHSWIPE -------------------
+                // ------------------- TOUCHSWIPE -------------------
 
     slideItem.swipe( {
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData, allowPageScroll) {
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
             allowPageScroll = "vertical";
             let slideItemActive = $('.burgers__item_active');
             if (direction == 'left') {            
@@ -252,5 +252,3 @@ $(function(){
         $('.order-message__text').remove();
     });
 });
-
-// ------------------ DOTDOTDOT ---------------------
