@@ -143,9 +143,9 @@ $(function(){
 
                 // ------------------- TOUCHSWIPE -------------------
 
-    slideItem.swipe( {
+    slideItem.swipe( {allowPageScroll:"auto",
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            allowPageScroll = "vertical";
+            
             let slideItemActive = $('.burgers__item_active');
             if (direction == 'left') {            
                 let slideItemNext = slideItemActive.next(slideItem);
@@ -168,8 +168,8 @@ $(function(){
             };  
         }
     });
-
 });
+
 
 
 // ---------------------- FULLPAGE.JS ---------------------------
