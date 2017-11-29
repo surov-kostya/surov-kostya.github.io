@@ -30,10 +30,11 @@
     flex-flow:row;
     justify-content: space-around;
     align-items:center;
-    flex-wrap:wrap;
+    margin-top:5px;
+    // flex-wrap:wrap;
 
     @include tablets{
-        flex-wrap:nowrap;
+        // flex-wrap:nowrap;
         flex-flow:column;
     }
 }
@@ -45,7 +46,7 @@
     background-image: url(../img/burgers/burger-1.png);
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 450px 315px;
+    background-size: 440px 310px;
     width: 443px;
     height:472px;
     flex: 0 1 443px;

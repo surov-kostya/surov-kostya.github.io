@@ -8,7 +8,7 @@ $(function(){
     let anyMenuItem = $('.fullscreen-menu__link');
 
     hamburgerBtn.on('click', () => {
-        hamburgerMenu.toggle();
+        hamburgerMenu.css({'display': 'flex'});
     });   
 
     hamburgerExitBtn.on('click', () => {
@@ -178,7 +178,7 @@ $(function (){
     $('#fullpage').fullpage({
         anchors:['Page1', 'Page2', 'Page3','Page4', 'Page5', 'Page6','Page7', 'Page8'],
         menu: '#menu',
-        responsiveWidth: 768
+        responsiveWidth: 800
     });
 });
 
