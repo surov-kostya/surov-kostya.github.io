@@ -31,10 +31,10 @@
     justify-content: space-around;
     align-items:center;
     margin-top:5px;
-    // flex-wrap:wrap;
+    flex-wrap:wrap;
 
     @include tablets{
-        // flex-wrap:nowrap;
+        flex-wrap:nowrap;
         flex-flow:column;
     }
 }
