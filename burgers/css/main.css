@@ -767,6 +767,7 @@ section {
   margin-top: 0.3125rem;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  
   @media screen and (max-width: 768px) {
     .burgers__item {
       -ms-flex-wrap: nowrap;
