@@ -1,0 +1,28 @@
+.first-section{
+    background-image: url('../img/bg-top/bg-1800.jpg');
+    background-position: center top;
+    background-size: cover;
+    display:flex;
+    flex-flow:column;
+    justify-content: space-between;
+}
+
+.first-section__angles{
+    height: 160px;
+    display:flex;
+}
+
+.first-section__angle-block{
+    width:50%;
+    height:100%;    
+
+    &_left{
+        background-color:#efeee9;
+        clip-path: polygon(0 0, 0 100%, 100% 100%);
+    }
+
+    &_right{
+        background-color:#eeebdf;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+}
