@@ -4,5 +4,8 @@ gulpfile.js
 package.json
 package-lock.json
 node_modules/
+<<<<<<< HEAD
 burgers/
 airplanet/
+=======
+>>>>>>> 81c33b97aed12b3fa5e96eb81ef14ba7842e8221
