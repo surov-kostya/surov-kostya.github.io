@@ -4,52 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <title>Мои работы</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="maincontent">
-        <section class="section first-section">
+      <div class="maincontent my-works">
+        <section class="first-section">
           <header class="first-section__header header">
-            <ul class="header__socials socials">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </ul>
-            <div class="header__hamburger"></div>
+            <div class="header__socials">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="socials__img">                           
+                      <use xlink:href="./assets/icons/svg/symbols.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="socials__img">                           
+                      <use xlink:href="./assets/icons/svg/symbols.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="socials__img">                           
+                      <use xlink:href="./assets/icons/svg/symbols.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="header__hamburger hamburger">
+              <button class="hamburger__button" type="button">
+                <label class="hamburger__label">
+                  <input class="hamburger__input visually-hidden" type="checkbox">
+                  <div class="hamburger__block hamburger__block_top"></div>
+                  <div class="hamburger__block hamburger__block_center"></div>
+                  <div class="hamburger__block hamburger__block_bottom"></div>
+                </label>
+              </button>
+            </div>
           </header>
-          <div class="first-section__person-card person-card">
-            <div class="person-card__avatar"></div>
-            <div class="person-card__name"></div>
-            <div class="person-card__text"></div>
+          <div class="first-section__title">
+            <svg class="first-section__title-img">
+              <use xlink:href="./assets/icons/svg/symbols.svg#portfolio_header"></use>
+            </svg>
           </div>
-          <div class="first-section__arrow"></div>
+          <div class="first-section__person-card"> 
+            <div class="person-card">
+              <div class="person-card__avatar"></div>
+              <div class="person-card__name">Суров Константин</div>
+              <div class="person-card__text">Личный сайт веб-разработчика</div>
+            </div>
+          </div>
+          <div class="first-section__arrow"><a class="first-section__arrow-link" href="#">
+              <svg class="first-section__arrow-img">
+                <use xlink:href="./assets/icons/svg/symbols.svg#arrow_down"></use>
+              </svg></a></div>
           <div class="first-section__angles">
             <div class="first-section__angle-block first-section__angle-block_left"></div>
             <div class="first-section__angle-block first-section__angle-block_right"></div>
           </div>
         </section>
-        <footer class="footer">
-          <div class="footer__top">
-            <ul class="footer__nav footer-nav">
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мои работы</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Обо мне</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Авторизация</a></li>
-            </ul>
-            <ul class="footer__socials footer-socials">
-              <li class="footer-socials__item"><a class="footer-socials__link" href="#"></a></li>
-              <li class="footer-socials__item"><a class="footer-socials__link" href="#"></a></li>
-              <li class="footer-socials__item"><a class="footer-socials__link" href="#"></a></li>
+        <section class="my-works__second-section my-works-second-section">
+          <div class="my-works-second-section__title">
+            <svg class="my-works-second-section__title-bg">
+              <use xlink:href="./assets/icons/svg/symbols.svg#works_header"></use>
+            </svg>
+            <div class="my-works-second-section__title-text">Мои работы</div>
+          </div>
+          <div class="my-works-second-section__projects">
+            <ul class="projects">
+              <li class="projects__item active">
+                <div class="projects__description project-description">
+                  <div class="project-description__title">Сайт школы онлайн образования</div>
+                  <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
+                    <svg class="project-description__link-icon">
+                      <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
+                    </svg></a>
+                </div>
+                <div class="projects__slider project-slider"><img class="project-slider__picture" src="./assets/images/project-slider/school.png">
+                  <div class="project-slider__controls"><a class="project-slider__button project-slider__button_prev" href="#"><img class="project-slider__img" src="./assets/images/project-slider/yoga.png">
+                      <div class="project-slider__filter project-slider__filter_prev">
+                        <svg class="project-slider__button-arrow project-slider__button-arrow_down">
+                          <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_down"></use>
+                        </svg>
+                      </div></a><a class="project-slider__button project-slider__button_next" href="#"><img class="project-slider__img" src="./assets/images/project-slider/design.png">
+                      <div class="project-slider__filter project-slider__filter_next">
+                        <svg class="project-slider__button-arrow project-slider__button-arrow_up">
+                          <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_up"></use>
+                        </svg>
+                      </div></a></div>
+                </div>
+              </li>
+              <li class="projects__item visually-hidden">
+                <div class="projects__description project-description">
+                  <div class="project-description__title">Сайт школы онлайн образования</div>
+                  <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
+                    <svg class="project-description__link-icon">
+                      <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
+                    </svg></a>
+                </div>
+                <div class="projects__slider project-slider"><img class="project-slider__picture" src="./assets/images/project-slider/yoga.png">
+                  <div class="project-slider__controls"><a class="project-slider__button project-slider__button_prev" href="#"><img class="project-slider__img" src="./assets/images/project-slider/yoga.png">
+                      <div class="project-slider__filter project-slider__filter_prev">
+                        <svg class="project-slider__button-arrow project-slider__button-arrow_down">
+                          <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_down"></use>
+                        </svg>
+                      </div></a><a class="project-slider__button project-slider__button_next" href="#"><img class="project-slider__img" src="./assets/images/project-slider/design.png">
+                      <div class="project-slider__filter project-slider__filter_next">
+                        <svg class="project-slider__button-arrow project-slider__button-arrow_up">
+                          <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_up"></use>
+                        </svg>
+                      </div></a></div>
+                </div>
+              </li>
+              <li class="projects__item visually-hidden">
+                <div class="projects__description project-description">
+                  <div class="project-description__title">Сайт школы онлайн образования</div>
+                  <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
+                    <svg class="project-description__link-icon">
+                      <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
+                    </svg></a>
+                </div>
+                <div class="projects__slider project-slider"><img class="project-slider__picture" src="./assets/images/project-slider/design.png">
+                  <div class="project-slider__controls"><a class="project-slider__button project-slider__button_prev" href="#"><img class="project-slider__img" src="./assets/images/project-slider/yoga.png">
+                      <div class="project-slider__filter project-slider__filter_prev">
+                        <svg class="project-slider__button-arrow project-slider__button-arrow_down">
+                          <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_down"></use>
+                        </svg>
+                      </div></a><a class="project-slider__button project-slider__button_next" href="#"><img class="project-slider__img" src="./assets/images/project-slider/design.png">
+                      <div class="project-slider__filter project-slider__filter_next">
+                        <svg class="project-slider__button-arrow project-slider__button-arrow_up">
+                          <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_up"></use>
+                        </svg>
+                      </div></a></div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="footer__bottom">
-            <div class="footer__text footer__text_left"></div>
-            <div class="footer__text footer__text_right"></div>
+        </section>
+        <section class="last-section my-works__last-section my-works-last-section">
+          <div class="my-works-last-section__title">Что обо мне говорят
+            <svg class="my-works-last-section__title-bg">
+              <use xlink:href="./assets/icons/svg/symbols.svg#about_header"></use>
+            </svg>
           </div>
-        </footer>
+          <div class="my-works-last-section__reviews">
+            <ul class="reviews">
+              <li class="reviews__item"><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
+                <p>
+                  Этот парень проходил обучение веб-разработке 
+                  не где-то, а в LoftSchool! 5 месяцев только самых 
+                  тяжелых испытаний и бессонных ночей!
+                </p>
+                <div class="reviews__user review-user">
+                  <div class="review-user__avatar"><img class="review-user__avatar-img" src="./assets/images/reviews/kovalchuk.png"></div>
+                  <div class="review-user__about">
+                    <div class="review-user__name">Ковальчук Дмитрий</div>
+                    <div class="review-user__position">основатель Loftschool</div>
+                  </div>
+                </div>
+              </li>
+              <li class="reviews__item"><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
+                <p>
+                  Этот код выдержит любые испытания. Только 
+                  пожалуйста, не загружается сайт на слишком 
+                  старых браузерах!
+                </p>
+                <div class="reviews__user review-user">
+                  <div class="review-user__avatar"><img class="review-user__avatar-img" src="./assets/images/reviews/sabantsev.png"></div>
+                  <div class="review-user__about">
+                    <div class="review-user__name">Сабанцев Владимир</div>
+                    <div class="review-user__position">преподаватель</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="my-works-last-section__form">
+            <form class="my-works-last-section-form">
+              <div class="my-works-last-section-form__filter-blur"></div>
+              <div class="my-works-last-section-form__wrapper">
+                <div class="my-works-last-section-form__inputs">
+                  <div class="my-works-last-section-form__title">Связаться со мной</div>
+                  <input class="my-works-last-section-form__name" type="text">
+                  <input class="my-works-last-section-form__email" type="email">
+                  <textarea class="my-works-last-section-form__comment"></textarea>
+                </div>
+                <div class="my-works-last-section-form__controls">
+                  <input class="my-works-last-section-form__btn my-works-last-section-form__btn_submit" type="submit" value="Отправить">
+                  <input class="my-works-last-section-form__btn my-works-last-section-form__btn_reset" type="reset" value="Очистить">
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
+      <footer class="footer">
+        <div class="footer__part footer__top">
+          <ul class="footer__nav footer-nav">
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мои работы</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Обо мне</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Авторизация</a></li>
+          </ul>
+          <ul class="footer__socials footer-socials">
+            <li class="footer-socials__item"><a class="footer-socials__link" href="http://www.vk.com/q05t9n" target="_blank">
+                <svg class="footer-socials__img">                           
+                  <use width="23px" height="13px" x="8.5" y="15.5" xlink:href="./assets/icons/svg/symbols.svg#vk"></use>
+                  <use y="3" x="0" width="38px" height="38px" xlink:href="./assets/icons/svg/symbols.svg#vk_round"></use>
+                </svg></a></li>
+            <li class="footer-socials__item"><a class="footer-socials__link" href="http://www.github.com/surov-kostya" target="_blank">
+                <svg class="footer-socials__img">                           
+                  <use width="20px" height="16px" x="10" y="14" xlink:href="./assets/icons/svg/symbols.svg#github"></use>
+                  <use y="3" x="0" width="38px" height="38px" xlink:href="./assets/icons/svg/symbols.svg#github_round"></use>
+                </svg></a></li>
+            <li class="footer-socials__item"><a class="footer-socials__link" href="http://www.linkedin.com/in/q05t9n/" target="_blank">
+                <svg class="footer-socials__img">                           
+                  <use width="18px" height="17px" x="11" y="13.5" xlink:href="./assets/icons/svg/symbols.svg#in"></use>
+                  <use y="3" x="0" width="38px" height="38px" xlink:href="./assets/icons/svg/symbols.svg#in_round"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="footer__part footer__bottom">
+          <div class="footer__text footer__text_left">
+            <p>Я веб-разработчик из Санкт-Петербурга, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
+          </div>
+          <div class="footer__text footer__text_right">
+            <p>© Суров Константин | создано с любовью в LoftSchool | 2017</p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
