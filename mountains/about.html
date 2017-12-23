@@ -121,8 +121,28 @@
           </div>
         </section>
         <section class="last-section about-last-section">
-          <div class="about-last-section__map"></div>
-          <div class="about-last-section__contacts"></div>
+          <div class="about-last-section__map" id="map"></div>
+          <div class="about-last-section__contacts"> 
+            <div class="about-last-section__contacts-title">Контакты</div>
+            <ul class="contacts">
+              <li class="contacts__item contacts__skype"><a class="contacts__link contacts__skype-link" href="skype:kostyan5685">
+                  <svg class="contacts__icon">
+                    <use xlink:href="./assets/icons/svg/symbols.svg#skype"></use>
+                  </svg><span class="contacts__text">kostyan5685</span></a></li>
+              <li class="contacts__item contacts__mailto"><a class="contacts__link contacts__mailto-link" href="mailto:surov.qostya@yandex.ru">
+                  <svg class="contacts__icon">
+                    <use xlink:href="./assets/icons/svg/symbols.svg#envelope"></use>
+                  </svg><span class="contacts__text">surov.qostya@yandex.ru</span></a></li>
+              <li class="contacts__item contacts__tel"><a class="contacts__link contacts__tel-link" href="tel:+79211234567">
+                  <svg class="contacts__icon">
+                    <use xlink:href="./assets/icons/svg/symbols.svg#phone"></use>
+                  </svg><span class="contacts__text">+79211234567</span></a></li>
+              <li class="contacts__item contacts__address"><a class="contacts__link contacts__address-link" href="address:Санкт-Петербург, Каменноостровский пр.">
+                  <svg class="contacts__icon">
+                    <use xlink:href="./assets/icons/svg/symbols.svg#map_marker"></use>
+                  </svg><span class="contacts__text">Санкт-Петербург, Каменноостровский пр.</span></a></li>
+            </ul>
+          </div>
         </section>
       </div>
       <footer class="footer">
@@ -161,5 +181,7 @@
         </div>
       </footer>
     </div>
+    <script src="./assets/scripts/bundle.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yUTi58l8XW5WBptKG277S5GmZ835J0I&amp;callback=initMap"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="maincontent my-works">
+      <div class="maincontent works">
         <section class="first-section">
           <header class="first-section__header header">
             <div class="header__socials">
@@ -62,14 +62,14 @@
             <div class="first-section__angle-block first-section__angle-block_right"></div>
           </div>
         </section>
-        <section class="my-works__second-section my-works-second-section">
-          <div class="my-works-second-section__title">
-            <svg class="my-works-second-section__title-bg">
+        <section class="works__second-section works-second-section">
+          <div class="works-second-section__title">
+            <svg class="works-second-section__title-bg">
               <use xlink:href="./assets/icons/svg/symbols.svg#works_header"></use>
             </svg>
-            <div class="my-works-second-section__title-text">Мои работы</div>
+            <div class="works-second-section__title-text">Мои работы</div>
           </div>
-          <div class="my-works-second-section__projects">
+          <div class="works-second-section__projects">
             <ul class="projects">
               <li class="projects__item active">
                 <div class="projects__description project-description">
@@ -140,13 +140,13 @@
             </ul>
           </div>
         </section>
-        <section class="last-section my-works__last-section my-works-last-section">
-          <div class="my-works-last-section__title">Что обо мне говорят
-            <svg class="my-works-last-section__title-bg">
+        <section class="last-section works__last-section works-last-section">
+          <div class="works-last-section__title">Что обо мне говорят
+            <svg class="works-last-section__title-bg">
               <use xlink:href="./assets/icons/svg/symbols.svg#about_header"></use>
             </svg>
           </div>
-          <div class="my-works-last-section__reviews">
+          <div class="works-last-section__reviews">
             <ul class="reviews">
               <li class="reviews__item"><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
                 <p>
@@ -178,23 +178,24 @@
               </li>
             </ul>
           </div>
-          <div class="my-works-last-section__form blur-effect">
-            <form class="my-works-last-section-form">
-              <div class="my-works-last-section-form__wrapper object">
-                <div class="my-works-last-section-form__inputs">
-                  <div class="my-works-last-section-form__title">Связаться со мной</div>
-                  <input class="my-works-last-section-form__name" type="text">
-                  <input class="my-works-last-section-form__email" type="email">
-                  <textarea class="my-works-last-section-form__comment"></textarea>
+          <div class="works-last-section__form">
+            <div class="works-last-section__blur"></div>
+            <form class="works-form">
+              <div class="works-form__wrapper">
+                <div class="works-form__inputs">
+                  <div class="works-form__title">Связаться со мной</div>
+                  <input class="works-form__name" type="text" placeholder="Имя">
+                  <input class="works-form__email" type="email" placeholder="Email">
+                  <textarea class="works-form__comment" placeholder="Ваше сообщение"></textarea>
                 </div>
-                <div class="my-works-last-section-form__controls">
-                  <input class="my-works-last-section-form__btn my-works-last-section-form__btn_submit" type="submit" value="Отправить">
-                  <input class="my-works-last-section-form__btn my-works-last-section-form__btn_reset" type="reset" value="Очистить">
+                <div class="works-form__controls">
+                  <input class="works-form__btn works-form__btn_submit" type="submit" value="Отправить">
+                  <input class="works-form__btn works-form__btn_reset" type="reset" value="Очистить">
                 </div>
               </div>
             </form>
-          </div><a class="my-works-last-section__arrow" href="#">
-            <svg class="my-works-last-section__arrow-up">
+          </div><a class="works-last-section__arrow" href="#">
+            <svg class="works-last-section__arrow-img">
               <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_up"></use>
             </svg></a>
         </section>
@@ -235,5 +236,7 @@
         </div>
       </footer>
     </div>
+    <script src="./assets/scripts/bundle.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yUTi58l8XW5WBptKG277S5GmZ835J0I&amp;callback=initMap"></script>
   </body>
 </html>
