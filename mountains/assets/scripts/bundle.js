@@ -68,7 +68,8 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+__webpack_require__(2);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
@@ -292,21 +293,38 @@ window.initMap = initMap;
 /* 2 */
 /***/ (function(module, exports) {
 
+// const indexParallax = document.querySelector('.index-parallax');
+// const indexParallaxLayers = indexParallax.children;
 
-function positionSearch() {
-    let text = document.querySelector('.works-last-section__form');
-    let leftIndent = text.offsetLeft;
+// const moveLayers = e =>{
+//     const initialX = (window.innerWidth / 2) - e.pageX;
+//     const initialY = (window.innerWidth / 2) - e.pageY;
+//     indexParallaxLayers[6].style.transform = `translate(${initialX}px, ${initialY}px)`;
+//     console.log(indexParallaxLayers);
+// }
+
+// window.addEventListener('mousemove', moveLayers);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+
+const blur = document.getElementById('works-last-section__blur');
+const text = document.getElementById('works-last-section__form');
+
+function positionSearch() { 
     let topIndent = text.offsetTop;
+    let leftIndent = text.offsetLeft;
     let height = text.offsetHeight;
     let width = text.offsetWidth;
-    let blur = document.querySelector('.works-last-section__blur');
-
     blur.style.clip = `rect(${topIndent}px, ${leftIndent + width}px, ${topIndent + height}px, ${leftIndent}px)`;
 };
 
-positionSearch()
-window.addEventListener('resize', ()=>positionSearch() );
-
+if (text != null) {
+    positionSearch()
+    window.addEventListener('resize', ()=>positionSearch() );
+};
 
 
 /***/ })
