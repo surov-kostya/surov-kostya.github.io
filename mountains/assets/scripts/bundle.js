@@ -68,11 +68,42 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+__webpack_require__(2);
+__webpack_require__(3);
+__webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+const firstParallaxLayers = document.querySelectorAll('.first-parallax__img');
+
+const moveLayers = e =>{
+    
+    const initialY = (window.pageYOffset);
+    let k = 1;
+
+    for(let i=0; i<firstParallaxLayers.length; i++){
+
+        if(i <= 2) {
+            k = i + 20;
+        } else if (i <= 4) {
+            k = i * 4;
+        } else if (i <=5 ){
+            k = i * 3;
+        } else {k = i*2};
+        
+        let finalY = initialY * 4 / k;
+        firstParallaxLayers[i].style.transform = `translateY(${finalY}px)`;
+    };
+};
+
+window.addEventListener('scroll', moveLayers);
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 var map;
@@ -289,24 +320,71 @@ function initMap() {
 window.initMap = initMap;
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports) {
+
+const authBtn = document.querySelector('.index-section__auth-btn');
+const indexBtn = document.querySelector('.index-panel__btn_index');
+const indexCenter = document.querySelector('.index-section__center');
+
+authBtn.addEventListener('click', ()=>{
+    authBtn.classList.add('visually-hidden');
+    indexCenter.classList.add('flipper');
+});
+
+indexBtn.addEventListener('click', ()=>{
+    authBtn.classList.remove('visually-hidden');
+    indexCenter.classList.remove('flipper');
+});
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+const indexParallaxLayers = document.querySelectorAll('.index-parallax__img');
+
+const moveLayers = e =>{
+    const initialX = (window.innerWidth / 2) - e.pageX;
+    const initialY = (window.innerHeight / 2) - e.pageY;
+    let k = 1;
+    for(let i=0; i<indexParallaxLayers.length; i++){
+        if(i <= 2) {
+            k = i + 20;
+        } else if (i <= 4) {
+            k = i * 4;
+        } else if (i <=5 ){
+            k = i * 3;
+        } else {k = i*2};
+        
+        let finalX = initialX / k;
+        let finalY = initialY / (k/ 1.5);
+        indexParallaxLayers[i].style.transform = `translate(${finalX}px, ${finalY}px)`;
+    };
+}
+
+window.addEventListener('mousemove', moveLayers);
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports) {
 
 
-function positionSearch() {
-    let text = document.querySelector('.works-last-section__form');
-    let leftIndent = text.offsetLeft;
+const blur = document.getElementById('works-last-section__blur');
+const text = document.getElementById('works-last-section__form');
+
+function positionSearch() { 
     let topIndent = text.offsetTop;
+    let leftIndent = text.offsetLeft;
     let height = text.offsetHeight;
     let width = text.offsetWidth;
-    let blur = document.querySelector('.works-last-section__blur');
-
     blur.style.clip = `rect(${topIndent}px, ${leftIndent + width}px, ${topIndent + height}px, ${leftIndent}px)`;
 };
 
-positionSearch()
-window.addEventListener('resize', ()=>positionSearch() );
-
+if (text != null) {
+    positionSearch()
+    window.addEventListener('resize', ()=>positionSearch() );
+};
 
 
 /***/ })

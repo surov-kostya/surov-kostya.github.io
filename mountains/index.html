@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,41 +12,88 @@
   <body>
     <div class="wrapper">
       <div class="maincontent index">
+        <section class="index-parallax">
+          <div class="index-parallax__layer"><img class="index-parallax__img index-parallax__img_0" src="./assets/images/index-parallax/pl-0.png"></div>
+          <div class="index-parallax__layer"><img class="index-parallax__img index-parallax__img_1" src="./assets/images/index-parallax/pl-1.png"></div>
+          <div class="index-parallax__layer"><img class="index-parallax__img index-parallax__img_2" src="./assets/images/index-parallax/pl-2.png"></div>
+          <div class="index-parallax__layer"><img class="index-parallax__img index-parallax__img_3" src="./assets/images/index-parallax/pl-3.png"></div>
+          <div class="index-parallax__layer"><img class="index-parallax__img index-parallax__img_4" src="./assets/images/index-parallax/pl-4.png"></div>
+          <div class="index-parallax__layer"><img class="index-parallax__img index-parallax__img_5" src="./assets/images/index-parallax/pl-5.png"></div>
+          <div class="index-parallax__layer"><img class="index-parallax__img index-parallax__img_6" src="./assets/images/index-parallax/pl-6.png"></div>
+        </section>
         <section class="index-section">
           <div class="index-section__top">
             <button class="index-section__auth-btn" type="button">Авторизоваться</button>
           </div>
-          <div class="index-section__center index-panel">
-            <div class="index-panel__top">
-              <div class="index-panel__person-card">
-                <div class="person-card">
-                  <div class="person-card__avatar"></div>
-                  <div class="person-card__name">Суров Константин</div>
-                  <div class="person-card__text">Личный сайт веб-разработчика</div>
+          <div class="index-section__center">
+            <div class="index-panel index-panel_first">
+              <div class="index-panel__top"> 
+                <div class="index-panel__person-card">
+                  <div class="person-card">
+                    <div class="person-card__avatar" style="background-image:url(./assets/images/person-card/155312-600.jpg);"><img class="person-card__avatar-img visually-hidden" src="./assets/images/person-card/155312-600.jpg"></div>
+                    <div class="person-card__name">Суров Константин</div>
+                    <div class="person-card__text">Личный сайт веб-разработчика</div>
+                  </div>
                 </div>
+                <ul class="socials">
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__img">                           
+                        <use xlink:href="./assets/icons/svg/symbols.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__img">                           
+                        <use xlink:href="./assets/icons/svg/symbols.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__img">                           
+                        <use xlink:href="./assets/icons/svg/symbols.svg#in"></use>
+                      </svg></a></li>
+                </ul>
               </div>
-              <ul class="socials">
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__img">                           
-                      <use xlink:href="./assets/icons/svg/symbols.svg#vk"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__img">                           
-                      <use xlink:href="./assets/icons/svg/symbols.svg#github"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__img">                           
-                      <use xlink:href="./assets/icons/svg/symbols.svg#in"></use>
-                    </svg></a></li>
-              </ul>
+              <div class="index-panel__bottom"><a class="index-panel__btn index-panel__btn_my-works" href="my-works.html">Мои работы</a><a class="index-panel__btn index-panel__btn_about-me" href="about.html">Обо мне</a><a class="index-panel__btn index-panel__btn_blog" href="blog.html">Блог</a></div>
             </div>
-            <div class="index-panel__bottom"><a class="index-panel__btn index-panel__btn_my-works" href="my-works.html">Мои работы</a><a class="index-panel__btn index-panel__btn_about-me" href="about.html">Обо мне</a><a class="index-panel__btn index-panel__btn_blog" href="blog.html">Блог</a></div>
+            <div class="index-panel index-panel_second">
+              <div class="index-panel__top">
+                <form class="auth-form" action="#">
+                  <div class="auth-form__wrapper">
+                    <div class="auth-form__title">Авторизуйтесь</div>
+                    <div class="auth-form__prompt auth-form__prompt_login">
+                      <svg class="auth-form__icon auth-form__icon_login">
+                        <use xlink:href="./assets/icons/svg/symbols.svg#login"></use>
+                      </svg>
+                      <input class="auth-form__input auth-form__input_login" type="text" placeholder="Логин" required>
+                    </div>
+                    <div class="auth-form__prompt auth-form__prompt_password">
+                      <svg class="auth-form__icon auth-form__icon_password">
+                        <use xlink:href="./assets/icons/svg/symbols.svg#password">   </use>
+                      </svg>
+                      <input class="auth-form__input auth-form__input_password" type="text" placeholder="Пароль" required>
+                    </div>
+                    <label class="auth-form__check-block">
+                      <input class="auth-form__human-check visually-hidden" type="checkbox" required>
+                      <div class="auth-form__human-check-title">Я человек</div>
+                    </label>
+                    <div class="auth-form__question">Вы точно не робот?</div>
+                    <div class="auth-form__radio">
+                      <label class="auth-form__radio-block" for="not-robot">
+                        <input class="auth-form__human-radio visually-hidden" type="radio" name="robot" value="robot" id="not-robot">
+                        <div class="auth-form__human-radio-title">Да</div>
+                      </label>
+                      <label class="auth-form__radio-block" for="robot">
+                        <input class="auth-form__human-radio visually-hidden" type="radio" name="robot" value="not-robot" id="robot">
+                        <div class="auth-form__human-radio-title">Не уверен</div>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="index-panel__bottom"><a class="index-panel__btn index-panel__btn_index" href="#">На главную</a><a class="index-panel__btn index-panel__btn_enter" href="#">Войти</a></div>
+            </div>
           </div>
           <div class="index-section__bottom">© Суров Константин | создано с любовью в LoftSchool | 2017</div>
         </section>
       </div>
     </div>
-    <script src="./assets/scripts/bundle.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yUTi58l8XW5WBptKG277S5GmZ835J0I&amp;callback=initMap"></script>
+    <script src="./assets/scripts/bundle.js" defer></script>
   </body>
 </html>
