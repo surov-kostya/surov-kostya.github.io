@@ -378,7 +378,6 @@ if (indexParallaxLayers !== null){
 
 const blur = document.getElementById('works-last-section__blur');
 const text = document.getElementById('works-last-section__form');
-const winObj = window;
 
 function positionSearch() { 
     let topIndent = text.offsetTop;
@@ -389,8 +388,8 @@ function positionSearch() {
 };
 
 if (text != null) {
-    positionSearch();
-    winObj.addEventListener('resize', ()=>positionSearch() );
+    window.onload = positionSearch();
+    window.addEventListener('resize', ()=>positionSearch() );
 };
 
 /***/ }),
