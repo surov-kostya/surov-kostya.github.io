@@ -80,16 +80,18 @@
           </div>
           <div class="works-second-section__projects">
             <ul class="projects">
-              <li class="projects__item active">
+              <li class="projects__item" v-show="status === &quot;school&quot;" data-project="&quot;school&quot;">
                 <div class="projects__left project-description project-description_outer">
-                  <div class="project-description__title">Сайт школы онлайн образования</div>
-                  <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
+                  <div class="project-description__title animated fadeIn">Сайт школы онлайн образования</div>
+                  <div class="project-description__technologies animated fadeIn">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
                     <svg class="project-description__link-icon">
                       <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
                     </svg></a>
                 </div>
                 <div class="projects__right project-slider">
-                  <div class="project-slider__big-bg" style="background-image:url(./assets/images/project-slider/school.png);"><img class="project-slider__picture visually-hidden" src="./assets/images/project-slider/school.png"></div>
+                  <transition mode="out-in" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                    <div class="project-slider__big-bg" v-show="status === &quot;school&quot;" style="background-image:url(./assets/images/project-slider/school.png);"><img class="project-slider__picture visually-hidden" src="./assets/images/project-slider/school.png"></div>
+                  </transition>
                   <div class="project-description project-description_inner">
                     <div class="project-description__title">Сайт школы онлайн образования</div>
                     <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
@@ -97,83 +99,114 @@
                         <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
                       </svg></a>
                   </div>
-                  <div class="project-slider__controls"><a class="project-slider__button project-slider__button_prev" href="#">
-                      <div class="project-slider__bg" style="background-image:url(./assets/images/project-slider/yoga.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/yoga.png"></div>
+                  <div class="project-slider__controls">
+                    <button class="project-slider__button project-slider__button_prev" @click.prevent="prevBtnClick">
+                      <transition mode="out-in" enter-active-class="animated slideInDown" leave-active-class="animated slideInUp">
+                        <div class="project-slider__bg project-slider__bg_prev" v-show="status === &quot;school&quot;" style="background-image:url(./assets/images/project-slider/design.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/design.png"></div>
+                      </transition>
                       <div class="project-slider__filter project-slider__filter_prev">
                         <svg class="project-slider__button-arrow project-slider__button-arrow_down">
                           <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_down"></use>
                         </svg>
-                      </div></a><a class="project-slider__button project-slider__button_next" href="#">
-                      <div class="project-slider__bg" style="background-image:url(./assets/images/project-slider/design.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/design.png"></div>
+                      </div>
+                    </button>
+                    <button class="project-slider__button project-slider__button_next" @click.prevent="nextBtnClick">
+                      <transition mode="out-in" enter-active-class="animated slideInUp" leave-active-class="animated slideInDown">
+                        <div class="project-slider__bg project-slider__bg_next" v-show="status === &quot;school&quot;" style="background-image:url(./assets/images/project-slider/yoga.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/yoga.png"></div>
+                      </transition>
                       <div class="project-slider__filter project-slider__filter_next">
                         <svg class="project-slider__button-arrow project-slider__button-arrow_up">
                           <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_up"></use>
                         </svg>
-                      </div></a></div>
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </li>
-              <li class="projects__item visually-hidden">
+              <li class="projects__item" v-show="status === &quot;yoga&quot;" data-project="&quot;yoga&quot;">
                 <div class="projects__left project-description project-description_outer">
-                  <div class="project-description__title">Сайт школы онлайн образования</div>
-                  <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
+                  <div class="project-description__title animated fadeIn">Сайт йоги</div>
+                  <div class="project-description__technologies animated fadeIn">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
                     <svg class="project-description__link-icon">
                       <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
                     </svg></a>
                 </div>
                 <div class="projects__right project-slider">
-                  <div class="project-slider__big-bg" style="background-image:url(./assets/images/project-slider/yoga.png);"><img class="project-slider__picture visually-hidden" src="./assets/images/project-slider/yoga.png"></div>
+                  <transition mode="out-in" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                    <div class="project-slider__big-bg" v-show="status === &quot;yoga&quot;" style="background-image:url(./assets/images/project-slider/yoga.png);"><img class="project-slider__picture visually-hidden" src="./assets/images/project-slider/yoga.png"></div>
+                  </transition>
                   <div class="project-description project-description_inner">
-                    <div class="project-description__title">Сайт школы онлайн образования</div>
+                    <div class="project-description__title">Сайт йоги</div>
                     <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
                       <svg class="project-description__link-icon">
                         <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
                       </svg></a>
                   </div>
-                  <div class="project-slider__controls"><a class="project-slider__button project-slider__button_prev" href="#">
-                      <div class="project-slider__bg" style="background-image:url(./assets/images/project-slider/yoga.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/yoga.png"></div>
+                  <div class="project-slider__controls">
+                    <button class="project-slider__button project-slider__button_prev" @click.prevent="prevBtnClick">
+                      <transition mode="out-in" enter-active-class="animated slideInDown" leave-active-class="animated slideInUp">
+                        <div class="project-slider__bg project-slider__bg_prev" v-show="status === &quot;yoga&quot;" style="background-image:url(./assets/images/project-slider/school.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/school.png"></div>
+                      </transition>
                       <div class="project-slider__filter project-slider__filter_prev">
                         <svg class="project-slider__button-arrow project-slider__button-arrow_down">
                           <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_down"></use>
                         </svg>
-                      </div></a><a class="project-slider__button project-slider__button_next" href="#">
-                      <div class="project-slider__bg" style="background-image:url(./assets/images/project-slider/design.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/design.png"></div>
+                      </div>
+                    </button>
+                    <button class="project-slider__button project-slider__button_next" @click.prevent="nextBtnClick">
+                      <transition mode="out-in" enter-active-class="animated slideInUp" leave-active-class="animated slideInDown">
+                        <div class="project-slider__bg project-slider__bg_next" v-show="status === &quot;yoga&quot;" style="background-image:url(./assets/images/project-slider/design.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/design.png"></div>
+                      </transition>
                       <div class="project-slider__filter project-slider__filter_next">
                         <svg class="project-slider__button-arrow project-slider__button-arrow_up">
                           <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_up"></use>
                         </svg>
-                      </div></a></div>
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </li>
-              <li class="projects__item visually-hidden">
+              <li class="projects__item" v-show="status === &quot;design&quot;" data-project="&quot;design&quot;">
                 <div class="projects__left project-description project-description_outer">
-                  <div class="project-description__title">Сайт школы онлайн образования</div>
-                  <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
+                  <div class="project-description__title animated fadeIn">Сайт дизайна</div>
+                  <div class="project-description__technologies animated fadeIn">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
                     <svg class="project-description__link-icon">
                       <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
                     </svg></a>
                 </div>
                 <div class="projects__right project-slider">
-                  <div class="project-slider__big-bg" style="background-image:url(./assets/images/project-slider/design.png);"><img class="project-slider__picture visually-hidden" src="./assets/images/project-slider/design.png"></div>
+                  <transition mode="out-in" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                    <div class="project-slider__big-bg" v-show="status === &quot;design&quot;" style="background-image:url(./assets/images/project-slider/design.png);"><img class="project-slider__picture visually-hidden" src="./assets/images/project-slider/design.png"></div>
+                  </transition>
                   <div class="project-description project-description_inner">
-                    <div class="project-description__title">Сайт школы онлайн образования</div>
+                    <div class="project-description__title">Сайт дизайна</div>
                     <div class="project-description__technologies">HTML, CSS, JavaScript</div><a class="project-description__link" href="#">Посмотреть сайт
                       <svg class="project-description__link-icon">
                         <use xlink:href="./assets/icons/svg/symbols.svg#link"></use>
                       </svg></a>
                   </div>
-                  <div class="project-slider__controls"><a class="project-slider__button project-slider__button_prev" href="#">
-                      <div class="project-slider__bg" style="background-image:url(./assets/images/project-slider/yoga.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/yoga.png"></div>
+                  <div class="project-slider__controls">
+                    <button class="project-slider__button project-slider__button_prev" @click.prevent="prevBtnClick">
+                      <transition mode="out-in" enter-active-class="animated slideInDown" leave-active-class="animated slideInUp">
+                        <div class="project-slider__bg project-slider__bg_prev" v-show="status === &quot;design&quot;" style="background-image:url(./assets/images/project-slider/yoga.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/yoga.png"></div>
+                      </transition>
                       <div class="project-slider__filter project-slider__filter_prev">
                         <svg class="project-slider__button-arrow project-slider__button-arrow_down">
                           <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_down"></use>
                         </svg>
-                      </div></a><a class="project-slider__button project-slider__button_next" href="#">
-                      <div class="project-slider__bg" style="background-image:url(./assets/images/project-slider/design.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/design.png"></div>
+                      </div>
+                    </button>
+                    <button class="project-slider__button project-slider__button_next" @click.prevent="nextBtnClick">
+                      <transition mode="out-in" enter-active-class="animated slideInUp" leave-active-class="animated slideInDown">
+                        <div class="project-slider__bg project-slider__bg_next" v-show="status === &quot;design&quot;" style="background-image:url(./assets/images/project-slider/school.png);"><img class="project-slider__img visually-hidden" src="./assets/images/project-slider/school.png"></div>
+                      </transition>
                       <div class="project-slider__filter project-slider__filter_next">
                         <svg class="project-slider__button-arrow project-slider__button-arrow_up">
                           <use xlink:href="./assets/icons/svg/symbols.svg#portf_arrow_up"></use>
                         </svg>
-                      </div></a></div>
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -279,6 +312,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue" defer></script>
     <script src="./assets/scripts/bundle.js" defer></script>
   </body>
 </html>

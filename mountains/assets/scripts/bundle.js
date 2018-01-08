@@ -71,7 +71,8 @@ __webpack_require__(1);
 __webpack_require__(2);
 __webpack_require__(3);
 __webpack_require__(4);
-module.exports = __webpack_require__(5);
+__webpack_require__(5);
+module.exports = __webpack_require__(6);
 
 
 /***/ }),
@@ -100,7 +101,9 @@ const moveLayers = e =>{
     };
 };
 
-window.addEventListener('scroll', moveLayers);
+if (firstParallaxLayers !== null){
+    window.addEventListener('scroll', moveLayers);
+};
 
 /***/ }),
 /* 2 */
@@ -327,16 +330,18 @@ const authBtn = document.querySelector('.index-section__auth-btn');
 const indexBtn = document.querySelector('.index-panel__btn_index');
 const indexCenter = document.querySelector('.index-section__center');
 
-authBtn.addEventListener('click', ()=>{
-    authBtn.classList.add('visually-hidden');
-    indexCenter.classList.add('flipper');
-});
 
-indexBtn.addEventListener('click', ()=>{
-    authBtn.classList.remove('visually-hidden');
-    indexCenter.classList.remove('flipper');
-});
+if (authBtn !== null){
+    authBtn.addEventListener('click', ()=>{
+        authBtn.classList.add('visually-hidden');
+        indexCenter.classList.add('flipper');
+    });
 
+    indexBtn.addEventListener('click', ()=>{
+        authBtn.classList.remove('visually-hidden');
+        indexCenter.classList.remove('flipper');
+    });
+};
 
 /***/ }),
 /* 4 */
@@ -363,15 +368,17 @@ const moveLayers = e =>{
     };
 }
 
-window.addEventListener('mousemove', moveLayers);
+if (indexParallaxLayers !== null){
+    window.addEventListener('mousemove', moveLayers);
+};
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-
 const blur = document.getElementById('works-last-section__blur');
 const text = document.getElementById('works-last-section__form');
+const winObj = window;
 
 function positionSearch() { 
     let topIndent = text.offsetTop;
@@ -382,10 +389,50 @@ function positionSearch() {
 };
 
 if (text != null) {
-    positionSearch()
-    window.addEventListener('resize', ()=>positionSearch() );
+    positionSearch();
+    winObj.addEventListener('resize', ()=>positionSearch() );
 };
 
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+new Vue({
+    el:'.projects',
+    data:{
+        ul: document.querySelectorAll('.projects__item'),
+        status: 'school',
+        nextItem: 0
+    },
+    computed:{
+        allDataAttr: function (){
+            let attrList = []
+            for(let i=0; i<this.ul.length; i++){
+                let attr = this.ul[i].getAttribute('data-project')
+                attr= attr.slice(1, -1)
+                console.log(attr)
+                attrList.push(attr)                
+            }            
+            return attrList
+        }
+    },
+    methods:{        
+        nextBtnClick(){
+            this.nextItem +=1
+            if(this.nextItem === this.ul.length){ 
+                this.nextItem = 0               
+            }
+            this.status = this.allDataAttr[this.nextItem]
+        },
+        prevBtnClick(){
+            this.nextItem -=1
+            if(this.nextItem < 0){ 
+                this.nextItem = this.ul.length - 1   
+            }
+            this.status = this.allDataAttr[this.nextItem]
+        }
+    }
+});
 
 /***/ })
 /******/ ]);
