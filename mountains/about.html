@@ -10,6 +10,37 @@
     <title>Обо мне</title>
   </head>
   <body>
+    <section class="preloader">
+      <div class="preloader__spinner">
+        <div class="preloader__percent"></div>
+        <div class="preloader__ring preloader__ring_big"></div>
+        <div class="preloader__ring preloader__ring_mid"></div>
+        <div class="preloader__ring preloader__ring_lit"></div>
+      </div>
+    </section>
+    <script>
+      const preloader = document.querySelector('.preloader');
+      const spinnerText = document.querySelector('.preloader__percent');
+      let percent = 0;
+      
+      spinnerText.innerText = percent + '%';
+      
+      document.onreadystatechange = ()=>{
+          if (document.readyState === 'interactive'){
+              let interval = setInterval(()=>{
+                  percent++;
+                  spinnerText.innerText = percent + '%';
+                  if(percent > 98 || document.readyState !== 'interactive'){
+                      preloader.classList.add('preloader_opacity');
+                      clearTimeout(interval);
+                  };
+              }, 300);        
+          } else {
+              percent = 99;
+              spinnerText.innerText = percent + '%';
+              preloader.classList.add('visually-hidden');};
+      };
+    </script>
     <div class="wrapper">
       <div class="maincontent about">
         <section class="first-parallax">
@@ -193,7 +224,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yUTi58l8XW5WBptKG277S5GmZ835J0I&amp;callback=initMap" defer></script>
-    <script src="./assets/scripts/bundle.js" defer></script>
   </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yUTi58l8XW5WBptKG277S5GmZ835J0I&amp;callback=initMap" defer></script>
+  <script src="./assets/scripts/bundle.js" defer></script>
 </html>

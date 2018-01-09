@@ -10,6 +10,37 @@
     <title>Добро пожаловать</title>
   </head>
   <body>
+    <section class="preloader">
+      <div class="preloader__spinner">
+        <div class="preloader__percent"></div>
+        <div class="preloader__ring preloader__ring_big"></div>
+        <div class="preloader__ring preloader__ring_mid"></div>
+        <div class="preloader__ring preloader__ring_lit"></div>
+      </div>
+    </section>
+    <script>
+      const preloader = document.querySelector('.preloader');
+      const spinnerText = document.querySelector('.preloader__percent');
+      let percent = 0;
+      
+      spinnerText.innerText = percent + '%';
+      
+      document.onreadystatechange = ()=>{
+          if (document.readyState === 'interactive'){
+              let interval = setInterval(()=>{
+                  percent++;
+                  spinnerText.innerText = percent + '%';
+                  if(percent > 98 || document.readyState !== 'interactive'){
+                      preloader.classList.add('preloader_opacity');
+                      clearTimeout(interval);
+                  };
+              }, 300);        
+          } else {
+              percent = 99;
+              spinnerText.innerText = percent + '%';
+              preloader.classList.add('visually-hidden');};
+      };
+    </script>
     <div class="wrapper">
       <div class="maincontent index">
         <section class="index-parallax">
@@ -25,7 +56,7 @@
           <div class="index-section__top">
             <button class="index-section__auth-btn" type="button">Авторизоваться</button>
           </div>
-          <div class="index-section__center">
+          <div class="index-section__center animated">
             <div class="index-panel index-panel_first">
               <div class="index-panel__top"> 
                 <div class="index-panel__person-card">
@@ -94,6 +125,6 @@
         </section>
       </div>
     </div>
-    <script src="./assets/scripts/bundle.js" defer></script>
   </body>
+  <script src="./assets/scripts/bundle.js" defer></script>
 </html>

@@ -329,9 +329,15 @@ window.initMap = initMap;
 const authBtn = document.querySelector('.index-section__auth-btn');
 const indexBtn = document.querySelector('.index-panel__btn_index');
 const indexCenter = document.querySelector('.index-section__center');
+const indexPanel = document.querySelector('.index-panel');
 
+
+window.onload = ()=>{
+    indexCenter.classList.add('flipInX');
+};
 
 if (authBtn !== null){
+
     authBtn.addEventListener('click', ()=>{
         authBtn.classList.add('visually-hidden');
         indexCenter.classList.add('flipper');
@@ -357,13 +363,13 @@ const moveLayers = e =>{
         if(i <= 2) {
             k = i + 20;
         } else if (i <= 4) {
-            k = i * 4;
+            k = i * 5;
         } else if (i <=5 ){
-            k = i * 3;
-        } else {k = i*2};
+            k = i * 4;
+        } else {k = i};
         
         let finalX = initialX / k;
-        let finalY = initialY / (k/ 1.5);
+        let finalY = initialY / k / 1.8;
         indexParallaxLayers[i].style.transform = `translate(${finalX}px, ${finalY}px)`;
     };
 }
@@ -396,42 +402,46 @@ if (text != null) {
 /* 6 */
 /***/ (function(module, exports) {
 
-new Vue({
-    el:'.projects',
-    data:{
-        ul: document.querySelectorAll('.projects__item'),
-        status: 'school',
-        nextItem: 0
-    },
-    computed:{
-        allDataAttr: function (){
-            let attrList = []
-            for(let i=0; i<this.ul.length; i++){
-                let attr = this.ul[i].getAttribute('data-project')
-                attr= attr.slice(1, -1)
-                console.log(attr)
-                attrList.push(attr)                
-            }            
-            return attrList
-        }
-    },
-    methods:{        
-        nextBtnClick(){
-            this.nextItem +=1
-            if(this.nextItem === this.ul.length){ 
-                this.nextItem = 0               
-            }
-            this.status = this.allDataAttr[this.nextItem]
+if (document.querySelectorAll('.projects__item').length){
+
+    new Vue({
+        el:'.projects',
+        data:{
+            ul: document.querySelectorAll('.projects__item'),
+            status: 'school',
+            nextItem: 0
         },
-        prevBtnClick(){
-            this.nextItem -=1
-            if(this.nextItem < 0){ 
-                this.nextItem = this.ul.length - 1   
+        computed:{
+            allDataAttr: function (){
+                let attrList = []
+                for(let i=0; i<this.ul.length; i++){
+                    let attr = this.ul[i].getAttribute('data-project')
+                    attr= attr.slice(1, -1)
+                    console.log(attr)
+                    attrList.push(attr)                
+                }            
+                return attrList
             }
-            this.status = this.allDataAttr[this.nextItem]
+        },
+        methods:{        
+            nextBtnClick(){
+                this.nextItem +=1
+                if(this.nextItem === this.ul.length){ 
+                    this.nextItem = 0               
+                }
+                this.status = this.allDataAttr[this.nextItem]
+            },
+            prevBtnClick(){
+                this.nextItem -=1
+                if(this.nextItem < 0){ 
+                    this.nextItem = this.ul.length - 1   
+                }
+                this.status = this.allDataAttr[this.nextItem]
+            }
         }
-    }
-});
+    });
+
+}
 
 /***/ })
 /******/ ]);
