@@ -73,11 +73,44 @@ __webpack_require__(3);
 __webpack_require__(4);
 __webpack_require__(5);
 __webpack_require__(6);
-module.exports = __webpack_require__(7);
+__webpack_require__(7);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+if(document.querySelectorAll('.article-names__item') !== null){
+
+    const artItem = document.querySelectorAll('.article-names__item');
+    const paperItem = document.querySelectorAll('.papers__item');
+
+    for (let i = 0; i<artItem.length; i++) {
+        artItem[i].addEventListener('click', (e)=>{
+            e.preventDefault();
+
+            for (let x = 0; x<artItem.length; x++) {
+                artItem[x].classList.remove('article-names__item_active');
+                paperItem[x].classList.add('visually-hidden');
+            };
+
+            e.currentTarget.classList.add('article-names__item_active');
+            let attrOfActive = e.currentTarget.getAttribute('data-title');
+
+            for (let y = 0; y<artItem.length; y++) {
+                let attrOfPaper = paperItem[y].getAttribute('data-title');
+                if(attrOfPaper === attrOfActive){
+                    paperItem[y].classList.remove('visually-hidden');
+                };
+            };
+        });
+    };
+
+};
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 const firstParallaxLayers = document.querySelectorAll('.first-parallax__img');
@@ -101,7 +134,7 @@ if (firstParallaxLayers !== null){
 };
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports) {
 
 const fsMenu = document.querySelector('.fullscreen-menu');
@@ -116,7 +149,7 @@ if (hrBtn !== null) {
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 var map;
@@ -333,7 +366,7 @@ function initMap() {
 window.initMap = initMap;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 const authBtn = document.querySelector('.index-section__auth-btn');
@@ -362,7 +395,7 @@ if (authBtn !== null){
 };
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 const indexParallaxLayers = document.querySelectorAll('.index-parallax__img');
@@ -384,7 +417,7 @@ if (indexParallaxLayers !== null){
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 const blur = document.getElementById('works-last-section__blur');
@@ -404,7 +437,7 @@ if (text != null) {
 };
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 if (document.querySelectorAll('.projects__item').length){
