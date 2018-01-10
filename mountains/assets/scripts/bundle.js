@@ -89,13 +89,7 @@ const moveLayers = e =>{
 
     for(let i=0; i<firstParallaxLayers.length; i++){
 
-        if(i <= 2) {
-            k = i + 20;
-        } else if (i <= 4) {
-            k = i * 4;
-        } else if (i <=5 ){
-            k = i * 3;
-        } else {k = i*2};
+        k = i*2;
         
         let finalY = initialY * 4 / k;
         firstParallaxLayers[i].style.transform = `translateY(${finalY}px)`;
@@ -380,7 +374,7 @@ const moveLayers = e =>{
     for(let i=0; i<indexParallaxLayers.length; i++){
         k = i*5;        
         let finalX = initialX / k;
-        let finalY = initialY / k / 1.8;
+        let finalY = initialY / k / 5;
         indexParallaxLayers[i].style.transform = `translate(${finalX}px, ${finalY}px)`;
     };
 }
