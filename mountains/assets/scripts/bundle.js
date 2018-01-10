@@ -72,7 +72,8 @@ __webpack_require__(2);
 __webpack_require__(3);
 __webpack_require__(4);
 __webpack_require__(5);
-module.exports = __webpack_require__(6);
+__webpack_require__(6);
+module.exports = __webpack_require__(7);
 
 
 /***/ }),
@@ -107,6 +108,21 @@ if (firstParallaxLayers !== null){
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+const fsMenu = document.querySelector('.fullscreen-menu');
+const hrBtn = document.querySelector('.hamburger__input');
+
+if (hrBtn !== null) {
+    hrBtn.addEventListener('click', (e)=>{
+        fsMenu.classList.toggle("visually-hidden");
+        console.log('NNN');
+    });
+};
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 var map;
@@ -323,7 +339,7 @@ function initMap() {
 window.initMap = initMap;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 const authBtn = document.querySelector('.index-section__auth-btn');
@@ -332,11 +348,13 @@ const indexCenter = document.querySelector('.index-section__center');
 const indexPanel = document.querySelector('.index-panel');
 
 
-window.onload = ()=>{
-    indexCenter.classList.add('flipInX');
-};
+
 
 if (authBtn !== null){
+    
+    window.onload = ()=>{
+        indexCenter.classList.add('flipInX');
+    };
 
     authBtn.addEventListener('click', ()=>{
         authBtn.classList.add('visually-hidden');
@@ -350,7 +368,7 @@ if (authBtn !== null){
 };
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 const indexParallaxLayers = document.querySelectorAll('.index-parallax__img');
@@ -361,12 +379,12 @@ const moveLayers = e =>{
     let k = 1;
     for(let i=0; i<indexParallaxLayers.length; i++){
         if(i <= 2) {
-            k = i + 20;
+            k = i + 30;
         } else if (i <= 4) {
-            k = i * 5;
+            k = i * 7;
         } else if (i <=5 ){
             k = i * 4;
-        } else {k = i};
+        } else {k = i * 2};
         
         let finalX = initialX / k;
         let finalY = initialY / k / 1.8;
@@ -379,7 +397,7 @@ if (indexParallaxLayers !== null){
 };
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 const blur = document.getElementById('works-last-section__blur');
@@ -399,7 +417,7 @@ if (text != null) {
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 if (document.querySelectorAll('.projects__item').length){
@@ -417,7 +435,6 @@ if (document.querySelectorAll('.projects__item').length){
                 for(let i=0; i<this.ul.length; i++){
                     let attr = this.ul[i].getAttribute('data-project')
                     attr= attr.slice(1, -1)
-                    console.log(attr)
                     attrList.push(attr)                
                 }            
                 return attrList
