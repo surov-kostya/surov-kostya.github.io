@@ -75,7 +75,8 @@ __webpack_require__(5);
 __webpack_require__(6);
 __webpack_require__(7);
 __webpack_require__(8);
-module.exports = __webpack_require__(9);
+__webpack_require__(9);
+module.exports = __webpack_require__(10);
 
 
 /***/ }),
@@ -416,11 +417,11 @@ const indexPanel = document.querySelector('.index-panel');
 
 
 
-if (authBtn !== null){
+if (document.querySelector('.index-section__auth-btn') !== null){
     
-    window.onload = ()=>{
+    window.addEventListener('load', ()=>{
         indexCenter.classList.add('flipInX');
-    };
+    });
 
     authBtn.addEventListener('click', ()=>{
         authBtn.classList.add('visually-hidden');
@@ -431,6 +432,7 @@ if (authBtn !== null){
         authBtn.classList.remove('visually-hidden');
         indexCenter.classList.remove('flipper');
     });
+    
 };
 
 /***/ }),
@@ -443,8 +445,15 @@ const moveLayers = e =>{
     const initialX = (window.innerWidth / 2) - e.pageX;
     const initialY = (window.innerHeight / 2) - e.pageY;
     let k = 1;
-    for(let i=0; i<indexParallaxLayers.length; i++){
-        k = i*5;        
+    for(let i=indexParallaxLayers.length-1; i>=0; i--){
+        // k = i*5; 
+        if(i===6){k=10}
+        else if(i===5){k=20}
+        else if(i===4){k=30}
+        else if(i===3){k=40}
+        else if(i===2){k=50}
+        else if(i===1){k=60}
+        else {k=100};
         let finalX = initialX / k;
         let finalY = initialY / k / 5;
         indexParallaxLayers[i].style.transform = `translate(${finalX}px, ${finalY}px)`;
@@ -457,6 +466,49 @@ if (indexParallaxLayers !== null){
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports) {
+
+if (document.querySelectorAll('.my-benefits__progress_filled') !== null){
+    
+    const progress = document.querySelectorAll('.my-benefits__progress_filled');
+    const emptyRight = document.querySelectorAll('.my-benefits__progress_empty-right');
+    const emptyLeft = document.querySelectorAll('.my-benefits__progress_empty-left');
+
+    const screenHeight = window.innerHeight;
+    let skillLevel = 0;
+
+    function fillLte50(i){
+        progress[i].classList.add('my-benefits__progress_' + skillLevel);
+    };
+
+    function fillGt50(i){
+        progress[i].classList.add('my-benefits__progress_50');
+
+        setTimeout(()=>{
+            emptyRight[i].style.borderRightColor = '#00bfa5';
+            emptyRight[i].style.borderBottomColor = '#00bfa5';
+            emptyRight[i].style.zIndex = '4';
+            progress[i].classList.remove('my-benefits__progress_50');
+            emptyLeft[i].classList.add('my-benefits__progress_' + (skillLevel - 50));
+        },5000);
+        
+    };
+    
+    window.addEventListener('load', ()=>{        
+
+        for (let i = 0; i < progress.length; i++){
+            skillLevel = progress[i].getAttribute('data-skill');
+            if (skillLevel <=50){
+                fillLte50(i);
+            } else if (skillLevel > 50){
+                fillGt50(i);
+            };
+        };
+    });
+};
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports) {
 
 const blur = document.getElementById('works-last-section__blur');
@@ -476,7 +528,7 @@ if (text != null) {
 };
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 if (document.querySelectorAll('.projects__item').length){
