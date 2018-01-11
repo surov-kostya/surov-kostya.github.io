@@ -74,11 +74,48 @@ __webpack_require__(4);
 __webpack_require__(5);
 __webpack_require__(6);
 __webpack_require__(7);
-module.exports = __webpack_require__(8);
+__webpack_require__(8);
+module.exports = __webpack_require__(9);
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+if (document.querySelector('.blog-section__left') !== null){
+
+    const sidebar = document.querySelector('.blog-section__left');
+    let startPoint = 0;
+    let endPoint = 0;
+    let distance = 0;
+
+    document.addEventListener('touchstart', e=>{
+        startPoint = e.targetTouches[0].pageX;
+    });
+
+    document.addEventListener('touchend', e=>{
+        endPoint = e.changedTouches[0].pageX;
+        showSidebar();
+    });
+
+    document.addEventListener('click', e=>{
+        showSidebar();
+    });
+
+    function showSidebar () {
+        distance = endPoint - startPoint;
+        if (distance > 200){
+            sidebar.classList.add('blog-section__left_active');
+        } else {
+            sidebar.classList.remove('blog-section__left_active');
+        };
+    };
+
+};
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 if(document.querySelectorAll('.article-names__item') !== null){
@@ -110,7 +147,7 @@ if(document.querySelectorAll('.article-names__item') !== null){
 };
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports) {
 
 const firstParallaxLayers = document.querySelectorAll('.first-parallax__img');
@@ -134,7 +171,7 @@ if (firstParallaxLayers !== null){
 };
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 const fsMenu = document.querySelector('.fullscreen-menu');
@@ -149,7 +186,7 @@ if (hrBtn !== null) {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 var map;
@@ -157,6 +194,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 59.953224, lng: 30.314344},
         zoom: 12,
+        gestureHandling: 'none',
         // disableDefaulUI: true,
         fullscreenControl: false,
         mapTypeControl: false,
@@ -360,13 +398,14 @@ function initMap() {
         map: map,
         title: 'Hello World!',
         icon: 'assets/images/map/map_marker.svg',
-        // label: 'Санкт-Петербург, Приморский район. Здесь Вы можете встретить меня чаще, чем где-либо.'
+        // label: 'Я здесь',
+        title: 'Я здесь'
     });
 }
 window.initMap = initMap;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 const authBtn = document.querySelector('.index-section__auth-btn');
@@ -395,7 +434,7 @@ if (authBtn !== null){
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 const indexParallaxLayers = document.querySelectorAll('.index-parallax__img');
@@ -417,7 +456,7 @@ if (indexParallaxLayers !== null){
 };
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 const blur = document.getElementById('works-last-section__blur');
@@ -437,7 +476,7 @@ if (text != null) {
 };
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 if (document.querySelectorAll('.projects__item').length){
