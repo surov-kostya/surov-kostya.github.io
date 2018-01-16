@@ -299,9 +299,9 @@
               <div class="works-form__wrapper">
                 <div class="works-form__inputs">
                   <div class="works-form__title">Связаться со мной</div>
-                  <input class="works-form__name" type="text" placeholder="Имя">
-                  <input class="works-form__email" type="email" placeholder="Email">
-                  <textarea class="works-form__comment" placeholder="Ваше сообщение"></textarea>
+                  <input class="works-form__name" type="text" placeholder="Имя" required pattern="[A-Z][A-Za-z' -]*">
+                  <input class="works-form__email" type="email" placeholder="Email" required>
+                  <textarea class="works-form__comment" placeholder="Ваше сообщение" required></textarea>
                 </div>
                 <div class="works-form__controls">
                   <button class="works-form__btn works-form__btn_submit" type="submit">Отправить</button>
