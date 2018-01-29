@@ -76,11 +76,43 @@ __webpack_require__(6);
 __webpack_require__(7);
 __webpack_require__(8);
 __webpack_require__(9);
-module.exports = __webpack_require__(10);
-
+__webpack_require__(10);
+__webpack_require__(11);
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+if(document.querySelectorAll('.article-names__item') !== null){
+
+    const artItem = document.querySelectorAll('.article-names__item');
+    const paperItem = document.querySelectorAll('.papers__item');
+
+    for (let i = 0; i<artItem.length; i++) {
+        artItem[i].addEventListener('click', (e)=>{
+            e.preventDefault();
+
+            for (let x = 0; x<artItem.length; x++) {
+                artItem[x].classList.remove('article-names__item_active');
+                paperItem[x].classList.add('visually-hidden');
+            };
+
+            e.currentTarget.classList.add('article-names__item_active');
+            let attrOfActive = e.currentTarget.getAttribute('data-title');
+
+            for (let y = 0; y<artItem.length; y++) {
+                let attrOfPaper = paperItem[y].getAttribute('data-title');
+                if(attrOfPaper === attrOfActive){
+                    paperItem[y].classList.remove('visually-hidden');
+                };
+            };
+        });
+    };
+
+};
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 if (document.querySelector('.blog-section__left') !== null){
@@ -116,38 +148,6 @@ if (document.querySelector('.blog-section__left') !== null){
 
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-if(document.querySelectorAll('.article-names__item') !== null){
-
-    const artItem = document.querySelectorAll('.article-names__item');
-    const paperItem = document.querySelectorAll('.papers__item');
-
-    for (let i = 0; i<artItem.length; i++) {
-        artItem[i].addEventListener('click', (e)=>{
-            e.preventDefault();
-
-            for (let x = 0; x<artItem.length; x++) {
-                artItem[x].classList.remove('article-names__item_active');
-                paperItem[x].classList.add('visually-hidden');
-            };
-
-            e.currentTarget.classList.add('article-names__item_active');
-            let attrOfActive = e.currentTarget.getAttribute('data-title');
-
-            for (let y = 0; y<artItem.length; y++) {
-                let attrOfPaper = paperItem[y].getAttribute('data-title');
-                if(attrOfPaper === attrOfActive){
-                    paperItem[y].classList.remove('visually-hidden');
-                };
-            };
-        });
-    };
-
-};
-
-/***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
@@ -159,7 +159,6 @@ const moveLayers = e =>{
     let k = 1;
 
     for(let i=0; i<firstParallaxLayers.length; i++){
-
         k = i*2;
         
         let finalY = initialY * 4 / k;
@@ -484,13 +483,15 @@ if (document.querySelectorAll('.my-benefits__progress_filled') !== null){
     function fillGt50(i){
         progress[i].classList.add('my-benefits__progress_50');
 
-        setTimeout(()=>{
+
+        progress[i].addEventListener('transitionend', ()=>{
             emptyRight[i].style.borderRightColor = '#00bfa5';
             emptyRight[i].style.borderBottomColor = '#00bfa5';
             emptyRight[i].style.zIndex = '4';
             progress[i].classList.remove('my-benefits__progress_50');
             emptyLeft[i].classList.add('my-benefits__progress_' + (skillLevel - 50));
-        },5000);
+        });
+
         
     };
     
@@ -570,6 +571,19 @@ if (document.querySelectorAll('.projects__item').length){
     });
 
 }
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+if (document.querySelector('.message__btn') !== null) {
+  const msgBtn = document.querySelector('.message__btn');
+  msgBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    window.history.go(-1);
+  });
+}
+
 
 /***/ })
 /******/ ]);
