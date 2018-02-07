@@ -41,6 +41,7 @@ body{
 }
 
 .button{
+	position:relative;
 	display:inline-block;
 	width: 204px;
 	height: 43px;
@@ -48,6 +49,22 @@ body{
 	border-radius:2px;
 	text-align: center;
 	margin-left: 4px;
+}
+
+.button:after{
+	position:absolute;
+	content:"";
+	width: 15px;
+	height: 14px;
+	top:15px;
+	right: 7px;
+	background-repeat: no-repeat;
+	background-image:url(../../img/intro/intro-btn-icon.png);
+	background-position: 0px 0px;
+}
+
+.button:hover:after{
+	background-position: -1px -69px;
 }
 
 .button:hover{
@@ -60,9 +77,6 @@ body{
 }
 
 .button__text{
-	position: relative;
-	left:-13px;
-	top:1px;
 	color:#1c5bc3;
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
@@ -74,21 +88,5 @@ body{
 
 .button:hover .button__text{
 	color:#fff;
-}
-
-.button__text:after{
-	position:absolute;
-	content:"";
-	width: 15px;
-	height: 14px;
-	top:15px;
-	right: 7px;
-	background-repeat: no-repeat;
-	background-image:url(../../img/intro/intro-btn-icon.png);
-	background-position: 0px 0px;
-}
-
-.button:hover .button__text:after{
-	background-position: -1px -69px;
 }
 
