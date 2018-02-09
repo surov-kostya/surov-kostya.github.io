@@ -3,9 +3,9 @@
 
 ## Airplanet
 
-**Сайт**: https://surov-kostya.github.io/airplanet
+[**Сайт**](https://surov-kostya.github.io/airplanet)
 
-**Исходники**: https://github.com/surov-kostya/surov-kostya.github.io/tree/master/airplanet
+[**Исходники**](https://github.com/surov-kostya/surov-kostya.github.io/tree/master/airplanet)
 
 **Задачи**: 
  - Статичная верстка на флоатах, 
@@ -17,9 +17,9 @@
 
 ## Burgers лэндинг
 
-**Сайт**: https://surov-kostya.github.io/burgers
+[**Сайт**](https://surov-kostya.github.io/burgers)
 
-**Исходники**: https://github.com/surov-kostya/surov-kostya.github.io/tree/master/burgers
+[**Исходники**](https://github.com/surov-kostya/surov-kostya.github.io/tree/master/burgers)
 
 **Задачи**: 
  - адаптивная и резиновая верстка на flexbox, 
@@ -35,9 +35,9 @@
 
 ## Mountains
 
-**Сайт**: https://surov-kostya.github.io/mountains
+[**Сайт**](https://surov-kostya.github.io/mountains)
 
-**Исходники**: https://github.com/surov-kostya/surov-kostya.github.io/tree/master/mountains
+[**Исходники**](https://github.com/surov-kostya/surov-kostya.github.io/tree/master/mountains)
 
 **Задачи**: 
  - адаптивная и резиновая верстка на flexbox, 
