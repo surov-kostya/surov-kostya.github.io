@@ -1,7 +1,9 @@
 # Портфолио
 
 **Сайт**: https://surov-kostya.github.io/airplanet
-**Исходники**:
+
+**Исходники**: https://github.com/surov-kostya/surov-kostya.github.io/tree/master/airplanet
+
 **Задачи**: 
  - Статичная верстка на флоатах, 
  - Исользование BEM-naming,
@@ -9,7 +11,9 @@
 **Технологии**: HTML, CSS, GIT, Animate.CSS
 
 **Сайт**: https://surov-kostya.github.io/burgers
-**Исходники**:
+
+**Исходники**: https://github.com/surov-kostya/surov-kostya.github.io/tree/master/burgers
+
 **Задачи**: 
  - адаптивная и резиновая верстка на flexbox, 
  - исользование BEM-naming,
@@ -21,7 +25,9 @@
 **Технологии**: HTML, SCSS, jQuery, Gulp, GIT, Animate.CSS, fullPage.JS, AJAX, MAMP, PHPmailer
 
 **Сайт**: https://surov-kostya.github.io/mountains
-**Исходники**:
+
+**Исходники**: https://github.com/surov-kostya/surov-kostya.github.io/tree/master/mountains
+
 **Задачи**: 
  - адаптивная и резиновая верстка на flexbox, 
  - исользование BEM-naming,
